@@ -1,0 +1,4 @@
+# Ignore internal scratch
+BRIEF-*.md
+index.html.bak-*
+stitch-preview/
