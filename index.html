@@ -265,13 +265,16 @@
   .wcard p{color:var(--high);font-size:15px;line-height:1.6;max-width:44ch}
 
   /* BLOG */
-  .blog-grid{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--border)}
-  .post{background:#0A0A0F;padding:36px 32px;display:flex;flex-direction:column;gap:18px;min-height:300px;transition:background .3s;cursor:pointer}
+  .blog-grid{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:2px;background:var(--border);border:1px solid var(--border);border-radius:10px;overflow:hidden}
+  .post{background:#0A0A0F;display:flex;flex-direction:column;transition:background .3s;cursor:pointer;overflow:hidden}
   .post:hover{background:#0D0D12}
+  .post .pcover{aspect-ratio:16/9;width:100%;background:#0D0D12;background-size:cover;background-position:center;position:relative;border-bottom:1px solid var(--border)}
+  .post .pbody{padding:28px 28px 30px;display:flex;flex-direction:column;gap:14px;flex:1}
   .post .pmeta{font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
-  .post h3{font-family:var(--serif);font-weight:400;font-size:24px;letter-spacing:-.018em;line-height:1.14;color:var(--white)}
+  .post h3{font-family:var(--serif);font-weight:400;font-size:22px;letter-spacing:-.018em;line-height:1.18;color:var(--white)}
   .post .pbrief{color:var(--dim);font-size:14px;line-height:1.55;flex:1}
-  .post .plink{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;color:var(--cyan);text-transform:uppercase}
+  .post .plink{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;color:var(--cyan);text-transform:uppercase;display:inline-flex;align-items:center;gap:6px}
+  .post:hover .plink{color:var(--cyan-h)}
   .blog-empty{grid-column:1/-1;padding:72px 48px;background:#0A0A0F;text-align:center;display:flex;flex-direction:column;gap:20px;align-items:center}
   .blog-empty h3{font-family:var(--serif);font-weight:300;font-size:44px;letter-spacing:-.025em;line-height:1.08;max-width:20ch;color:var(--white)}
   .blog-empty p{color:var(--dim);font-size:15.5px;max-width:50ch;line-height:1.6}
@@ -1110,7 +1113,7 @@ apply(lang);
 
 async function loadPosts(){
   const host='infinitelabs.hashnode.dev';
-  const q=`query Pub($host:String!){publication(host:$host){posts(first:3){edges{node{title brief url publishedAt readTimeInMinutes}}}}}`;
+  const q=`query Pub($host:String!){publication(host:$host){posts(first:3){edges{node{title brief url publishedAt readTimeInMinutes coverImage{url}}}}}}`;
   try{
     const r=await fetch('https://gql.hashnode.com/',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({query:q,variables:{host}})});
     if(!r.ok) throw 0;
@@ -1125,7 +1128,9 @@ async function loadPosts(){
       const a=document.createElement('a');
       a.className='post anim'+(i?' anim-'+i:'');
       a.href=n.url;a.target='_blank';a.rel='noopener';
-      a.innerHTML=`<div class="pmeta">${dt} · ${n.readTimeInMinutes||4} min</div><h3>${n.title}</h3><div class="pbrief">${(n.brief||'').slice(0,160)}${(n.brief||'').length>160?'…':''}</div><div class="plink">${lang==='es'?'Leer':'Read'} ↗</div>`;
+      const cover=n.coverImage?.url?`<div class="pcover" style="background-image:url('${n.coverImage.url}')"></div>`:'';
+      const brief=(n.brief||'').replace(/^[^A-Za-zÁÉÍÓÚÑáéíóúñ]*/,'').replace(/\s+/g,' ').replace(/^(TL;DR\.?\s*)/i,'').slice(0,160);
+      a.innerHTML=`${cover}<div class="pbody"><div class="pmeta">${dt} · ${n.readTimeInMinutes||4} min</div><h3>${n.title}</h3><div class="pbrief">${brief}${brief.length>=160?'…':''}</div><div class="plink">${lang==='es'?'Leer artículo':'Read article'} <svg viewBox="0 0 24 24" style="width:12px;height:12px;stroke:currentColor;stroke-width:2;fill:none"><path d="M7 17 17 7M8 7h9v9"/></svg></div></div>`;
       g.appendChild(a);
       requestAnimationFrame(()=>a.classList.add('in'));
     });
