@@ -161,6 +161,11 @@
   .offer-card.wide{grid-column:1/-1;min-height:auto}
   .offer-card.wide .ow{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
   .offer-card.wide h3{font-size:clamp(34px,4vw,56px)}
+  .offer-tiers{display:grid;grid-template-columns:1fr 1fr auto;gap:16px;align-items:end;border-top:1px solid rgba(0,0,0,.12);padding-top:24px}
+  .tier{display:flex;flex-direction:column;gap:6px}
+  .tier-price{font-family:var(--serif);font-weight:400;font-size:26px;line-height:1;letter-spacing:-.015em;color:var(--paper-ink)}
+  .tier-unit{font-family:var(--sans);font-weight:400;font-size:13px;color:#6B5E44;margin-left:2px;letter-spacing:0}
+  .tier-desc{font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#6B5E44;line-height:1.5}
 
   /* STATS STRIP */
   .stats-strip{padding:120px 48px;background:var(--ink);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
@@ -363,6 +368,7 @@
   }
   @media (max-width: 620px){
     .pfgrid,.psteps,.whygrid,.offer-grid,.blog-grid,.stats-grid,form.cform,.loc-grid{grid-template-columns:1fr}
+    .offer-tiers{grid-template-columns:1fr}
     .pfcard.feat,.pfcard.std,.pfcard.mini,.pfcard.cta{grid-column:span 1}
     .f-top{grid-template-columns:1fr}
     .f-legal{flex-direction:column;align-items:flex-start}
@@ -404,6 +410,7 @@
   <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></symbol>
   <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a4.5 4.5 0 0 0 6 6L17 16l4 4-2 2-4-4-3.7 3.7a4.5 4.5 0 0 1-6-6L9 12 3 6l3-3 6 6 2.7-2.7z"/></symbol>
   <symbol id="i-video" viewBox="0 0 24 24"><path d="m23 7-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></symbol>
+  <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16.24 7.76-2.12 6.36-6.36 2.12 2.12-6.36 6.36-2.12z"/></symbol>
 </defs></svg>
 
 <!-- NAV -->
@@ -575,6 +582,40 @@
                 <div class="pl" data-i18n="of3.pl">SLA · Soporte · Sin lock-in</div>
               </div>
               <a href="#contacto" class="offer-cta" data-i18n="of3.cta">Hablemos <svg><use href="#i-arrow"/></svg></a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="offer-card wide anim anim-3">
+        <div class="ow">
+          <div>
+            <div class="offer-head" style="margin-bottom:16px">
+              <div class="offer-icon"><svg><use href="#i-compass"/></svg></div>
+              <div class="offer-num">04 · <span data-i18n="of4.k">Continuidad</span></div>
+            </div>
+            <h3 data-i18n="of4.h"><em>Director</em> de tecnología por horas.</h3>
+            <p class="lead" style="margin-top:16px;max-width:42ch" data-i18n="of4.sub">Tu mano derecha tecnológica, sin contratar uno en plantilla. Tú nos llamas cuando necesitas.</p>
+          </div>
+          <div>
+            <p class="lead" style="margin-bottom:24px" data-i18n="of4.p">Te acompañamos cada mes. Revisamos propuestas de proveedores antes de que firmes, entramos a reuniones con consultoras externas, auditamos tus facturas de SaaS cada trimestre y te ayudamos a decidir qué comprar, qué desarrollar y qué dejar pasar.</p>
+            <ul class="offer-topics" style="margin-bottom:24px">
+              <li data-i18n="of4.t1">Revisión de propuestas de software antes de firmar</li>
+              <li data-i18n="of4.t2">Acompañamiento en reuniones con consultoras externas</li>
+              <li data-i18n="of4.t3">Auditoría trimestral de licencias y SaaS</li>
+              <li data-i18n="of4.t4">Roadmap tecnológico a 12 meses, actualizado</li>
+              <li data-i18n="of4.t5">Canal directo Slack o WhatsApp con el equipo</li>
+            </ul>
+            <div class="offer-tiers">
+              <div class="tier">
+                <div class="tier-price">1.500€<span class="tier-unit">/mes</span></div>
+                <div class="tier-desc" data-i18n="of4.tr1">10 h/mes · Contrato 6 meses</div>
+              </div>
+              <div class="tier">
+                <div class="tier-price">3.000€<span class="tier-unit">/mes</span></div>
+                <div class="tier-desc" data-i18n="of4.tr2">25 h/mes · Contrato 6 meses</div>
+              </div>
+              <a href="#contacto" class="offer-cta" style="align-self:center" data-i18n="of4.cta">Reservar <svg><use href="#i-arrow"/></svg></a>
             </div>
           </div>
         </div>
@@ -963,6 +1004,7 @@
         <li><a href="#services" data-i18n="fo.s1">Diagnóstico gratis</a></li>
         <li><a href="#services" data-i18n="fo.s2">Estudio de ahorro</a></li>
         <li><a href="#services" data-i18n="fo.s3">Llave en mano</a></li>
+        <li><a href="#services" data-i18n="fo.s6">Director tecnología por horas</a></li>
         <li><a href="#industries" data-i18n="fo.s4">Sectores</a></li>
         <li><a href="#case" data-i18n="fo.s5">Caso destacado</a></li>
       </ul>
@@ -1057,6 +1099,14 @@ const I18N={es:{},en:{
   'of3.t3':'Monthly SLA: we stay on top of it working',
   'of3.t4':'When you leave, everything stays with you. No lock-in',
   'of3.pv':'From €8,000','of3.pl':'SLA · Support · No lock-in','of3.cta':'Let\u2019s talk',
+  'of4.k':'Continuity','of4.h':'<em>Fractional</em> head of technology.','of4.sub':'Your right-hand tech lead, without hiring one in-house. You call us when you need.',
+  'of4.p':'We are on call every month. We review software vendor proposals before you sign, join meetings with outside consultancies, audit your SaaS invoices every quarter and help you decide what to buy, what to build and what to skip.',
+  'of4.t1':'Software proposal review before you sign',
+  'of4.t2':'Joining meetings with outside consultancies',
+  'of4.t3':'Quarterly audit of licenses and SaaS',
+  'of4.t4':'12-month tech roadmap, kept up to date',
+  'of4.t5':'Direct Slack or WhatsApp channel with the team',
+  'of4.tr1':'10 h/mo · 6-month contract','of4.tr2':'25 h/mo · 6-month contract','of4.cta':'Book',
   'num.1':'Avg savings per quarter','num.2':'Ops hours returned / month','num.3':'Own SaaS in production','num.4':'EU offices · Estonia + Spain',
   'mf.eb':'Manifesto · 2026','mf.a':'AI is not going to replace your company. ','mf.b':'Companies that use it will.',
   'in.eb':'Sectors · 02','in.ha':'Six sectors where we already ','in.hb':'save money.','in.sub':'Each sector, a proven playbook. Scroll sideways to browse.',
@@ -1103,7 +1153,7 @@ const I18N={es:{},en:{
   'f.sz':'Team size','f.sz0':'Select…','f.msg':'Message','f.cta':'Send message →',
   'f.legal':'By submitting you accept our <a href="/privacy/">privacy policy</a>. Data handled in EU · GDPR · Never shared with third parties.',
   'fo.tag':'European AI consultancy for SMEs. We show you what you can save, quantify it in euros and build it.',
-  'fo.s':'What we do','fo.s1':'Free diagnosis','fo.s2':'Savings study','fo.s3':'Turnkey','fo.s4':'Who for','fo.s5':'Featured case',
+  'fo.s':'What we do','fo.s1':'Free diagnosis','fo.s2':'Savings study','fo.s3':'Turnkey','fo.s6':'Fractional tech lead','fo.s4':'Who for','fo.s5':'Featured case',
   'fo.p':'Products','fo.c':'Contact','fo.c2':'Book diagnosis',
   'fo.l1':'Privacy','fo.l2':'Terms','fo.l3':'Cookies'
 }};
