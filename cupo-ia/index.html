@@ -125,6 +125,19 @@
   .stat .label { font-size: 0.85rem; color: var(--ink-soft); margin-top: 6px; }
   .stat-green .num { color: var(--green-dark); }
 
+  /* Qui som heading */
+  .qui-h2 { display: block; }
+  .qui-brand {
+    display: block; color: var(--red);
+    font-size: 0.55em; font-weight: 600;
+    font-style: italic; letter-spacing: 0.01em;
+    margin-bottom: 10px; opacity: 0.95;
+  }
+  .qui-mark {
+    background: linear-gradient(180deg, transparent 62%, var(--green-soft) 62%);
+    color: var(--black); padding: 0 4px; border-radius: 2px;
+  }
+
   /* Quien soy */
   .intro { background: var(--gray-100); }
   .intro .container { display: grid; grid-template-columns: 1fr 1.5fr; gap: 64px; align-items: center; }
@@ -412,7 +425,7 @@
     </div>
     <div class="hero-stats">
       <div class="stat"><span class="num">8.000 €</span><span class="label">Diagnosi finançada per ACCIÓ</span></div>
-      <div class="stat stat-green"><span class="num">+ Implementació</span><span class="label">De regal d'Infinite Labs</span></div>
+      <div class="stat stat-green"><span class="num">GRATIS</span><span class="label">Implementació personalitzada</span></div>
       <div class="stat stat-green"><span class="num">0 €</span><span class="label">Cost per a l'empresa</span></div>
       <div class="stat"><span class="num">4 setm.</span><span class="label">Fins a producció</span></div>
     </div>
@@ -424,7 +437,7 @@
   <div class="container">
     <div>
       <p class="kicker">Qui farà el projecte</p>
-      <h2>Infinite Labs. Consultora d'IA per a pymes.</h2>
+      <h2 class="qui-h2"><span class="qui-brand">Infinite Labs:</span>Consultora d'IA per a <mark class="qui-mark">pymes</mark>.</h2>
       <p>Som <strong>proveïdor acreditat d'ACCIÓ</strong> per al Cupó IA. Executem el servei amb càrrec al cupó públic i ens encarreguem de tota la tramitació davant la Generalitat.</p>
       <ul>
         <li>Equip d'IA amb <strong>30+ anys d'experiència combinada</strong> en tecnologia, innovació corporativa i transformació digital.</li>
