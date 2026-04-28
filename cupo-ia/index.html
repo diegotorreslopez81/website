@@ -14,6 +14,10 @@
     --red-dark: #B31F14;
     --red-soft: #FCEAE8;
     --red-bg: #FEF5F4;
+    --green: #0FA46B;
+    --green-dark: #058049;
+    --green-soft: #DCF6E9;
+    --green-bg: #F0FBF5;
     --black: #0A0A0A;
     --ink: #1A1A1A;
     --ink-soft: #555;
@@ -119,10 +123,12 @@
   @media (max-width: 700px) { .hero-stats { grid-template-columns: repeat(2, 1fr); } }
   .stat .num { font-family: 'Fraunces', serif; font-size: 2rem; font-weight: 700; color: var(--red); display: block; line-height: 1; }
   .stat .label { font-size: 0.85rem; color: var(--ink-soft); margin-top: 6px; }
+  .stat-green .num { color: var(--green-dark); }
 
   /* Quien soy */
   .intro { background: var(--gray-100); }
   .intro .container { display: grid; grid-template-columns: 1fr 1.5fr; gap: 64px; align-items: center; }
+  .intro-narrow .container { display: block; max-width: 800px; }
   @media (max-width: 800px) { .intro .container { grid-template-columns: 1fr; gap: 40px; } }
   .intro-photo {
     aspect-ratio: 1;
@@ -170,9 +176,9 @@
   @media (max-width: 800px) { .cupo-split { grid-template-columns: 1fr; } }
   .cupo-split-col { padding: 28px; border-radius: var(--radius); border: 1px solid var(--gray-200); }
   .cupo-split-cupo { background: var(--gray-100); }
-  .cupo-split-il { background: var(--red-bg); border-color: var(--red-soft); }
+  .cupo-split-il { background: var(--green-bg); border-color: var(--green-soft); }
   .cupo-split-col .kicker { color: var(--red); margin-bottom: 8px; }
-  .cupo-split-il .kicker { color: var(--red-dark); }
+  .cupo-split-il .kicker { color: var(--green-dark); }
   .cupo-split-col ul { padding-left: 18px; margin: 12px 0 0 0; color: var(--ink); }
   .cupo-split-col li { margin: 8px 0; }
 
@@ -220,6 +226,13 @@
   .check-item strong { color: var(--white); display: block; margin-bottom: 4px; font-size: 1rem; }
   .check-item span { color: rgba(255,255,255,0.65); font-size: 0.9rem; }
 
+  .eligible-fallback {
+    max-width: 760px; margin: 32px 0 0 0; padding: 18px 22px;
+    background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12);
+    border-radius: var(--radius-sm); color: rgba(255,255,255,0.85);
+    font-size: 0.95rem;
+  }
+  .eligible-fallback strong { color: var(--white); }
   .eligible-cta {
     margin-top: 40px;
     padding: 24px;
@@ -266,7 +279,32 @@
     background: var(--gray-100); color: var(--ink); font-size: 0.78rem;
     border-radius: 999px; font-weight: 600;
   }
-  .week-tag-il { background: var(--red-soft); color: var(--red-dark); }
+  .week-tag-il { background: var(--green-soft); color: var(--green-dark); }
+
+  /* PHASES (substitueix weeks-wrap) */
+  .phases-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 40px; }
+  @media (max-width: 800px) { .phases-wrap { grid-template-columns: 1fr; } }
+  .phase {
+    padding: 32px; border-radius: var(--radius);
+    border: 1px solid var(--gray-200); background: var(--white);
+    position: relative;
+  }
+  .phase-cupo { border-top: 4px solid var(--red); }
+  .phase-il { border-top: 4px solid var(--green); background: var(--green-bg); border-color: var(--green-soft); }
+  .phase-head { display: flex; gap: 16px; align-items: flex-start; margin-bottom: 16px; }
+  .phase-num {
+    font-family: 'Fraunces', serif; font-size: 2.4rem; font-weight: 700;
+    line-height: 1; color: var(--red);
+    width: 56px; height: 56px; border-radius: 50%;
+    background: var(--red-soft); display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .phase-il .phase-num { color: var(--green-dark); background: var(--green-soft); }
+  .phase h3 { margin: 6px 0 4px 0; }
+  .phase-meta { font-size: 0.88rem; color: var(--ink-soft); margin: 0; font-weight: 600; }
+  .phase-il .phase-meta { color: var(--green-dark); }
+  .phase ul { padding-left: 20px; margin: 8px 0 0 0; }
+  .phase li { padding: 6px 0; color: var(--ink); }
 
   /* PROJECTES */
   .projects { background: var(--gray-100); }
@@ -337,6 +375,11 @@
   .btn-whatsapp svg { width: 22px; height: 22px; fill: white; }
   .final .alt-contact { margin-top: 32px; font-size: 0.9rem; color: rgba(255,255,255,0.6); }
   .final .alt-contact a { color: var(--red); }
+  .final-pill {
+    display: inline-block; padding: 8px 18px; border-radius: 999px;
+    background: var(--green-soft); color: var(--green-dark);
+    font-size: 0.92rem; font-weight: 700; margin-bottom: 20px;
+  }
 
   /* Footer */
   footer { background: var(--black); color: rgba(255,255,255,0.5); padding: 32px 0; font-size: 0.85rem; border-top: 1px solid rgba(255,255,255,0.1); }
@@ -369,36 +412,26 @@
     </div>
     <div class="hero-stats">
       <div class="stat"><span class="num">8.000 €</span><span class="label">Diagnosi finançada per ACCIÓ</span></div>
-      <div class="stat"><span class="num">+ Implementació</span><span class="label">De regal d'Infinite Labs</span></div>
-      <div class="stat"><span class="num">0 €</span><span class="label">Cost per a l'empresa</span></div>
+      <div class="stat stat-green"><span class="num">+ Implementació</span><span class="label">De regal d'Infinite Labs</span></div>
+      <div class="stat stat-green"><span class="num">0 €</span><span class="label">Cost per a l'empresa</span></div>
       <div class="stat"><span class="num">4 setm.</span><span class="label">Fins a producció</span></div>
     </div>
   </div>
 </section>
 
 <!-- QUI SOM -->
-<section class="intro">
+<section class="intro intro-narrow">
   <div class="container">
-    <div class="intro-photo"><img src="/img/diego-profile.png" alt="Diego Torres, fundador d'Infinite Labs"></div>
     <div>
       <p class="kicker">Qui farà el projecte</p>
-      <h2>Infinite Labs. Consultora d'IA per a pymes catalanes.</h2>
-      <p>A Infinite Labs implementem IA a pymes reals. Som <strong>proveïdor acreditat d'ACCIÓ</strong> per al Cupó IA: executem el servei amb càrrec al cupó públic de la Generalitat i ens ocupem de tota la tramitació.</p>
+      <h2>Infinite Labs. Consultora d'IA per a pymes.</h2>
+      <p>Som <strong>proveïdor acreditat d'ACCIÓ</strong> per al Cupó IA. Executem el servei amb càrrec al cupó públic i ens encarreguem de tota la tramitació davant la Generalitat.</p>
       <ul>
-        <li>Equip liderat per Diego Torres, fundador i consultor principal d'IA (20+ anys en tecnologia, 8 anys específics en IA).</li>
-        <li>Formacions acadèmiques de l'equip: Enginyeria de Telecomunicacions, MBA, Màster en Recerca en IA (UNED, 2025).</li>
-        <li>Experiència prèvia en banca, sector públic, salut, tercer sector i innovació corporativa.</li>
+        <li>Equip d'IA amb <strong>30+ anys d'experiència combinada</strong> en tecnologia, innovació corporativa i transformació digital.</li>
+        <li>Formacions acadèmiques: Enginyeria de Telecomunicacions, MBA, Màster en Recerca en IA i postgraus en innovació.</li>
+        <li>Experiència prèvia en <strong>banca, salut, sector públic, tercer sector i innovació corporativa</strong> a empreses i institucions de referència.</li>
         <li>Col·laboradors especialitzats (desenvolupament, DPO, domini sectorial) quan l'abast ho requereix.</li>
-        <li>Sense lock-in: codi, claus i dades sempre es queden a la teva empresa.</li>
       </ul>
-      <a href="https://infinitelabs.co" target="_blank" rel="noopener" class="intro-linkedin">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L2 7l10 5 10-5-10-5zm0 8.5L4 7l8 4 8-4-8 3.5zM2 17l10 5 10-5-10-5-10 5z"/></svg>
-        Coneix Infinite Labs
-      </a>
-      <div class="clients">
-        <strong>Experiència de l'equip</strong>
-        Banc Sabadell · European Banking Association · Dubai Government (DGEP) · Alastria Network · Open Society Foundations · Sector públic espanyol
-      </div>
     </div>
   </div>
 </section>
@@ -515,43 +548,7 @@
 
     </div>
 
-    <h3 class="eligible-title">No encaixes en el Cupó IA? Mira els compatibles</h3>
-
-    <div class="eligible-checks">
-
-      <div class="check-item ko">
-        <div class="check-box">!</div>
-        <div>
-          <strong>Tens menys de 10 empleats?</strong>
-          <span>Pots sol·licitar el <strong style="color: var(--red);">Cupó Innovació</strong> (fins a 12.000 €) o el <strong style="color: var(--red);">Cupó Estratègia</strong> (fins a 8.000 €), sense requisit de mida mínima.</span>
-        </div>
-      </div>
-
-      <div class="check-item ko">
-        <div class="check-box">!</div>
-        <div>
-          <strong>Vols enfocar-ho a sostenibilitat?</strong>
-          <span>El <strong style="color: var(--red);">Cupó Green</strong> (fins a 8.000 €, al <strong style="color: var(--red);">100% sense copagament</strong>) cobreix IA aplicada a reducció d'emissions o adaptació climàtica.</span>
-        </div>
-      </div>
-
-      <div class="check-item ko">
-        <div class="check-box">!</div>
-        <div>
-          <strong>Tens menys de 2 anys d'activitat?</strong>
-          <span>Massa recent per a qualsevol cupó ACCIÓ. Hi ha altres vies (Kit Digital, ajudes autonòmiques a start-ups) que podem explorar.</span>
-        </div>
-      </div>
-
-      <div class="check-item ko">
-        <div class="check-box">!</div>
-        <div>
-          <strong>Vols combinar cupons?</strong>
-          <span>Pots acumular <strong style="color: var(--red);">fins a 3 cupons ACCIÓ</strong> en línies diferents dins del mateix exercici. Això pot sumar fins a <strong style="color: var(--red);">28.000 €</strong> en servei cobert.</span>
-        </div>
-      </div>
-
-    </div>
+    <p class="eligible-fallback">No encaixes? Hi ha alternatives: <strong>Cupó Innovació</strong> (fins a 12.000 €), <strong>Cupó Estratègia</strong> (8.000 €), <strong>Cupó Green</strong> (8.000 €). Pots combinar fins a 3 cupons ACCIÓ. T'ho mirem al portal.</p>
 
     <div class="eligible-cta">
       <strong>Comprova en 2 minuts si encaixes i sol·licita des del portal.</strong>
@@ -561,119 +558,48 @@
   </div>
 </section>
 
-<!-- CASOS -->
-<section class="cases">
-  <div class="container">
-    <p class="kicker">Casos d'ús reals</p>
-    <h2>Què pots automatitzar al teu sector</h2>
-    <p style="max-width: 700px;">Exemples concrets del que fem amb el Cupó IA a pymes catalanes. Cada cas s'adapta a la teva realitat.</p>
-    <div class="cases-grid">
-
-      <div class="case">
-        <span class="emoji">🩺</span>
-        <h3>Clíniques i centres de salut</h3>
-        <p class="what">Recepcionista IA per WhatsApp: cites, dubtes, integració amb Google Calendar.</p>
-        <p class="result">Redueix un 30% les cancel·lacions</p>
-      </div>
-
-      <div class="case">
-        <span class="emoji">⚙️</span>
-        <h3>Indústria i tallers</h3>
-        <p class="what">Automatització de pressupostos tècnics connectada a l'ERP.</p>
-        <p class="result">Redueix dràsticament el temps per tancar una oferta</p>
-      </div>
-
-      <div class="case">
-        <span class="emoji">🛒</span>
-        <h3>Comerç i retail</h3>
-        <p class="what">Automatització del cicle de comanda per WhatsApp (catàleg, disponibilitat, confirmació).</p>
-        <p class="result">Atenció 10 vegades més ràpida</p>
-      </div>
-
-      <div class="case">
-        <span class="emoji">🍽️</span>
-        <h3>Restauració</h3>
-        <p class="what">Reserves i recordatoris automàtics per WhatsApp 24h abans.</p>
-        <p class="result">Fins a 35% menys cancel·lacions</p>
-      </div>
-
-      <div class="case">
-        <span class="emoji">🏢</span>
-        <h3>Serveis professionals</h3>
-        <p class="what">Redacció assistida d'informes, propostes i contractes. Base de coneixement interna consultable.</p>
-        <p class="result">Fins a 60% menys temps en propostes</p>
-      </div>
-
-      <div class="case">
-        <span class="emoji">✨</span>
-        <h3>El teu cas no hi és?</h3>
-        <p class="what">En la trucada de diagnòstic gratuïta mirem què té sentit automatitzar a la teva empresa concreta.</p>
-        <p class="result">Escriu-nos i ho calculem</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- 4 SEMANAS -->
+<!-- 2 FASES -->
 <section class="weeks">
   <div class="container">
-    <p class="kicker">Execució</p>
-    <h2>Diagnosi (cupó) + implementació (regal): 4 setmanes</h2>
-    <p style="max-width: 720px;">Setmanes 1-2 fem la <strong>diagnosi finançada pel Cupó IA</strong>. Setmanes 3-4 fem la <strong>implementació del primer cas d'ús sense cost addicional</strong>. Resultat: producte funcionant en producció, no només informe.</p>
-    <div class="weeks-wrap">
+    <p class="kicker">Execució en 4 setmanes</p>
+    <h2>Dues fases. Cap cost per a la teva empresa.</h2>
+    <div class="phases-wrap">
 
-      <div class="week">
-        <div class="num">1</div>
-        <h3>Diagnosi · necessitats i dades</h3>
+      <div class="phase phase-cupo">
+        <div class="phase-head">
+          <span class="phase-num">1</span>
+          <div>
+            <h3>Diagnosi</h3>
+            <p class="phase-meta">Setmanes 1-2 · Finançat pel Cupó IA · 8.000 €</p>
+          </div>
+        </div>
         <ul>
-          <li>Entrevistes amb 2-3 persones clau</li>
-          <li>Mapa dels processos i de la cadena de valor</li>
-          <li>Identificació de necessitats i iniciatives IA</li>
-          <li>Mapa amb origen de dades i anàlisi de qualitat</li>
+          <li>Identificació de necessitats i iniciatives IA prioritàries.</li>
+          <li>Mapa amb origen de dades i anàlisi de qualitat.</li>
+          <li>Full de ruta IA a curt i mitjà termini.</li>
+          <li>Estimació de costos i infraestructures.</li>
         </ul>
-        <p class="week-tag">Finançat pel Cupó IA</p>
       </div>
 
-      <div class="week">
-        <div class="num">2</div>
-        <h3>Diagnosi · full de ruta i costos</h3>
+      <div class="phase phase-il">
+        <div class="phase-head">
+          <span class="phase-num">2</span>
+          <div>
+            <h3>Implementació</h3>
+            <p class="phase-meta">Setmanes 3-4 · De regal d'Infinite Labs · 0 €</p>
+          </div>
+        </div>
         <ul>
-          <li>Priorització d'iniciatives IA</li>
-          <li>Full de ruta a curt i mitjà termini</li>
-          <li>Estimació de costos (desenvolupament, manteniment)</li>
-          <li>Definició d'infraestructures necessàries</li>
+          <li>Primer cas d'ús construït, integrat i en producció.</li>
+          <li>Connexió amb les eines existents (ERP, CRM, calendaris).</li>
+          <li>Formació de l'equip i documentació del projecte.</li>
+          <li>Suport mensual els primers 90 dies.</li>
         </ul>
-        <p class="week-tag">Finançat pel Cupó IA</p>
-      </div>
-
-      <div class="week">
-        <div class="num">3</div>
-        <h3>Implementació · pilot</h3>
-        <ul>
-          <li>Primer cas d'ús construït i integrat</li>
-          <li>Connexió amb eines existents</li>
-          <li>Proves amb volum controlat</li>
-          <li>Ajustos amb feedback de l'equip</li>
-        </ul>
-        <p class="week-tag week-tag-il">De regal d'Infinite Labs</p>
-      </div>
-
-      <div class="week">
-        <div class="num">4</div>
-        <h3>Implementació · producció</h3>
-        <ul>
-          <li>Volum real i monitorització</li>
-          <li>Formació de l'equip (2-3 sessions)</li>
-          <li>Documentació del projecte</li>
-          <li>Suport mensual els primers 90 dies</li>
-        </ul>
-        <p class="week-tag week-tag-il">De regal d'Infinite Labs</p>
       </div>
 
     </div>
-    <p class="center" style="margin-top: 40px; font-size: 1.05rem; color: var(--black);">
-      <strong>Zero lock-in.</strong> Codi, claus i dades es queden a la teva empresa. Si demà canvies de proveïdor, no hi ha ostatges.
+    <p class="center" style="margin-top: 32px; font-size: 1rem; color: var(--ink-soft);">
+      <strong style="color: var(--black);">Zero lock-in.</strong> Codi, claus i dades es queden a la teva empresa.
     </p>
   </div>
 </section>
@@ -723,62 +649,44 @@
 <section class="process">
   <div class="container">
     <p class="kicker">Pas a pas</p>
-    <h2>Com s'aplica al Cupó IA (ens encarreguem nosaltres del tràmit)</h2>
-    <p style="max-width: 700px;">Tu només fas la trucada de diagnòstic. La resta la tramitem nosaltres en nom de la teva empresa: memòria, pressupost, presentació a ACCIÓ i justificació final.</p>
+    <h2>De zero a IA en producció. Ens encarreguem de tot.</h2>
+    <p style="max-width: 700px;">Tu et registres al portal i ens contes el cas. La resta la tramitem nosaltres: memòria, pressupost, presentació a ACCIÓ, execució del servei i justificació final.</p>
 
     <div class="steps">
 
       <div class="step">
         <div class="step-num">1</div>
         <div class="step-content">
-          <div class="time">Dia 0 · 30 min · gratis</div>
-          <h3>Registre al portal i trucada inicial</h3>
-          <p>Et registres al portal amb el CIF de l'empresa. Comprovem automàticament si encaixes (sector IAE, antiguitat, mida). Si encaixa, fem una trucada per entendre què fa l'empresa i on veus colls d'ampolla.</p>
+          <div class="time">Dia 0 · gratis</div>
+          <h3>Registre al portal</h3>
+          <p>Et registres amb el CIF. Comprovem automàticament si encaixes (sector IAE, antiguitat, mida). Si encaixa, fem una trucada per concretar l'abast.</p>
         </div>
       </div>
 
       <div class="step">
         <div class="step-num">2</div>
         <div class="step-content">
-          <div class="time">+ 48 hores</div>
-          <h3>Proposta per escrit</h3>
-          <p>Si encaixa, t'enviem una proposta amb abast, entregables, cronograma i el text exacte que farem servir a la sol·licitud. Tu la revises i, si és OK, tanquem l'encàrrec condicionat a la concessió del cupó.</p>
+          <div class="time">Setmanes 1-2</div>
+          <h3>Tramitació a ACCIÓ</h3>
+          <p>Preparem la memòria tècnica, el pressupost i la sol·licitud. Presentem davant d'ACCIÓ en nom de la teva empresa.</p>
         </div>
       </div>
 
       <div class="step">
         <div class="step-num">3</div>
         <div class="step-content">
-          <div class="time">Setmanes 1-2</div>
-          <h3>Tramitació a ACCIÓ (la fem nosaltres)</h3>
-          <p>Preparem tota la documentació: memòria, pressupost i compromisos. Presentem la sol·licitud per tu al portal d'ACCIÓ. Tu només hi has d'aportar les dades bàsiques de l'empresa.</p>
+          <div class="time">Setmanes 3-6</div>
+          <h3>Resolució d'ACCIÓ</h3>
+          <p>ACCIÓ revisa i concedeix per ordre d'arribada fins a esgotar pressupost. Sol·licitar aviat és clau.</p>
         </div>
       </div>
 
       <div class="step">
         <div class="step-num">4</div>
         <div class="step-content">
-          <div class="time">Setmanes 3-6</div>
-          <h3>Resolució d'ACCIÓ</h3>
-          <p>ACCIÓ revisa la sol·licitud i la concedeix (o no). Els cupons es resolen per ordre d'arribada fins a esgotar pressupost. Sol·licitar aviat dins de la convocatòria és clau.</p>
-        </div>
-      </div>
-
-      <div class="step">
-        <div class="step-num">5</div>
-        <div class="step-content">
-          <div class="time">Setmanes 7-10</div>
-          <h3>Diagnosi (cupó) + implementació (regal)</h3>
-          <p>Setmanes 1-2: executem la diagnosi finançada pel cupó (full de ruta IA, mapa de dades, costos, infraestructures). Setmanes 3-4: construïm i posem en producció el primer cas d'ús, sense cost addicional per a la teva empresa.</p>
-        </div>
-      </div>
-
-      <div class="step">
-        <div class="step-num">6</div>
-        <div class="step-content">
-          <div class="time">Setmana 11</div>
-          <h3>Justificació a ACCIÓ (també la fem nosaltres)</h3>
-          <p>Preparem l'informe tècnic, la memòria final i les factures per a la justificació davant d'ACCIÓ. Tanquem l'expedient i rebem el pagament del cupó directament de la Generalitat.</p>
+          <div class="time">Setmanes 7-11</div>
+          <h3>Execució + justificació</h3>
+          <p>4 setmanes de diagnosi (cupó) + implementació (regal). Tanquem amb informe tècnic i justificació davant d'ACCIÓ.</p>
         </div>
       </div>
 
@@ -795,58 +703,33 @@
     <div style="max-width: 820px; margin-top: 32px;">
 
       <details class="faq-item">
-        <summary>Què passa si no em concedeixen el cupó?</summary>
-        <div class="answer">Tres opcions: (1) esperar la següent convocatòria sense cost; (2) contractar el servei sense cupó amb la tarifa estàndard; (3) no continuar, sense compromís. Si en la trucada de diagnòstic veiem que la probabilitat de concessió és baixa, t'ho diem abans de tocar res. No sol·licitem per sol·licitar.</div>
-      </details>
-
-      <details class="faq-item">
-        <summary>Quant costa a la meva empresa?</summary>
-        <div class="answer">El Cupó IA cobreix el <strong>100% del cost elegible</strong> del servei d'<strong>assessorament i diagnosi</strong> fins a 8.000 €. La <strong>implementació posterior te la regalem</strong> nosaltres com a diferenciador d'Infinite Labs. Resultat: <strong>0 € per a l'empresa</strong> si tot encaixa dins del pressupost del cupó.</div>
+        <summary>Quant costa realment a la meva empresa?</summary>
+        <div class="answer"><strong>0 €</strong> si tot encaixa. El Cupó IA cobreix el 100% del cost del servei d'assessorament i diagnosi (fins a 8.000 €). La <strong>implementació posterior te la regalem nosaltres</strong> com a diferenciador d'Infinite Labs.</div>
       </details>
 
       <details class="faq-item">
         <summary>Per què regaleu la implementació?</summary>
-        <div class="answer">Perquè una diagnosi sense implementació no transforma res. Volem que les nostres referències siguin pymes amb IA <strong>en producció</strong>, no informes en un calaix. La implementació ens permet validar el full de ruta, deixar valor real i guanyar-nos el dret a futures col·laboracions amb la teva empresa.</div>
+        <div class="answer">Perquè una diagnosi sense implementació no transforma res. Volem que les nostres referències siguin pymes amb IA <strong>en producció</strong>, no informes en un calaix.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Què passa si ACCIÓ no concedeix el cupó?</summary>
+        <div class="answer">Tres opcions: esperar la següent convocatòria sense cost, contractar sense cupó amb tarifa estàndard, o no continuar sense compromís. Si veiem que la concessió és poc probable, t'ho diem abans de tocar res.</div>
       </details>
 
       <details class="faq-item">
         <summary>Quant triga tot el procés?</summary>
-        <div class="answer">Entre 8 i 12 setmanes des del primer contacte fins a estar en producció. Desglossament: trucada de diagnòstic (dia 0), proposta (dia 2), tramitació a ACCIÓ (2 setmanes), resolució d'ACCIÓ (2-4 setmanes), execució del servei (4 setmanes), justificació (1 setmana).</div>
+        <div class="answer">Entre 8 i 11 setmanes des del registre fins a tenir IA en producció: tramitació (1-2 setmanes), resolució d'ACCIÓ (2-4 setmanes), execució del servei (4 setmanes), justificació (1 setmana).</div>
       </details>
 
       <details class="faq-item">
-        <summary>Tinc menys de 10 empleats, puc fer alguna cosa?</summary>
-        <div class="answer">Sí. El Cupó IA té aquest requisit específic, però hi ha altres línies d'ACCIÓ compatibles: Cupó Innovació (fins a 12.000 €), Cupó Estratègia (fins a 8.000 €), Cupó Green (fins a 8.000 €, cobertura 100%). En el diagnòstic valorem quina t'encaixa millor.</div>
-      </details>
-
-      <details class="faq-item">
-        <summary>Qui signa el contracte de servei?</summary>
-        <div class="answer">El contracte és directament entre l'empresa client i Infinite Labs. La Generalitat no és part del contracte: el cupó és un instrument que cobreix una part del preu pactat entre les dues parts. Infinite Labs factura l'empresa client i la Generalitat abona directament la part coberta pel cupó.</div>
-      </details>
-
-      <details class="faq-item">
-        <summary>Puc demanar més d'un cupó?</summary>
-        <div class="answer">Sí, fins a 3 cupons ACCIÓ en línies diferents dins del mateix exercici. Exemple: Cupó IA + Cupó Innovació + Cupó Green. En total podrien cobrir entre 24.000 € i 28.000 € de serveis. En el diagnòstic t'expliquem què té sentit per a la teva empresa.</div>
-      </details>
-
-      <details class="faq-item">
-        <summary>Ja he fet una consultoria amb una altra empresa. Puc continuar amb vosaltres?</summary>
-        <div class="answer">Sí. Portem el projecte des del punt on estàs. En la trucada de diagnòstic revisem el que ja tens i definim l'abast específic del projecte nou per al cupó. Sempre sense duplicar feina ni facturar per coses ja cobertes.</div>
+        <summary>No encaixo al Cupó IA. Hi ha alternatives?</summary>
+        <div class="answer">Sí: Cupó Innovació (fins a 12.000 €), Cupó Estratègia (8.000 €), Cupó Green (8.000 €). Pots combinar fins a 3 cupons ACCIÓ al mateix exercici. Et registres al portal i t'orientem.</div>
       </details>
 
       <details class="faq-item">
         <summary>Hi ha lock-in amb el codi o les dades?</summary>
-        <div class="answer">No. Codi, claus, dades i documentació es queden sempre a la teva empresa. Si demà vols treballar amb un altre proveïdor, no hi ha cap ostatge. Aquesta és una condició que et posem per escrit al contracte.</div>
-      </details>
-
-      <details class="faq-item">
-        <summary>Qui és Infinite Labs? Hi ha un equip?</summary>
-        <div class="answer">Infinite Labs és una consultora d'IA per a pymes, liderada per Diego Torres (enginyer de telecomunicacions, 20+ anys en desenvolupament i 8 anys específics en IA, director Tech a Peninsula Corporate Innovation). Als projectes hi participen col·laboradors especialitzats segons l'abast (desenvolupadors, experts sectorials, DPO). Infinite Labs està acreditada com a proveïdora d'ACCIÓ per al Cupó IA.</div>
-      </details>
-
-      <details class="faq-item">
-        <summary>Com us contacto si tinc un dubte abans de parlar?</summary>
-        <div class="answer">Registra't al <a href="https://cupons.infinitelabs.co/login">portal</a> amb el CIF de l'empresa: en pocs minuts et confirmem si encaixes i obrim un canal de comunicacions intern dins del portal. També pots escriure'ns a <a href="mailto:diego@infinitelabs.co">diego@infinitelabs.co</a> o <a href="mailto:irene@infinitelabs.co">irene@infinitelabs.co</a>. Resposta dins de 24 hores.</div>
+        <div class="answer">No. Codi, claus, dades i documentació es queden sempre a la teva empresa. Per escrit al contracte.</div>
       </details>
 
     </div>
@@ -856,8 +739,9 @@
 <!-- CTA PORTAL -->
 <section class="final" id="contacte">
   <div class="container">
-    <h2>Registra't al portal i comprovem si encaixes</h2>
-    <p>Introdueix el CIF de l'empresa al portal. Comprovem automàticament IAE, sector i requisits del Cupó IA. Si encaixa, obrim el tràmit. Cost final si tot encaixa: <strong>0 €</strong> (cupó + implementació de regal).</p>
+    <span class="final-pill">0 € · 8.000 € coberts + implementació de regal</span>
+    <h2>Registra el CIF al portal. Comprovem si encaixes en 2 minuts.</h2>
+    <p>Comprovem automàticament IAE, sector, antiguitat i mida. Si encaixa, obrim el tràmit i t'acompanyem fins tenir IA en producció.</p>
     <a href="https://cupons.infinitelabs.co/login" class="btn btn-primary">Accedeix al portal →</a>
     <p class="alt-contact">O escriu-nos a: <a href="mailto:diego@infinitelabs.co">diego@infinitelabs.co</a> · <a href="mailto:irene@infinitelabs.co">irene@infinitelabs.co</a></p>
   </div>
