@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>infinitelabs · variantes logo (sobre original)</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0A0A0F;--surface:#111113;--border:#27272A;--text:#FAFAFA;
+  --dim:#A1A1AA;--muted:#71717A;--accent:#8000FF;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font:400 15px/1.5 'Inter',sans-serif;padding:48px 24px;min-height:100vh}
+h1{font:600 24px 'Inter';margin-bottom:6px}
+p.intro{color:var(--dim);margin-bottom:48px;max-width:64ch}
+section{max-width:1200px;margin:0 auto 56px}
+section > h2{font:600 14px 'Inter';color:var(--accent);text-transform:uppercase;letter-spacing:.16em;margin-bottom:20px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:36px 28px;display:flex;flex-direction:column;gap:18px}
+.card__hd{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:8px}
+.card__lbl{font:700 11px 'Inter';letter-spacing:.18em;text-transform:uppercase;color:var(--accent)}
+.card__name{font:600 17px 'Inter';color:var(--text);margin-top:4px}
+.card__desc{font-size:13px;color:var(--dim);line-height:1.55}
+.card .stage{padding:32px;background:var(--bg);border-radius:8px;display:flex;justify-content:flex-start;align-items:center}
+.card .stage--light{background:#FAFAFA}
+.card .stage img{max-width:100%;height:auto}
+.card .stage--symbol{padding:24px;justify-content:center}
+.card .stage--symbol img{max-height:80px}
+.note{font:500 11px monospace;color:var(--muted);letter-spacing:.06em}
+</style>
+</head>
+<body>
+
+<div style="max-width:1200px;margin:0 auto 32px">
+  <h1>infinitelabs · variantes logo · originales editados</h1>
+  <p class="intro">Tomé el SVG original (logo-white.svg y symbol-white.svg) y solo cambié colores · estructura intacta. 3 variantes para wordmark completo + 3 para símbolo solo. Mira sobre fondo dark y claro.</p>
+</div>
+
+<section>
+  <h2>1. Logo completo (símbolo + wordmark)</h2>
+  <div class="grid">
+
+    <div class="card">
+      <div class="card__hd">
+        <div>
+          <div class="card__lbl">Variant A</div>
+          <div class="card__name">Bolitas en lila</div>
+        </div>
+      </div>
+      <p class="card__desc">Las dos bolitas (los puntos de luz del símbolo) en lila accent. Path del infinito y wordmark se mantienen blancos. Sutil, conserva el original.</p>
+      <div class="stage"><img src="logo-A-bolitas-lila.svg" alt="Variant A dark"></div>
+      <div class="stage stage--light"><img src="logo-A-bolitas-lila.svg" alt="Variant A light" style="filter:invert(1);filter:none"></div>
+      <span class="note">Las bolitas en #8000FF · path infinity en white · wordmark white</span>
+    </div>
+
+    <div class="card">
+      <div class="card__hd">
+        <div>
+          <div class="card__lbl">Variant B</div>
+          <div class="card__name">Infinito en lila</div>
+        </div>
+      </div>
+      <p class="card__desc">El path del símbolo infinito (las curvas) en lila accent. Las bolitas blancas marcan los puntos de luz. Wordmark blanco.</p>
+      <div class="stage"><img src="logo-B-infinito-lila.svg" alt="Variant B dark"></div>
+      <div class="stage stage--light"><img src="logo-B-infinito-lila.svg" alt="Variant B light"></div>
+      <span class="note">Path infinity en #8000FF · bolitas en white · wordmark white</span>
+    </div>
+
+    <div class="card">
+      <div class="card__hd">
+        <div>
+          <div class="card__lbl">Variant C</div>
+          <div class="card__name">Símbolo entero en lila</div>
+        </div>
+      </div>
+      <p class="card__desc">Todo el símbolo (infinito + bolitas) en lila. Wordmark blanco. Máxima identidad cromática del símbolo, claro contraste con el wordmark.</p>
+      <div class="stage"><img src="logo-C-simbolo-lila.svg" alt="Variant C dark"></div>
+      <div class="stage stage--light"><img src="logo-C-simbolo-lila.svg" alt="Variant C light"></div>
+      <span class="note">Símbolo completo en #8000FF · wordmark white</span>
+    </div>
+
+    <div class="card">
+      <div class="card__hd">
+        <div>
+          <div class="card__lbl">Original</div>
+          <div class="card__name">Sin cambios (referencia)</div>
+        </div>
+      </div>
+      <p class="card__desc">Original blanco que me has pasado. Para comparar.</p>
+      <div class="stage"><img src="logo-white-original.svg" alt="Original white"></div>
+      <div class="stage stage--light"><img src="logo-black-original.svg" alt="Original black"></div>
+      <span class="note">white sobre dark · black sobre claro</span>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>2. Símbolo solo (sin wordmark · para favicon, app icons, social)</h2>
+  <div class="grid">
+
+    <div class="card">
+      <div class="card__hd">
+        <div>
+          <div class="card__lbl">Symbol A</div>
+          <div class="card__name">Bolitas en lila</div>
+        </div>
+      </div>
+      <p class="card__desc">Versión symbol-only para usar como favicon, avatar redes, app icon.</p>
+      <div class="stage stage--symbol"><img src="symbol-A-bolitas-lila.svg" alt="Symbol A"></div>
+      <div class="stage stage--symbol stage--light"><img src="symbol-A-bolitas-lila.svg" alt="Symbol A light"></div>
+      <span class="note">200×97 viewBox</span>
+    </div>
+
+    <div class="card">
+      <div class="card__hd">
+        <div>
+          <div class="card__lbl">Symbol B</div>
+          <div class="card__name">Infinito en lila</div>
+        </div>
+      </div>
+      <p class="card__desc">Símbolo curvas en lila, bolitas en blanco.</p>
+      <div class="stage stage--symbol"><img src="symbol-B-infinito-lila.svg" alt="Symbol B"></div>
+      <div class="stage stage--symbol stage--light"><img src="symbol-B-infinito-lila.svg" alt="Symbol B light"></div>
+      <span class="note">200×97 viewBox</span>
+    </div>
+
+    <div class="card">
+      <div class="card__hd">
+        <div>
+          <div class="card__lbl">Symbol C</div>
+          <div class="card__name">Todo lila</div>
+        </div>
+      </div>
+      <p class="card__desc">Monocromo lila. Más uniforme.</p>
+      <div class="stage stage--symbol"><img src="symbol-C-todo-lila.svg" alt="Symbol C"></div>
+      <div class="stage stage--symbol stage--light"><img src="symbol-C-todo-lila.svg" alt="Symbol C light"></div>
+      <span class="note">200×97 viewBox</span>
+    </div>
+
+    <div class="card">
+      <div class="card__hd">
+        <div>
+          <div class="card__lbl">Symbol Original</div>
+          <div class="card__name">Sin cambios</div>
+        </div>
+      </div>
+      <p class="card__desc">Original symbol-white para comparar.</p>
+      <div class="stage stage--symbol"><img src="symbol-white-original.svg" alt="Symbol original white"></div>
+      <div class="stage stage--symbol stage--light"><img src="symbol-black-original.svg" alt="Symbol original black"></div>
+      <span class="note">white + black originales</span>
+    </div>
+
+  </div>
+</section>
+
+<div style="max-width:1200px;margin:32px auto 0;padding:18px 24px;background:var(--surface);border:1px solid var(--border);border-radius:8px;font-size:13px;color:var(--dim)">
+  Dime <strong style="color:var(--text)">A · B · C</strong> y reemplazo el wordmark text del nav y footer del index-v6.html con el SVG inline que escojas. También puedes pedir variante mixta (ej. "B con bolitas más gordas").
+</div>
+
+</body>
+</html>

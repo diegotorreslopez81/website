@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>infinitelabs · variantes logo</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0A0A0F;--surface:#111113;--border:#27272A;
+  --text:#FAFAFA;--dim:#A1A1AA;--muted:#71717A;
+  --accent:#8000FF;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font:400 15px/1.5 'Inter',sans-serif;padding:48px 24px;min-height:100vh}
+h1{font:600 22px 'Inter',sans-serif;margin-bottom:8px}
+p.intro{color:var(--dim);margin-bottom:48px;max-width:60ch}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;max-width:1200px;margin:0 auto}
+.variant{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:48px 32px;display:flex;flex-direction:column;align-items:flex-start;gap:24px}
+.variant__lbl{font:600 11px 'Inter',monospace;letter-spacing:.18em;text-transform:uppercase;color:var(--accent)}
+.variant__name{font:600 18px 'Inter',sans-serif;color:var(--text)}
+.variant__desc{font-size:13.5px;color:var(--dim);line-height:1.55}
+.variant svg{display:block}
+.bg-light{background:var(--text);padding:32px;border-radius:8px;width:100%;display:flex;justify-content:flex-start}
+.bg-light svg .text-mark{fill:#0A0A0F !important}
+.note{color:var(--muted);font-size:11px;font-family:monospace;letter-spacing:.06em;text-transform:uppercase}
+.controls{margin-top:32px;padding:18px 24px;background:var(--surface);border:1px solid var(--border);border-radius:8px;max-width:1200px;margin-left:auto;margin-right:auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.controls span{font-size:13px;color:var(--dim)}
+.controls a{color:var(--accent);text-decoration:none;font-weight:600;font-size:13px}
+</style>
+</head>
+<body>
+
+<div style="max-width:1200px;margin:0 auto 32px">
+  <h1>infinitelabs · 4 variantes de logo</h1>
+  <p class="intro">SVG vectorial · escalable · accent lila #8000FF. Mira las 4 versiones sobre fondo dark + sobre fondo claro. Dime cuál te gusta y la dejo como `infinitelabs-logo.svg` lista para usar en la web.</p>
+</div>
+
+<div class="grid">
+
+  <!-- Variant A · Infinity en lila + dot blanco -->
+  <div class="variant">
+    <span class="variant__lbl">Variant A</span>
+    <span class="variant__name">Infinito lila · bolita blanca</span>
+    <p class="variant__desc">Los dos círculos del infinito en lila accent · la bolita superior queda blanca como punto de conexión.</p>
+    <svg width="280" height="60" viewBox="0 0 280 60" xmlns="http://www.w3.org/2000/svg">
+      <g fill="none">
+        <circle cx="20" cy="30" r="13" stroke="#8000FF" stroke-width="2"/>
+        <circle cx="42" cy="30" r="13" stroke="#8000FF" stroke-width="2"/>
+        <circle cx="31" cy="14" r="3.5" fill="#FAFAFA"/>
+      </g>
+      <text class="text-mark" x="68" y="38" font-family="Inter,sans-serif" font-size="26" font-weight="300" fill="#FAFAFA" letter-spacing="-0.01em">infinitelabs</text>
+    </svg>
+    <div class="bg-light">
+      <svg width="280" height="60" viewBox="0 0 280 60" xmlns="http://www.w3.org/2000/svg">
+        <g fill="none">
+          <circle cx="20" cy="30" r="13" stroke="#8000FF" stroke-width="2"/>
+          <circle cx="42" cy="30" r="13" stroke="#8000FF" stroke-width="2"/>
+          <circle cx="31" cy="14" r="3.5" fill="#0A0A0F"/>
+        </g>
+        <text class="text-mark" x="68" y="38" font-family="Inter,sans-serif" font-size="26" font-weight="300" fill="#0A0A0F" letter-spacing="-0.01em">infinitelabs</text>
+      </svg>
+    </div>
+    <span class="note">stroke=#8000FF · dot=#FAFAFA</span>
+  </div>
+
+  <!-- Variant B · Infinity blanco + dot lila -->
+  <div class="variant">
+    <span class="variant__lbl">Variant B</span>
+    <span class="variant__name">Infinito blanco · bolita lila</span>
+    <p class="variant__desc">Mantiene el original blanco y solo el accent lila aparece como detalle en el dot superior. Más sutil.</p>
+    <svg width="280" height="60" viewBox="0 0 280 60" xmlns="http://www.w3.org/2000/svg">
+      <g fill="none">
+        <circle cx="20" cy="30" r="13" stroke="#FAFAFA" stroke-width="2"/>
+        <circle cx="42" cy="30" r="13" stroke="#FAFAFA" stroke-width="2"/>
+        <circle cx="31" cy="14" r="3.5" fill="#8000FF"/>
+      </g>
+      <text class="text-mark" x="68" y="38" font-family="Inter,sans-serif" font-size="26" font-weight="300" fill="#FAFAFA" letter-spacing="-0.01em">infinitelabs</text>
+    </svg>
+    <div class="bg-light">
+      <svg width="280" height="60" viewBox="0 0 280 60" xmlns="http://www.w3.org/2000/svg">
+        <g fill="none">
+          <circle cx="20" cy="30" r="13" stroke="#0A0A0F" stroke-width="2"/>
+          <circle cx="42" cy="30" r="13" stroke="#0A0A0F" stroke-width="2"/>
+          <circle cx="31" cy="14" r="3.5" fill="#8000FF"/>
+        </g>
+        <text class="text-mark" x="68" y="38" font-family="Inter,sans-serif" font-size="26" font-weight="300" fill="#0A0A0F" letter-spacing="-0.01em">infinitelabs</text>
+      </svg>
+    </div>
+    <span class="note">stroke=#FAFAFA · dot=#8000FF</span>
+  </div>
+
+  <!-- Variant C · Mixed: un círculo lila uno blanco -->
+  <div class="variant">
+    <span class="variant__lbl">Variant C</span>
+    <span class="variant__name">Mixto · un círculo lila</span>
+    <p class="variant__desc">Asimétrico: el círculo derecho en lila, el izquierdo blanco. Sugiere "transición" o evolución. Diferenciador visual fuerte.</p>
+    <svg width="280" height="60" viewBox="0 0 280 60" xmlns="http://www.w3.org/2000/svg">
+      <g fill="none">
+        <circle cx="20" cy="30" r="13" stroke="#FAFAFA" stroke-width="2"/>
+        <circle cx="42" cy="30" r="13" stroke="#8000FF" stroke-width="2"/>
+        <circle cx="31" cy="14" r="3.5" fill="#FAFAFA"/>
+      </g>
+      <text class="text-mark" x="68" y="38" font-family="Inter,sans-serif" font-size="26" font-weight="300" fill="#FAFAFA" letter-spacing="-0.01em">infinite<tspan fill="#8000FF">labs</tspan></text>
+    </svg>
+    <div class="bg-light">
+      <svg width="280" height="60" viewBox="0 0 280 60" xmlns="http://www.w3.org/2000/svg">
+        <g fill="none">
+          <circle cx="20" cy="30" r="13" stroke="#0A0A0F" stroke-width="2"/>
+          <circle cx="42" cy="30" r="13" stroke="#8000FF" stroke-width="2"/>
+          <circle cx="31" cy="14" r="3.5" fill="#0A0A0F"/>
+        </g>
+        <text class="text-mark" x="68" y="38" font-family="Inter,sans-serif" font-size="26" font-weight="300" fill="#0A0A0F" letter-spacing="-0.01em">infinite<tspan fill="#8000FF">labs</tspan></text>
+      </svg>
+    </div>
+    <span class="note">izq=#FAFAFA · der=#8000FF · "labs"=#8000FF</span>
+  </div>
+
+  <!-- Variant D · All lila + más fuerte -->
+  <div class="variant">
+    <span class="variant__lbl">Variant D</span>
+    <span class="variant__name">Todo lila · monocromo accent</span>
+    <p class="variant__desc">El logo entero en lila. Más impactante visualmente · forte para wordmark + símbolo unidos.</p>
+    <svg width="280" height="60" viewBox="0 0 280 60" xmlns="http://www.w3.org/2000/svg">
+      <g fill="none">
+        <circle cx="20" cy="30" r="13" stroke="#8000FF" stroke-width="2"/>
+        <circle cx="42" cy="30" r="13" stroke="#8000FF" stroke-width="2"/>
+        <circle cx="31" cy="14" r="3.5" fill="#8000FF"/>
+      </g>
+      <text class="text-mark" x="68" y="38" font-family="Inter,sans-serif" font-size="26" font-weight="300" fill="#8000FF" letter-spacing="-0.01em">infinitelabs</text>
+    </svg>
+    <div class="bg-light">
+      <svg width="280" height="60" viewBox="0 0 280 60" xmlns="http://www.w3.org/2000/svg">
+        <g fill="none">
+          <circle cx="20" cy="30" r="13" stroke="#8000FF" stroke-width="2"/>
+          <circle cx="42" cy="30" r="13" stroke="#8000FF" stroke-width="2"/>
+          <circle cx="31" cy="14" r="3.5" fill="#8000FF"/>
+        </g>
+        <text class="text-mark" x="68" y="38" font-family="Inter,sans-serif" font-size="26" font-weight="300" fill="#8000FF" letter-spacing="-0.01em">infinitelabs</text>
+      </svg>
+    </div>
+    <span class="note">all=#8000FF</span>
+  </div>
+
+</div>
+
+<div class="controls">
+  <span>4 variantes · accent lila #8000FF · stroke 2px · Inter Light 26px</span>
+  <a href="#" onclick="alert('Dime A · B · C · D y guardo la elegida en /img/infinitelabs-logo.svg'); return false">Cómo elegir →</a>
+</div>
+
+</body>
+</html>
