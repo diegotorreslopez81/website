@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg?v=infinite-d"><meta name="theme-color" content="#0A0A0F">
+<meta property="og:title" content="Entrenamiento de modelos LLM y predictivos · Infinite Labs Portfolio">
+<meta property="og:description" content="5 capacidades de entrenamiento: fine-tuning verticales, forecasting, clasificación salud, OCR custom, evaluación de modelos.">
+<script defer src="https://umami.infinitelabs.co/script.js" data-website-id="8b3ff8f3-ef3e-4c8f-bf8e-22a4be3d78a7"></script>
+<title>Entrenamiento de modelos LLM y predictivos · Portfolio · Infinite Labs</title>
+<meta name="description" content="5 capacidades de entrenamiento de modelos: fine-tuning, forecasting, clasificación clínica, OCR custom, evaluación.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/portfolio/portfolio.css?v=1">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+<symbol id="i-arrow-r" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></symbol>
+</defs></svg>
+
+<nav class="site-nav" id="nav">
+  <a href="/" class="brand"><svg height="20" viewBox="0 0 400 54"><circle cx="84.5" cy="15.5" r="7.5" fill="#8000FF"/><circle cx="7.5" cy="30.5" r="7.5" fill="currentColor"/></svg><span style="margin-left:14px;font-family:var(--mono);font-size:11px;letter-spacing:.18em;color:var(--dim);text-transform:uppercase">Infinite Labs</span></a>
+  <div class="links"><a href="/#services">Qué hacemos</a><a href="/#industries">Para quién</a><a href="/portfolio/" class="active">Portfolio</a><a href="/#process">Cómo empezar</a><a href="/#about">Equipo</a><a href="https://blog.infinitelabs.co" target="_blank" rel="noopener">Blog</a></div>
+  <div class="right"><div class="lang"><button data-lang="es" class="active">ES</button><span class="sep">·</span><button data-lang="ca">CA</button><span class="sep">·</span><button data-lang="en">EN</button></div><a href="/#contacto" class="btn btn-primary">Reservar diagnóstico →</a></div>
+</nav>
+
+<section class="fp-hero">
+  <div class="fp-hero-wrap">
+    <div>
+      <div class="fp-crumbs anim"><a href="/portfolio/">Portfolio</a><span class="sep">/</span><span>Familia 07</span></div>
+      <div class="eyebrow anim anim-1">Familia 07 · Entrenamiento de modelos LLM y predictivos</div>
+      <h1 class="anim anim-2">Cuando un modelo general <em class="ac">no es suficiente.</em></h1>
+      <p class="sub anim anim-3">Hay problemas donde GPT-4 o Gemini no llegan: vocabulario técnico de tu sector, datos confidenciales que no pueden salir, predicciones específicas de tu operativa. Cinco capacidades de entrenamiento propio: fine-tuning de LLMs open weights, forecasting, clasificación supervisada, OCR custom y evaluación de modelos.</p>
+    </div>
+    <div class="fp-stat anim anim-4">
+      <div class="fp-stat-l">Coste de inferencia</div>
+      <div class="fp-stat-n">10–30<span style="font-size:.55em;color:var(--cyan);margin-left:6px">×</span></div>
+      <div class="fp-stat-d">menor con modelo open-weight fine-tuned self-hosted que con API gestionada para volúmenes altos. Soberanía EU como bonus.</div>
+    </div>
+  </div>
+</section>
+
+<section class="fp-section">
+  <div class="fp-sec-wrap"><div class="fp-sec-head">
+    <div><div class="eyebrow">El problema · 01</div><h2><span>Los modelos generales </span><em class="ac">no saben tu dominio.</em></h2></div>
+    <div class="intro">
+      <p>Los LLMs comerciales han leído internet pero no han leído tus pólizas, tus historiales clínicos, tus expedientes administrativos ni tu jerga interna. Para casos críticos donde el dominio importa, un modelo general da resultados mediocres.</p>
+      <p style="margin-top:18px">Además: para volúmenes altos, el coste de API gestionada se dispara. Para casos sensibles (salud, defensa, jurídico) los datos no pueden salir. Para casos predictivos (forecasting, anomaly detection) no necesitas LLM, necesitas un modelo entrenado sobre tu serie temporal. La respuesta es entrenar lo necesario para tu caso, no usar lo más grande disponible.</p>
+    </div>
+  </div></div>
+</section>
+
+<section class="fp-section paper">
+  <div class="fp-sec-wrap"><div class="fp-sec-head">
+    <div><div class="eyebrow">Principios · 02</div><h2><span>Cinco reglas </span><em class="ac">de entrenamiento honesto.</em></h2></div>
+    <p class="intro">El entrenamiento mal hecho produce modelos peores que la API de OpenAI a coste enorme. Estas son las reglas que aplicamos para que el resultado merezca la pena.</p>
+  </div>
+  <div class="principles">
+    <div class="principle"><div class="principle-n">01 · Empieza pequeño</div><h4>Mistral 7B antes que Llama 70B</h4><p>El modelo pequeño fine-tuned suele superar al grande sin tuning sobre tu tarea. Empezamos con 7B, validamos, escalamos solo si hace falta.</p></div>
+    <div class="principle"><div class="principle-n">02 · Benchmark con harness propio</div><h4>Métricas tuyas, no MMLU</h4><p>Los benchmarks genéricos (MMLU, HellaSwag) no dicen nada sobre tu caso. Construimos harness reproducible con preguntas y métricas relevantes para tu negocio.</p></div>
+    <div class="principle"><div class="principle-n">03 · Datos sintéticos para arranque</div><h4>Cold start sin pedir más datos</h4><p>Cuando no hay suficientes ejemplos reales, generamos sintéticos validados antes de pedir más datos al cliente. Acelera el arranque significativamente.</p></div>
+    <div class="principle"><div class="principle-n">04 · Retraining incremental</div><h4>El modelo no es entregable estático</h4><p>Pipeline de retraining incremental con feedback humano. Cada error corregido entra al training set. El modelo mejora en producción.</p></div>
+    <div class="principle"><div class="principle-n">05 · Documentación de modelo</div><h4>Model Card como entregable</h4><p>Cada modelo entregado lleva Model Card: datos de entrenamiento, métricas en benchmark, sesgos detectados, limitaciones conocidas. Compatible con AI Act.</p></div>
+    <div class="principle"><div class="principle-n">06 · Reproducibilidad</div><h4>Mismo training, mismo modelo</h4><p>Seeds fijadas, versiones de datos, hiperparámetros versionados. Si hay que reentrenar dentro de 1 año, el mismo training genera el mismo modelo.</p></div>
+  </div></div>
+</section>
+
+<section class="fp-section" id="casos">
+  <div class="fp-sec-wrap"><div class="fp-sec-head">
+    <div><div class="eyebrow">Las 5 capacidades · 03</div><h2><span>Cinco tipos </span><em class="ac">de entrenamiento.</em></h2></div>
+    <p class="intro">Desde fine-tuning de LLMs verticales hasta modelos clásicos de forecasting. La elección depende de tu tarea, no de la moda del momento.</p>
+  </div>
+  <div class="cases-list">
+
+    <article class="case-detail" id="finetuning">
+      <div class="case-detail-side"><div class="case-detail-num">01 · B2B / Legal / Salud</div><h3>Fine-tuning de LLM open weights verticales</h3><p class="blurb">Ajuste de Mistral o Llama sobre corpus propio del cliente. Cumple soberanía EU y reduce coste de inferencia.</p><div class="tags"><span class="tag">B2B</span><span class="tag">Legal</span><span class="tag">Salud</span><span class="tag">Open weights</span></div></div>
+      <div class="case-detail-body">
+        <div class="case-block"><h4>Problema</h4><p>Una API LLM gestionada (Gemini, Claude, GPT) responde bien en general pero no domina vocabulario sectorial. Para volúmenes altos el coste se dispara. Para datos confidenciales (médicos, jurídicos, defensa), enviarlos a US es inviable.</p></div>
+        <div class="case-block"><h4>Solución</h4><p>Fine-tuning supervisado de un modelo open-weights europeo (Mistral 7B/22B, Llama 3 en su caso) sobre corpus específico del cliente. LoRA o QLoRA para eficiencia. Datos de entrenamiento curados con tu equipo. Validación contra benchmark propio. Despliegue self-hosted en Hetzner Frankfurt o tu infra. Pipeline reproducible.</p>
+          <ul class="bullets"><li>Modelos europeos cuando es viable (Mistral La Plateforme)</li><li>LoRA / QLoRA para reducir coste de training</li><li>Benchmark propio del cliente, no MMLU</li><li>Model Card como entregable AI Act-compatible</li></ul></div>
+        <div class="case-block"><h4>Business case</h4><p>Coste de inferencia 10-30× inferior a APIs gestionadas para volúmenes altos. Soberanía EU completa. Latencia menor (modelo self-hosted, sin viaje a US). Capacidad de incorporar conocimiento dominio que ningún modelo general tiene.</p></div>
+        <div class="case-block"><h4>Stack</h4><div class="stack-list"><span class="stack-chip">Mistral / Llama</span><span class="stack-chip">LoRA / QLoRA</span><span class="stack-chip">Hugging Face TRL</span><span class="stack-chip">Hetzner GPU</span><span class="stack-chip">vLLM serving</span></div></div>
+        <div class="case-block"><h4>Ejemplo concreto</h4><p>Para una organización jurídica que procesa 50K consultas/mes: Mistral 7B fine-tuned sobre 12K pares pregunta-respuesta jurídicas reales. Acierto en benchmark propio del 87% vs 72% del modelo base. Coste por consulta 0,003€ vs 0,12€ de API gestionada.</p></div>
+        <div class="case-twin"><a href="https://calendar.app.google/UvcME44u8dsucaVT9" target="_blank" rel="noopener" class="btn btn-primary">Reservar 30 min →</a><button class="btn btn-ghost" onclick="askTwin('fine-tuning LLM open weights vertical')">Pregúntale a Diego</button></div>
+      </div>
+    </article>
+
+    <article class="case-detail" id="forecasting">
+      <div class="case-detail-side"><div class="case-detail-num">02 · B2B / Público / Turismo</div><h3>Forecasting y detección de anomalías</h3><p class="blurb">Modelos de serie temporal (Prophet, ARIMA, deep learning) y anomaly detection sobre métricas operativas.</p><div class="tags"><span class="tag">B2B</span><span class="tag">Turismo</span><span class="tag">Predicción</span><span class="tag">Anomaly</span></div></div>
+      <div class="case-detail-body">
+        <div class="case-block"><h4>Problema</h4><p>Negocios con estacionalidad (turismo, retail, energía) y operaciones críticas (SaaS, infraestructura) necesitan predecir demanda y detectar anomalías. Las hojas de Excel con medias no escalan. Contratar data scientist por cada caso es caro.</p></div>
+        <div class="case-block"><h4>Solución</h4><p>Modelos de serie temporal apropiados para tu caso: Prophet para tendencias con estacionalidad clara, ARIMA para series estables, deep learning (LSTM, Temporal Fusion Transformer) cuando hay relaciones complejas. Anomaly detection sobre métricas operativas con thresholds adaptativos. Re-training automático ante drift detectado.</p>
+          <ul class="bullets"><li>Elección del modelo según tu serie, no según moda</li><li>Pipeline de re-training mensual o trimestral</li><li>Detección de drift que reentrenar automáticamente</li><li>Explicabilidad: por qué el modelo predice eso</li></ul></div>
+        <div class="case-block"><h4>Business case</h4><p>Dimensionamiento ajustado a demanda real. Detección temprana de anomalías que evita incidentes. Decisiones de inversión basadas en predicción defendible. Reducción del coste por sobre-dimensionamiento preventivo.</p></div>
+        <div class="case-block"><h4>Stack</h4><div class="stack-list"><span class="stack-chip">Prophet / ARIMA</span><span class="stack-chip">PyTorch / Lightning</span><span class="stack-chip">MLflow tracking</span><span class="stack-chip">Pipeline re-training</span></div></div>
+        <div class="case-block"><h4>Ejemplo concreto</h4><p>Para un destino turístico con datos de ocupación hotelera de 8 años: modelo predice ocupación a 30 días con MAPE de 6.2% (vs 14% del método estadístico tradicional). El sector hotelero local ajusta pricing y plantilla con anticipación.</p></div>
+        <div class="case-twin"><a href="https://calendar.app.google/UvcME44u8dsucaVT9" target="_blank" rel="noopener" class="btn btn-primary">Reservar 30 min →</a><button class="btn btn-ghost" onclick="askTwin('forecasting anomaly detection')">Pregúntale a Diego</button></div>
+      </div>
+    </article>
+
+    <article class="case-detail" id="clasificacion-salud">
+      <div class="case-detail-side"><div class="case-detail-num">03 · Salud</div><h3>Clasificación supervisada para triaje clínico</h3><p class="blurb">Modelo de triaje sintomático para asistente sanitario remoto entrenado sobre datos sintéticos. Auditable y reproducible.</p><div class="tags"><span class="tag">Salud</span><span class="tag">Triaje</span><span class="tag">Datos sintéticos</span><span class="tag">AI Act</span></div></div>
+      <div class="case-detail-body">
+        <div class="case-block"><h4>Problema</h4><p>Sistemas de salud bajo presión: 24/7 con personal limitado, demanda creciente. La población llama, llega a urgencias o usa servicios online sin filtro previo. Casos urgentes esperan, casos no urgentes saturan recursos. Un modelo de triaje fiable es crítico, pero entrenarlo con datos reales de pacientes es jurídicamente complejo.</p></div>
+        <div class="case-block"><h4>Solución</h4><p>Modelo de clasificación supervisada para triaje sintomático en asistente sanitario remoto (chatbot o teleasistencia). Entrenado sobre dataset sintético generado a partir de literatura clínica validada y casos reales anonimizados con synthetic data overlay (SDV + diferencial privacy). Output: categoría de urgencia (verde/amarillo/rojo) + recomendación (autocuidado, cita ambulatoria, urgencias). Auditable y reproducible. Diseñado conforme a AI Act alto riesgo (sector salud).</p>
+          <ul class="bullets"><li>Datos sintéticos para entrenamiento, evita gestión RGPD compleja en fase de R&D</li><li>Validación clínica con panel de profesionales sanitarios</li><li>Audit log de cada predicción para revisión post-hoc</li><li>Escalado automático a humano cuando el modelo no tiene confianza suficiente</li><li>Reentrenamiento periódico con feedback de profesional supervisor</li></ul></div>
+        <div class="case-block"><h4>Business case</h4><p>Mejora del flujo asistencial sin contratar personal adicional. Reducción de saturación en urgencias por casos no críticos. Detección temprana de casos rojos que llegarían tarde. Modelo compatible con AI Act alto riesgo, documentación obligatoria generada. Aplicable a teleconsulta, mutuas y servicios sanitarios públicos.</p></div>
+        <div class="case-block"><h4>Stack</h4><div class="stack-list"><span class="stack-chip">SDV datos sintéticos</span><span class="stack-chip">XGBoost / Random Forest</span><span class="stack-chip">Validación clínica panel</span><span class="stack-chip">Audit logs inmutables</span><span class="stack-chip">AI Act high-risk docs</span></div></div>
+        <div class="case-block"><h4>Ejemplo concreto</h4><p>Para un servicio de teleasistencia sanitaria piloto: modelo clasifica el 78% de consultas iniciales correctamente, deriva el 22% restante a profesional con contexto completo. Sensibilidad para casos rojos del 96% (objetivo clínico: nunca rebajar urgencia real). Reducción del 35% en derivaciones inadecuadas a urgencias presenciales.</p></div>
+        <div class="case-twin"><a href="https://calendar.app.google/UvcME44u8dsucaVT9" target="_blank" rel="noopener" class="btn btn-primary">Reservar 30 min →</a><button class="btn btn-ghost" onclick="askTwin('clasificación triaje sanitario sintético')">Pregúntale a Diego</button></div>
+      </div>
+    </article>
+
+    <article class="case-detail" id="ocr">
+      <div class="case-detail-side"><div class="case-detail-num">04 · Legal / B2B / Público</div><h3>OCR custom para documentación específica</h3><p class="blurb">Extracción estructurada de campos en pólizas, facturas, recetas o expedientes. Re-entrenamiento incremental con feedback.</p><div class="tags"><span class="tag">Legal</span><span class="tag">B2B</span><span class="tag">OCR</span><span class="tag">Extracción</span></div></div>
+      <div class="case-detail-body">
+        <div class="case-block"><h4>Problema</h4><p>Los OCR genéricos (Tesseract, Azure Document Intelligence) funcionan bien en documentos estándar pero fallan en plantillas específicas del cliente (pólizas propias, facturas con formato heredado, recetas, expedientes administrativos). Cada error pasa a cola humana, eliminando el ahorro de la automatización.</p></div>
+        <div class="case-block"><h4>Solución</h4><p>OCR custom entrenado sobre los documentos reales del cliente. Combinación de OCR base (texto plano) + modelo de extracción estructurada (campos relevantes: importe, fecha, NIF, identificadores). Re-entrenamiento incremental: cada error corregido por humano entra al training set. Confianza por campo: si baja del umbral, escala a humano.</p>
+          <ul class="bullets"><li>Active learning: el modelo pide al humano corregir solo los casos dudosos</li><li>Modelo específico por tipo de documento</li><li>Auditoría: cada extracción lleva confianza por campo</li><li>Compatible con flujos de aprobación (RPA o agente IA)</li></ul></div>
+        <div class="case-block"><h4>Business case</h4><p>Reducción del trabajo manual de captura de datos. Mejora del tiempo de procesamiento de documentación entrante (pólizas, facturas, expedientes). Tasa de error baja con auditoría por campo. ROI medible al primer mes para volúmenes >5.000 docs/mes.</p></div>
+        <div class="case-block"><h4>Stack</h4><div class="stack-list"><span class="stack-chip">Tesseract / Azure DI base</span><span class="stack-chip">LayoutLM / Donut</span><span class="stack-chip">Active learning loop</span><span class="stack-chip">Confianza por campo</span></div></div>
+        <div class="case-block"><h4>Ejemplo concreto</h4><p>Para una organización que procesa 12.000 documentos/mes con formato propio: precisión inicial del 78%, tras 6 meses de active learning sube al 96%. Equivale a no necesitar 4 personas dedicadas a captura manual.</p></div>
+        <div class="case-twin"><a href="https://calendar.app.google/UvcME44u8dsucaVT9" target="_blank" rel="noopener" class="btn btn-primary">Reservar 30 min →</a><button class="btn btn-ghost" onclick="askTwin('OCR custom documentación')">Pregúntale a Diego</button></div>
+      </div>
+    </article>
+
+    <article class="case-detail" id="eval">
+      <div class="case-detail-side"><div class="case-detail-num">05 · B2B</div><h3>Evaluación y benchmarking de modelos</h3><p class="blurb">Harness reproducible para comparar LLMs y modelos clásicos sobre tu tarea concreta con métricas tuyas, no genéricas.</p><div class="tags"><span class="tag">B2B</span><span class="tag">MLOps</span><span class="tag">Benchmark</span><span class="tag">A/B</span></div></div>
+      <div class="case-detail-body">
+        <div class="case-block"><h4>Problema</h4><p>Cómo eliges entre Gemini, Claude, GPT-4, Mistral fine-tuned y un XGBoost clásico para tu caso. Los benchmarks públicos (MMLU, HellaSwag) miden tareas genéricas, no la tuya. Elegir mal cuesta dinero (10× coste, latencia mala) o calidad (modelo demasiado pequeño).</p></div>
+        <div class="case-block"><h4>Solución</h4><p>Harness de evaluación reproducible específico de tu tarea. Conjunto de prompts/inputs representativos. Métricas definidas con tu equipo (no accuracy genérico: NPS, tiempo a respuesta correcta, coste por consulta, factualidad, hallucination rate). Ejecuta varios modelos en paralelo. Reporte comparativo objetivo. A/B testing de variantes de prompt y de modelo en producción.</p>
+          <ul class="bullets"><li>Conjunto de evaluación versionado y curado con expertos del cliente</li><li>Métricas multidimensionales: calidad + coste + latencia + privacidad</li><li>Reporte ejecutivo y técnico</li><li>Integración con observability para A/B en producción</li></ul></div>
+        <div class="case-block"><h4>Business case</h4><p>Decisión de modelo basada en datos de tu caso, no en marketing. Capacidad de cambiar modelo cuando aparece uno mejor (proceso reproducible). Justificación ante auditoría regulatoria de por qué elegiste un modelo concreto. Optimización continua de coste vs calidad.</p></div>
+        <div class="case-block"><h4>Stack</h4><div class="stack-list"><span class="stack-chip">Harness propio reproducible</span><span class="stack-chip">MLflow / Weights & Biases</span><span class="stack-chip">LangSmith para LLM eval</span><span class="stack-chip">A/B testing prod</span></div></div>
+        <div class="case-block"><h4>Ejemplo concreto</h4><p>Para una empresa eligiendo entre 5 modelos LLM para asistente vertical: harness con 240 casos representativos validados por experto. Resultado: Mistral 22B fine-tuned bate a GPT-4 en calidad (+8%) a coste 14× menor. Decisión defendible ante CFO y auditor.</p></div>
+        <div class="case-twin"><a href="https://calendar.app.google/UvcME44u8dsucaVT9" target="_blank" rel="noopener" class="btn btn-primary">Reservar 30 min →</a><button class="btn btn-ghost" onclick="askTwin('evaluación benchmarking modelos')">Pregúntale a Diego</button></div>
+      </div>
+    </article>
+
+  </div></div>
+</section>
+
+<section class="fp-section paper">
+  <div class="fp-sec-wrap"><div class="fp-sec-head">
+    <div><div class="eyebrow">FAQ · 04</div><h2><span>Lo </span><em class="ac">crítico antes de entrenar.</em></h2></div>
+    <p class="intro">Cuatro dudas que aparecen al evaluar entrenar modelo propio vs usar API.</p>
+  </div>
+  <div class="faq-list">
+    <details class="faq"><summary>¿Cuándo merece la pena fine-tunear un modelo en lugar de usar GPT o Gemini?</summary><p>Tres criterios: (1) volumen alto que dispara el coste de API (típicamente desde 100K consultas/mes), (2) datos confidenciales que no pueden salir, (3) vocabulario sectorial donde el modelo general da resultados mediocres. Si no se cumple ninguno, API gestionada suele ser la decisión correcta.</p></details>
+    <details class="faq"><summary>¿Cuántos datos necesito para fine-tuning supervisado?</summary><p>Depende. Para LoRA sobre Mistral 7B: 1.000-5.000 pares pregunta-respuesta de calidad suelen mover la aguja. Calidad importa más que cantidad: 1.000 ejemplos curados baten a 10.000 ruidosos. Cuando faltan datos reales arrancamos con sintéticos validados.</p></details>
+    <details class="faq"><summary>¿Cuánto cuesta un fine-tuning?</summary><p>Setup + training inicial: 8.000-20.000€ según tamaño del modelo y tareas. Operación mensual self-hosted: 300-1.800€ según volumen. Retraining trimestral: 1.000-2.500€. Punto de equilibrio vs API suele estar entre 80K-200K consultas/mes.</p></details>
+    <details class="faq"><summary>¿Y los modelos clásicos (XGBoost, Prophet, etc.)?</summary><p>Sin moda. Para clasificación tabular, anomaly detection, forecasting: los modelos clásicos siguen siendo la respuesta correcta y barata. No usamos LLM si XGBoost es mejor. La elección depende de la tarea, no de la moda.</p></details>
+  </div></div>
+</section>
+
+<section class="cta-strip">
+  <div class="cta-strip-wrap">
+    <div><div class="eyebrow">Empezar · 05</div><h2 style="margin-top:20px"><span>¿API o </span><em>modelo propio</em><span>? Decidimos con números.</span></h2><p>30 minutos por videollamada. Hacemos el cálculo de fine-tuning vs API para tu volumen y caso. Si no compensa, no lo haces.</p></div>
+    <div class="cta-strip-ctas"><a href="https://calendar.app.google/UvcME44u8dsucaVT9" target="_blank" rel="noopener" class="btn btn-paper-primary btn-xl">Reservar diagnóstico gratis <svg><use href="#i-arrow"/></svg></a><a href="/portfolio/" class="btn btn-paper-ghost btn-lg">Ver otras familias</a></div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="f-wrap">
+    <div class="f-top">
+      <div class="f-brand"><h4>Infinite Labs</h4><p>Consultora europea de IA para PYMEs. Construimos y operamos nuestros propios SaaS con las mismas tecnologías que implantamos en clientes.</p></div>
+      <div class="f-col"><h5>Portfolio</h5><ul><li><a href="/portfolio/conversacional/">Asistentes conversacionales</a></li><li><a href="/portfolio/agentes/">Agentes IA autónomos</a></li><li><a href="/portfolio/rag/">RAG</a></li><li><a href="/portfolio/workflow/">Workflow automation</a></li><li><a href="/portfolio/governance/">IA Governance</a></li><li><a href="/portfolio/verticales/">Verticales</a></li><li><a href="/portfolio/modelos/">Modelos</a></li></ul></div>
+      <div class="f-col"><h5>Empresa</h5><ul><li><a href="/#about">Quiénes somos</a></li><li><a href="/#process">Cómo trabajamos</a></li><li><a href="https://blog.infinitelabs.co" target="_blank" rel="noopener">Blog</a></li></ul></div>
+      <div class="f-col"><h5>Contacto</h5><ul><li><a href="mailto:hello@infinitelabs.co">hello@infinitelabs.co</a></li><li><a href="https://calendar.app.google/UvcME44u8dsucaVT9" target="_blank" rel="noopener">Reservar diagnóstico</a></li></ul></div>
+    </div>
+    <div class="f-legal"><span><strong>Infinite Labs OÜ</strong> · Reg. 14889000 · VAT EE102227228 · Tallinn</span><span><strong>Next Gen Academy SL</strong> · CIF B44861649 · Barcelona</span></div>
+  </div>
+</footer>
+
+<button class="twin-fab" onclick="document.getElementById('twin-modal').classList.add('open')"><span class="pdot"></span><span>Pregunta sobre modelos</span><svg><use href="#i-chat"/></svg></button>
+<div class="twin-modal" id="twin-modal"><div class="twin-panel">
+  <div class="twin-h"><div class="twin-h-l"><div class="twin-h-av">D</div><div><h3>Diego Torres</h3><p>Founder · AI Twin · Familia 07</p></div></div><button class="twin-close" onclick="document.getElementById('twin-modal').classList.remove('open')">×</button></div>
+  <div class="twin-body" id="twin-body"><div class="twin-msg bot">Soy el AI Twin de Diego, especializado en entrenamiento de modelos. Pregúntame si compensa fine-tunear en tu caso, qué modelo elegir o cómo se entrena con datos sintéticos en salud.</div></div>
+  <div class="twin-suggestions"><button class="twin-sug" data-q="¿Cuándo compensa fine-tunear vs usar API?">¿Fine-tune o API?</button><button class="twin-sug" data-q="¿Qué modelo open weights europeo elegir?">¿Qué modelo open weights?</button><button class="twin-sug" data-q="¿Cómo entrenar con datos sintéticos en salud?">¿Datos sintéticos en salud?</button></div>
+  <form class="twin-input" onsubmit="event.preventDefault();sendTwin()"><input type="text" id="twin-q" placeholder="Escribe tu pregunta..." autocomplete="off"><button class="twin-send" type="submit">Enviar</button></form>
+</div></div>
+
+<script>window.PORTFOLIO_CONTEXT = "portfolio.modelos";</script>
+<script>function askTwin(t){document.getElementById("twin-modal").classList.add("open");const q=document.getElementById("twin-q");q.value="Cuéntame más sobre "+t;setTimeout(()=>sendTwin(),100);}</script>
+<script src="/portfolio/data.js?v=1"></script><script src="/portfolio/i18n.js?v=1"></script><script src="/portfolio/app.js?v=1"></script>
+</body>
+</html>
