@@ -215,6 +215,12 @@ footer.site-footer{background:var(--ink);color:var(--high);padding:80px 48px 40p
 .faq summary:hover{color:var(--cyan)}
 .faq p{margin-top:18px;color:var(--dim);font-size:15px;line-height:1.7;max-width:72ch}
 
+/* Language blocks */
+.l-block{display:none}
+html[lang="es"] .l-es,html[lang="ca"] .l-ca,html[lang="en"] .l-en{display:block}
+span.l-block,strong.l-block,em.l-block{display:inline}
+html[lang="es"] span.l-es,html[lang="ca"] span.l-ca,html[lang="en"] span.l-en{display:inline}
+
 /* Twin button (floating) */
 .twin-fab{position:fixed;bottom:32px;right:32px;background:var(--cyan);color:#fff;padding:14px 22px;border-radius:999px;font-weight:600;font-size:14px;display:inline-flex;align-items:center;gap:10px;box-shadow:0 12px 32px -8px rgba(128,0,255,.6);z-index:60;cursor:pointer;transition:all .25s var(--ease)}
 .twin-fab:hover{background:var(--cyan-h);transform:translateY(-2px) scale(1.02)}
