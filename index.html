@@ -12,10 +12,19 @@
 <meta name="theme-color" content="#0A0A0F">
 <meta property="og:title" content="Infinite Labs · Consultora europea de IA para PYMEs">
 <meta property="og:description" content="Consultora europea de IA para PYMEs. Cuantificamos el ahorro potencial con IA en euros y horas, y diseñamos la implantación. Diagnóstico inicial de 30 min. Estonia + España. GDPR.">
-<meta property="og:image" content="https://infinitelabs.co/img/og-default.png">
+<meta property="og:image" content="https://infinitelabs.co/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Infinite Labs · Aplicamos la IA para ahorrar costes a tu empresa">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://infinitelabs.co">
-<meta name="twitter:card" content="summary">
+<meta property="og:site_name" content="Infinite Labs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Infinite Labs · Consultora europea de IA para PYMEs">
+<meta name="twitter:description" content="Aplicamos la IA para ahorrar costes a tu empresa. Diagnóstico inicial de 30 min. Estonia + España. GDPR.">
+<meta name="twitter:image" content="https://infinitelabs.co/img/og-image.png">
+<meta name="twitter:site" content="@0xDiegoTorres">
+<meta name="twitter:creator" content="@0xDiegoTorres">
 
 <script defer src="https://umami.infinitelabs.co/script.js" data-website-id="8b3ff8f3-ef3e-4c8f-bf8e-22a4be3d78a7"></script>
 
@@ -316,6 +325,19 @@
   .loc span.ld{color:#4B433A;font-size:13.5px;line-height:1.5}
 
   /* CTA final */
+  /* CUSTOMERS & PARTNERS · pre-footer logos */
+  .partners{padding:80px 48px 90px;background:var(--ink);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+  .partners-wrap{max-width:var(--max);margin:0 auto}
+  .partners-head{text-align:center;margin-bottom:54px}
+  .partners-head .eyebrow{justify-content:center}
+  .partners-head h3{font-family:var(--serif);font-weight:300;font-size:clamp(26px,3vw,40px);letter-spacing:-.02em;line-height:1.08;margin-top:18px;color:var(--high);max-width:32ch;margin-left:auto;margin-right:auto}
+  .partners-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:2px 0;background:transparent;align-items:center}
+  .partner{display:flex;align-items:center;justify-content:center;padding:22px 28px;min-height:96px}
+  .partner img{max-height:46px;max-width:160px;width:auto;height:auto;object-fit:contain;filter:brightness(0) invert(1) opacity(.55);transition:filter .25s var(--ease),transform .25s var(--ease)}
+  .partner:hover img{filter:brightness(0) invert(1) opacity(1);transform:scale(1.04)}
+  @media (max-width:1100px){.partners{padding:60px 24px 70px}.partners-grid{grid-template-columns:repeat(3,1fr)}}
+  @media (max-width:620px){.partners-grid{grid-template-columns:repeat(2,1fr)}.partner{padding:16px 18px;min-height:84px}.partner img{max-height:40px;max-width:130px}}
+
   .cta-final{padding:180px 48px;text-align:center;position:relative;overflow:hidden;background:var(--ink);border-bottom:1px solid var(--border)}
   .cta-final::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 50% 50% at 50% 50%,rgba(128,0,255,.18),transparent 65%);pointer-events:none}
   .cta-final h2{position:relative;font-family:var(--serif);font-weight:300;font-size:clamp(52px,7vw,108px);letter-spacing:-.035em;line-height:.98;max-width:20ch;margin:0 auto;color:var(--white)}
@@ -1093,6 +1115,33 @@
   </div>
 </section>
 
+<!-- CUSTOMERS & PARTNERS · pre-footer -->
+<section class="partners" id="partners">
+  <div class="partners-wrap">
+    <div class="partners-head">
+      <div class="eyebrow anim" data-i18n="pt.eb">Customers & Partners</div>
+      <h3 class="anim anim-1" data-i18n="pt.h">Organizaciones con las que hemos colaborado.</h3>
+    </div>
+    <div class="partners-grid">
+      <div class="partner anim"><img src="/img/logos/sabadell.png" alt="Banco Sabadell" loading="lazy"></div>
+      <div class="partner anim anim-1"><img src="/img/logos/anthropic.svg" alt="Anthropic" loading="lazy"></div>
+      <div class="partner anim anim-2"><img src="/img/logos/gencat.svg" alt="Generalitat de Catalunya" loading="lazy"></div>
+      <div class="partner anim anim-3"><img src="/img/logos/gov-dubai.svg" alt="Government of Dubai" loading="lazy"></div>
+      <div class="partner anim anim-4"><img src="/img/logos/open-society.png" alt="Open Society Foundations" loading="lazy"></div>
+      <div class="partner anim"><img src="/img/logos/barcelona-activa.png" alt="Barcelona Activa" loading="lazy"></div>
+      <div class="partner anim anim-1"><img src="/img/logos/accio.png" alt="ACCIÓ"  loading="lazy"></div>
+      <div class="partner anim anim-2"><img src="/img/logos/peninsula.png" alt="Peninsula" loading="lazy"></div>
+      <div class="partner anim anim-3"><img src="/img/logos/badajoz.svg" alt="Ayuntamiento de Badajoz" loading="lazy"></div>
+      <div class="partner anim anim-4"><img src="/img/logos/eba.png" alt="Euro Banking Association" loading="lazy"></div>
+      <div class="partner anim"><img src="/img/logos/futurium.svg" alt="Futurium · European Commission" loading="lazy"></div>
+      <div class="partner anim anim-1"><img src="/img/logos/interledger.svg" alt="Interledger Foundation" loading="lazy"></div>
+      <div class="partner anim anim-2"><img src="/img/logos/mydata.png" alt="MyData Global" loading="lazy"></div>
+      <div class="partner anim anim-3"><img src="/img/logos/all-tech-is-human.webp" alt="All Tech is Human" loading="lazy"></div>
+      <div class="partner anim anim-4"><img src="/img/logos/alastria.png" alt="Alastria" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
 <footer class="site-footer">
   <div class="f-top">
     <div class="f-col f-brand">
@@ -1236,6 +1285,7 @@ const I18N={es:{},en:{
   'pp.6.t':'Vertical platforms and synthetic data','pp.6.p':'Sector platforms (insurance, legal, healthcare), digital simulation and privacy-preserving synthetic data generation.','pp.6.c':'6 capabilities',
   'pp.7.t':'LLM and predictive model training','pp.7.p':'Open-weight LLM fine-tuning, forecasting, anomaly detection, custom OCR and model evaluation.','pp.7.c':'5 capabilities',
   'pp.cta':'See all 36 capabilities',
+  'pt.eb':'Customers & Partners','pt.h':'Organizations we have collaborated with.',
   'pr1.d':'Automated European compliance. GDPR, NIS2, AI Act, ISO. WCAG scanner, NIS2 questionnaires, AI Act classifier, exportable audit evidence.',
   'pr2.d':'AI-generated exams from text, PDFs or YouTube. Leaderboard, SCORM export, certificates.',
   'pr3.d':'WhatsApp AI receptionist for clinics. Voice, Google Calendar, pay per use.',
