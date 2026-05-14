@@ -446,6 +446,7 @@
     <a href="/portfolio/" data-i18n="n.p">Portfolio</a>
     <a href="#process" data-i18n="n.pr">Cómo empezar</a>
     <a href="#about" data-i18n="n.a">Equipo</a>
+    <a href="https://blog.infinitelabs.co" target="_blank" rel="noopener" data-i18n="n.b">Blog</a>
   </div>
   <div class="right">
     <div class="lang">
@@ -940,17 +941,43 @@
   </div>
 </section>
 
-<!-- INSIGHTS (placeholder hasta nueva plataforma de blog) -->
+<!-- INSIGHTS · blog feed -->
 <section class="sec sec-darker" id="insights-blog">
   <div class="sec-head">
     <div>
       <div class="eyebrow anim" data-i18n="bl.eb">Insights · 07</div>
-      <h2 class="anim anim-1"><span data-i18n="bl.ha">Notas técnicas y casos reales. </span><em class="ac" data-i18n="bl.hb">Próximamente.</em></h2>
+      <h2 class="anim anim-1"><span data-i18n="bl.ha">Briefings diarios </span><em class="ac" data-i18n="bl.hb">sobre IA para empresa.</em></h2>
     </div>
     <div class="anim anim-2" style="display:flex;flex-direction:column;gap:16px;align-items:flex-start">
-      <p class="intro" data-i18n="bl.sub">Estamos preparando el canal de publicaciones. Mientras tanto, las conversaciones técnicas con clientes se canalizan vía diagnóstico inicial.</p>
-      <a href="https://calendar.app.google/UvcME44u8dsucaVT9" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="bl.b1">Solicitar diagnóstico inicial <svg><use href="#i-arrow"/></svg></a>
+      <p class="intro" data-i18n="bl.sub">Cada día laborable: modelos, herramientas, casos, mercado y regulación europea. Texto y podcast de 3-5 minutos.</p>
+      <a href="https://blog.infinitelabs.co" target="_blank" rel="noopener" class="btn btn-ghost" data-i18n="bl.seeall">Ver blog completo <svg><use href="#i-arrow"/></svg></a>
     </div>
+  </div>
+  <div class="blog-grid" id="blog-grid">
+    <a class="post anim" href="https://blog.infinitelabs.co/briefing-5-voz-tiempo-real-agentes-datos-expuestos" target="_blank" rel="noopener">
+      <div class="pbody">
+        <div class="pmeta">11 may 2026 · 4 min</div>
+        <h3>Briefing #5 · Voz en tiempo real, agentes y datos expuestos</h3>
+        <div class="pbrief">OpenAI despliega nuevas APIs de voz, la CNIL regula scoring crediticio automatizado y miles de apps vibe-coded filtran datos corporativos.</div>
+        <div class="plink"><span data-i18n="bl.read">Leer artículo</span> <svg viewBox="0 0 24 24" style="width:12px;height:12px;stroke:currentColor;stroke-width:2;fill:none"><path d="M7 17 17 7M8 7h9v9"/></svg></div>
+      </div>
+    </a>
+    <a class="post anim anim-1" href="https://blog.infinitelabs.co/briefing-4-agentes-banca-g7" target="_blank" rel="noopener">
+      <div class="pbody">
+        <div class="pmeta">7 may 2026 · 4 min</div>
+        <h3>Briefing #4 · Agentes, banca y regulación G7</h3>
+        <div class="pbrief">Microsoft pivota al modelo agentic, Singular Bank ahorra 90 minutos al día por banquero, y el G7 debate el futuro de los datos personales en París.</div>
+        <div class="plink"><span data-i18n="bl.read">Leer artículo</span> <svg viewBox="0 0 24 24" style="width:12px;height:12px;stroke:currentColor;stroke-width:2;fill:none"><path d="M7 17 17 7M8 7h9v9"/></svg></div>
+      </div>
+    </a>
+    <a class="post anim anim-2" href="https://blog.infinitelabs.co/briefing-3-servicios-ia-cfo-regulacion-juvenil" target="_blank" rel="noopener">
+      <div class="pbody">
+        <div class="pmeta">6 may 2026 · 4 min</div>
+        <h3>Briefing #3 · Servicios IA, CFO automatizado y regulación juvenil</h3>
+        <div class="pbrief">Modelos más precisos, agentes para finanzas, y Europa pregunta qué pasa cuando los jóvenes usan IA para hablar de salud mental.</div>
+        <div class="plink"><span data-i18n="bl.read">Leer artículo</span> <svg viewBox="0 0 24 24" style="width:12px;height:12px;stroke:currentColor;stroke-width:2;fill:none"><path d="M7 17 17 7M8 7h9v9"/></svg></div>
+      </div>
+    </a>
   </div>
 </section>
 
@@ -1103,6 +1130,7 @@
         <li><a href="mailto:hello@infinitelabs.co">hello@infinitelabs.co</a></li>
         <li><a href="https://calendar.app.google/UvcME44u8dsucaVT9" target="_blank" rel="noopener" data-i18n="fo.c2">Solicitar diagnóstico</a></li>
         <li><a href="https://linkedin.com/company/infinitelabs-eu" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://blog.infinitelabs.co" target="_blank" rel="noopener">Blog</a></li>
       </ul>
     </div>
   </div>
@@ -1147,7 +1175,7 @@ window.scrollInsights=function(dir){
 };
 
 const I18N={es:{},en:{
-  'n.s':'What we do','n.i':'Industries','n.p':'Portfolio','n.pr':'How to start','n.a':'Team','n.cta':'Request diagnostic →',
+  'n.s':'What we do','n.i':'Industries','n.p':'Portfolio','n.pr':'How to start','n.a':'Team','n.b':'Blog','n.cta':'Request diagnostic →',
   'h.live':'Live from Tallinn + Barcelona','h.issue':'European AI consultancy',
   'h.h1a':'We apply AI to ','h.h1b':'reduce costs in your organization.',
   'h.sub':'European AI consultancy for SMBs. Reduction of repetitive tasks, optimization of operational workflows and rationalization of software and SaaS expenses. We quantify potential savings before any project begins.',
@@ -1225,8 +1253,8 @@ const I18N={es:{},en:{
   'w2.t':'European, GDPR','w2.p':'Data in the EU. Own infra. No US dependencies. Contract and support in Spanish. EU invoicing.',
   'w3.t':'Results measured in euros','w3.p':'Audit with numbers. Projects with figures. If the result cannot be measured in euros or hours, it is not a result.',
   'w4.t':'No smoke, no lock-in','w4.p':'Open tech. Docs yours. Keys, repos and data stay with you. When we are done, you can keep going without us.',
-  'bl.eb':'Insights · 07','bl.ha':'Technical notes and real cases. ','bl.hb':'Coming soon.','bl.sub':'New publication channel in preparation. Technical conversations with clients are currently channelled through the initial diagnostic.',
-  'bl.b1':'Request initial diagnostic',
+  'bl.eb':'Insights · 07','bl.ha':'Daily briefings ','bl.hb':'on AI for business.','bl.sub':'Every business day: models, tools, cases, market and European regulation. Text and 3-5 minute podcast.',
+  'bl.seeall':'View full blog','bl.read':'Read article',
   'ab.eb':'About · 08','ab.a':'European consultancy. ','ab.b':'We build and operate','ab.c':' our own SaaS with the same technologies we deploy at clients.',
   'ab.e':'Infinite Labs OÜ · Reg. 14889000 · VAT EE102227228','ab.s':'Next Gen Academy SL · CIF B44861649 · Carrer Penedès 27, Palau-solità i Plegamans',
   'cf.eb':'Start today','cf.ha':'Start with a free ','cf.hb':'diagnosis session','cf.hc':'. You decide.',
@@ -1249,7 +1277,34 @@ function apply(L){lang=L;localStorage.setItem('il_lang_v6',L);document.documentE
 document.querySelectorAll('.lang button').forEach(b=>b.addEventListener('click',()=>apply(b.dataset.lang)));
 apply(lang);
 
-// Blog feed deshabilitado mientras se migra de plataforma (Hashnode descartado, plataforma nueva pendiente).
+// Refresh insights from blog.infinitelabs.co RSS if CORS allows.
+// Static cards above act as graceful fallback when CORS is blocked.
+async function loadPosts(){
+  try{
+    const r=await fetch('https://blog.infinitelabs.co/rss.xml',{cache:'no-store'});
+    if(!r.ok) return;
+    const xml=new DOMParser().parseFromString(await r.text(),'text/xml');
+    const items=Array.from(xml.querySelectorAll('item')).slice(0,3);
+    if(!items.length) return;
+    const g=document.getElementById('blog-grid');
+    g.innerHTML='';
+    items.forEach((it,i)=>{
+      const title=it.querySelector('title')?.textContent||'';
+      const link=it.querySelector('link')?.textContent||'#';
+      const desc=it.querySelector('description')?.textContent||'';
+      const date=it.querySelector('pubDate')?.textContent;
+      const dt=date?new Date(date).toLocaleDateString(lang==='es'?'es-ES':'en-GB',{day:'numeric',month:'short',year:'numeric'}):'';
+      const a=document.createElement('a');
+      a.className='post anim'+(i?' anim-'+i:'');
+      a.href=link;a.target='_blank';a.rel='noopener';
+      const brief=desc.replace(/\s+/g,' ').slice(0,180);
+      a.innerHTML=`<div class="pbody"><div class="pmeta">${dt} · 4 min</div><h3>${title}</h3><div class="pbrief">${brief}${brief.length>=180?'…':''}</div><div class="plink">${lang==='es'?'Leer artículo':'Read article'} <svg viewBox="0 0 24 24" style="width:12px;height:12px;stroke:currentColor;stroke-width:2;fill:none"><path d="M7 17 17 7M8 7h9v9"/></svg></div></div>`;
+      g.appendChild(a);
+      requestAnimationFrame(()=>a.classList.add('in'));
+    });
+  }catch(e){/* CORS not enabled on blog; static cards remain */}
+}
+loadPosts();
 
 window.submitContact=async function(e){
   e.preventDefault();
