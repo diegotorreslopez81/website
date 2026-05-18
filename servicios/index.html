@@ -15,9 +15,11 @@
     --line:rgba(15,15,20,.08);--line-strong:rgba(15,15,20,.16);
     --dark:#0A0A0F;--ease:cubic-bezier(.2,.7,.2,1);
   }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
-  body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55;-webkit-font-smoothing:antialiased}
+  *{box-sizing:border-box;margin:0;padding:0;min-width:0}
+  html{scroll-behavior:smooth;overflow-x:hidden}
+  body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden;max-width:100vw;width:100%}
+  section{max-width:100%;overflow-x:clip;position:relative}
+  img,video{max-width:100%;height:auto;display:block}
   h1,h2,h3,h4{font-family:'Fraunces',Georgia,serif;font-weight:500;letter-spacing:-.02em;line-height:1.05}
   a{color:inherit;text-decoration:none}
   img{display:block;max-width:100%;height:auto}
@@ -131,16 +133,50 @@
   footer .bottom{padding-top:40px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
 
   @media(max-width:1024px){
+    .wrap{padding:0 24px}
     .servicio .grid{grid-template-columns:1fr;gap:36px}
     .servicio .col-left{position:relative;top:auto}
     .servicio .packages{grid-template-columns:1fr}
     .proceso .steps{grid-template-columns:repeat(2,1fr)}
     .proceso .step:not(:last-child)::after{display:none}
-    footer .top{grid-template-columns:1fr 1fr}
+    footer .top{grid-template-columns:1fr 1fr;gap:32px}
   }
   @media(max-width:640px){
+    .wrap{padding:0 20px}
     nav.top ul{display:none}
-    .proceso .steps{grid-template-columns:1fr}
+    nav.top .wrap{height:64px}
+    nav.top .brand img{height:24px}
+    nav.top .cta{padding:9px 14px;font-size:12px}
+    .hero{padding:60px 0 48px}
+    .hero h1{font-size:32px;line-height:1.15}
+    .hero .lead{font-size:16px}
+    .servicio{padding:60px 0}
+    .servicio h2{font-size:32px;line-height:1.15}
+    .servicio .col-right p,.servicio .col-right h3{font-size:15px}
+    .servicio .col-right h3{font-size:18px}
+    .servicio .price-card .price{font-size:26px}
+    .servicio .deliverable{padding:14px 16px}
+    .servicio .deliverable strong{font-size:14px}
+    .servicio .deliverable span{font-size:13px}
+    .servicio .pkg{padding:20px}
+    .servicio .pkg .pkg-price{font-size:26px}
+    .proceso{padding:80px 0}
+    .proceso h2{font-size:28px;line-height:1.2}
+    .proceso .steps{grid-template-columns:1fr;gap:16px}
+    .proceso .step{padding:16px 0}
+    .proceso .step .num-step{font-size:36px}
+    .faq{padding:80px 0}
+    .faq h2{font-size:28px;line-height:1.2}
+    .faq details{padding:20px 22px}
+    .faq summary{font-size:15px;gap:12px}
+    .faq details p{font-size:14px}
+    .closing{min-height:auto}
+    .closing .wrap{padding:80px 20px}
+    .closing h2{font-size:30px;line-height:1.15}
+    .closing p{font-size:16px}
+    footer{padding:60px 0 30px}
+    footer .top{grid-template-columns:1fr;gap:32px}
+    footer .bottom{flex-direction:column;align-items:flex-start;gap:12px;text-align:left}
   }
 </style>
 </head>
