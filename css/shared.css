@@ -24,6 +24,8 @@ nav.top ul.nav-list{display:flex;gap:22px;list-style:none;align-items:center;fle
 nav.top ul.nav-list a{font-size:14px;color:var(--ink-2);font-weight:500;transition:color .2s;display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
 nav.top ul.nav-list a:hover,nav.top ul.nav-list a.active{color:var(--accent)}
 nav.top .cta{background:var(--ink);color:#fff;padding:11px 20px;border-radius:8px;font-size:13px;font-weight:600;transition:background .2s,box-shadow .2s;white-space:nowrap}
+nav.top .cta .cta-full{display:inline}
+nav.top .cta .cta-mob{display:none}
 nav.top .cta:hover{background:var(--accent);box-shadow:0 6px 20px var(--accent-glow)}
 
 /* Hamburger mobile */
@@ -102,6 +104,8 @@ footer .bottom .legal a:hover{color:#fff}
   nav.top .wrap{height:64px}
   nav.top .brand img{height:24px}
   nav.top .cta{padding:9px 12px;font-size:11px;white-space:nowrap}
+  nav.top .cta .cta-full{display:none}
+  nav.top .cta .cta-mob{display:inline}
   .page-hero{padding:60px 0 48px}
   .page-hero h1{font-size:32px;line-height:1.15}
   .page-hero .lead{font-size:16px}

@@ -64,6 +64,8 @@
   nav.top.menu-open .nav-burger span:nth-child(2){opacity:0}
   nav.top.menu-open .nav-burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
   nav.top .cta{background:var(--ink);color:#fff;padding:11px 20px;border-radius:8px;font-size:13px;font-weight:600;transition:background .2s,box-shadow .2s;display:inline-flex;align-items:center;white-space:nowrap;flex-shrink:0}
+  nav.top .cta .cta-full{display:inline}
+  nav.top .cta .cta-mob{display:none}
   nav.top .cta:hover{background:var(--accent);box-shadow:0 6px 20px var(--accent-glow)}
 
   /* HERO asimétrico (texto izquierda + foto derecha) */
@@ -271,6 +273,8 @@
     nav.top .wrap{height:64px}
     nav.top .brand img{height:24px}
     nav.top .cta{padding:9px 12px;font-size:11px;white-space:nowrap}
+    nav.top .cta .cta-full{display:none}
+    nav.top .cta .cta-mob{display:inline}
     .hero{padding:48px 0 64px;min-height:auto}
     .hero h1{font-size:36px;line-height:1.1}
     .hero .lead{font-size:16px}
@@ -343,7 +347,7 @@
       <li><a href="/contacto/">Contacto</a></li>
     </ul>
     <button class="nav-burger" aria-label="Menú" onclick="this.closest('nav').classList.toggle('menu-open')"><span></span><span></span><span></span></button>
-    <a href="/contacto/" class="cta">Reservar diagnóstico</a>
+    <a href="/contacto/" class="cta"><span class="cta-full">Reservar diagnóstico</span><span class="cta-mob">Reservar</span></a>
   </div>
 </nav>
 
