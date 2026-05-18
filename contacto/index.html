@@ -1,0 +1,81 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contacto · Infinite Labs · Reserva tu diagnóstico gratuito de 30 minutos</title><meta name="description" content="Reserva diagnóstico de 30 minutos sin compromiso. Tres vías de contacto: formulario, calendario directo y email. Respondemos en 24h hábiles.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/shared.css">
+<style>
+.contacto-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;padding:60px 0 120px}
+.form-card{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:40px}
+.form-card h2{font-size:28px;margin-bottom:8px;font-weight:600;font-family:'Inter',sans-serif}
+.form-card p{color:var(--ink-3);margin-bottom:32px;font-size:15px}
+form .field{margin-bottom:18px}
+form label{display:block;font-size:13px;color:var(--ink-2);margin-bottom:6px;font-weight:600}
+form input,form select,form textarea{width:100%;padding:14px 18px;border:1px solid var(--line-strong);border-radius:10px;font-family:'Inter',sans-serif;font-size:15px;background:var(--paper);transition:border-color .2s,background .2s}
+form input:focus,form select:focus,form textarea:focus{outline:none;border-color:var(--accent);background:var(--white)}
+form textarea{min-height:120px;resize:vertical}
+form button{width:100%;background:var(--accent);color:#fff;padding:16px 24px;border-radius:10px;font-weight:600;font-size:15px;cursor:pointer;border:none;font-family:'Inter',sans-serif;box-shadow:0 8px 24px var(--accent-glow);transition:all .2s;margin-top:8px}
+form button:hover{background:var(--accent-2);transform:translateY(-1px);box-shadow:0 12px 32px var(--accent-glow)}
+.vias{display:flex;flex-direction:column;gap:20px;margin-top:24px}
+.via{padding:28px;background:var(--white);border:1px solid var(--line);border-radius:16px;transition:transform .2s,border-color .2s,box-shadow .2s}
+.via:hover{transform:translateY(-2px);border-color:var(--accent);box-shadow:0 12px 32px rgba(96,0,255,.06)}
+.via h3{font-size:18px;font-weight:600;font-family:'Inter',sans-serif;margin-bottom:6px}
+.via p{font-size:14px;color:var(--ink-3);margin-bottom:14px;line-height:1.5}
+.via a{display:inline-flex;align-items:center;gap:8px;color:var(--accent);font-weight:600;font-size:14px}
+.note{padding:24px;background:var(--accent-soft);border-radius:12px;border-left:3px solid var(--accent);margin-top:32px}
+.note p{color:var(--ink-2);font-size:14px;line-height:1.5}
+@media(max-width:1024px){.contacto-grid{grid-template-columns:1fr;gap:48px}}
+@media(max-width:640px){.contacto-grid{padding:48px 0 80px}.form-card{padding:28px}.form-card h2{font-size:24px}}
+</style></head><body><nav class="top"><div class="wrap"><a href="/" class="brand"><img src="/logos/svg/infinitelabs-mono-black.svg" alt="Infinite Labs"></a><ul><li><a href="/servicios/">Servicios</a></li><li><a href="/sectores/">Sectores</a></li><li><a href="/productos/">Productos</a></li><li><a href="/casos/">Casos</a></li><li><a href="/sobre-nosotros/">Sobre nosotros</a></li><li><a href="https://blog.infinitelabs.co">Blog</a></li><li><a href="/portfolio/">Portfolio</a></li></ul><a href="/contacto/" class="cta">Reservar diagnóstico</a></div></nav>
+<section class="page-hero">
+  <div class="wrap">
+    <div class="eyebrow"><span class="badge"></span>Contacto</div>
+    <h1>Cuéntanos <em>tu situación.</em></h1>
+    <p class="lead">Respondemos en 24 horas hábiles. Si lo prefieres, reserva directamente la conversación inicial de 30 minutos en el calendario.</p>
+  </div>
+</section>
+
+<section><div class="wrap"><div class="contacto-grid">
+  <div class="form-card">
+    <h2>Escríbenos</h2>
+    <p>Describe tu situación con tus propias palabras. Te respondemos en menos de 24 horas hábiles.</p>
+    <form action="https://formspree.io/f/INFINITELABS_FORM" method="POST">
+      <div class="field"><label>Nombre</label><input type="text" name="name" required></div>
+      <div class="field"><label>Empresa</label><input type="text" name="company" required></div>
+      <div class="field"><label>Email</label><input type="email" name="email" required></div>
+      <div class="field"><label>Sector</label><select name="sector"><option value="clinicas">Clínicas y centros de salud</option><option value="industria">Industria y talleres</option><option value="distribucion">Distribución y logística</option><option value="despachos">Despachos profesionales</option><option value="administracion">Administración pública</option><option value="formacion">Formación y RRHH</option><option value="otro">Otro</option></select></div>
+      <div class="field"><label>¿Qué te trae por aquí?</label><textarea name="message" placeholder="Cuéntanos brevemente tu situación, qué buscas o qué dolor concreto te ha hecho llegar a nosotros..."></textarea></div>
+      <button type="submit">Enviar mensaje →</button>
+    </form>
+    <div class="note"><p>Los datos se tratan en la Unión Europea conforme al RGPD. No los cedemos a terceros. Más detalle en nuestra <a href="/politica-privacidad/" style="color:var(--accent);font-weight:600">política de privacidad</a>.</p></div>
+  </div>
+
+  <div>
+    <h2 style="font-size:28px;margin-bottom:8px;font-weight:600">Otras vías</h2>
+    <p style="color:var(--ink-3);font-size:15px;margin-bottom:8px">Si prefieres ir directo al grano:</p>
+    <div class="vias">
+      <div class="via">
+        <h3>📅 Reservar conversación</h3>
+        <p>30 minutos por videoconferencia. Sin coste. Sin compromiso. Te entregamos propuesta personalizada tras la llamada.</p>
+        <a href="https://cal.com/infinitelabs/diagnostico" target="_blank" rel="noopener">Acceder al calendario →</a>
+      </div>
+      <div class="via">
+        <h3>✉ Email directo</h3>
+        <p>Para temas concretos sin formato form. Respondemos en 24h hábiles.</p>
+        <a href="mailto:hello@infinitelabs.co">hello@infinitelabs.co →</a>
+      </div>
+      <div class="via">
+        <h3>💼 LinkedIn</h3>
+        <p>Sigue nuestro día a día y nuestra actividad pública. Mensajes también respondidos.</p>
+        <a href="https://www.linkedin.com/company/infinitelabs" target="_blank" rel="noopener">Ver perfil →</a>
+      </div>
+    </div>
+  </div>
+</div></div></section>
+<footer><div class="wrap"><div class="top">
+  <div><a href="/" class="brand"><img src="/logos/svg/infinitelabs-mono-white.svg" alt="Infinite Labs"></a><p class="tagline">Consultora europea de IA. Transformamos PYMEs con inteligencia artificial aplicada con criterio.</p><div class="locations">Oficinas en <strong>Barcelona</strong> y <strong>Tallinn</strong></div></div>
+  <div class="col"><h4>Servicios</h4><ul><li><a href="/servicios/#diagnostico">Diagnóstico</a></li><li><a href="/servicios/#transformacion">Transformación operativa</a></li><li><a href="/servicios/#director">Director de IA externo</a></li><li><a href="/sectores/">Sectores</a></li><li><a href="/casos/">Casos</a></li></ul></div>
+  <div class="col"><h4>Productos</h4><ul><li><a href="/productos/regulia/">Regulia</a></li><li><a href="/productos/contestia/">Contestia</a></li><li><a href="/productos/instantexam/">InstantExam</a></li><li><a href="/productos/canto/">Canto</a></li><li><a href="/productos/scoreflow/">ScoreFlow</a></li><li><a href="/productos/contablia/">Contablia</a></li><li><a href="/productos/swarmix/">Swarmix</a></li></ul></div>
+  <div class="col"><h4>Empresa</h4><ul><li><a href="/sobre-nosotros/">Sobre nosotros</a></li><li><a href="/portfolio/">Portfolio</a></li><li><a href="https://blog.infinitelabs.co">Blog</a></li><li><a href="/cupons/">Cupons ACCIÓ</a></li><li><a href="/contacto/">Contacto</a></li></ul></div>
+  <div class="col"><h4>Legal</h4><ul><li><a href="/aviso-legal/">Aviso legal</a></li><li><a href="/politica-privacidad/">Privacidad</a></li><li><a href="/politica-cookies/">Cookies</a></li><li><a href="https://www.linkedin.com/company/infinitelabs">LinkedIn</a></li></ul></div>
+</div><div class="bottom"><div>© 2026 Infinite Labs · Datos procesados en la Unión Europea · RGPD garantizado</div></div></div></footer></body></html>
