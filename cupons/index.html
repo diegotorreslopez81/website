@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cupons ACCIÓ · Infinite Labs · Proveedores acreditados Generalitat</title>
+<meta name="description" content="Como proveedores acreditados ACCIÓ, gestionamos los cupons de la Generalitat de Catalunya para PYMEs catalanas. Verificación de elegibilidad en 24 horas.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/shared.css">
+<style>
+  .alert{padding:24px 32px;background:linear-gradient(135deg,var(--accent-soft) 0%,rgba(96,0,255,.04) 100%);border:1px solid var(--accent);border-radius:14px;margin-top:48px;display:flex;gap:20px;align-items:flex-start}
+  .alert .icon{width:48px;height:48px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;box-shadow:0 0 24px var(--accent-glow)}
+  .alert h3{font-family:'Fraunces',serif;font-size:22px;margin-bottom:8px;color:var(--ink);font-weight:600}
+  .alert p{color:var(--ink-2);font-size:15px;line-height:1.55;margin-bottom:14px}
+  .alert form{display:flex;gap:10px;flex-wrap:wrap}
+  .alert form input{flex:1;min-width:240px;padding:14px 18px;border:1px solid var(--line-strong);border-radius:10px;font-family:'Inter',sans-serif;font-size:15px;background:#fff}
+  .alert form input:focus{outline:none;border-color:var(--accent)}
+  .alert form button{background:var(--accent);color:#fff;padding:14px 24px;border-radius:10px;font-weight:600;font-size:14px;border:none;cursor:pointer;box-shadow:0 6px 20px var(--accent-glow);transition:all .2s}
+  .alert form button:hover{background:var(--accent-2);transform:translateY(-1px)}
+
+  .what{padding:120px 0;background:var(--white)}
+  .what .grid{display:grid;grid-template-columns:5fr 7fr;gap:80px;align-items:start}
+  .what .col-left{position:sticky;top:120px}
+  .what .num{font-family:'Fraunces',serif;font-size:14px;color:var(--accent);font-weight:600;margin-bottom:14px;letter-spacing:.05em}
+  .what h2{font-size:clamp(34px,4vw,52px);margin-bottom:18px}
+  .what h2 em{color:var(--accent);font-style:italic;font-weight:400}
+  .what p{font-size:17px;color:var(--ink-2);margin-bottom:20px;line-height:1.65}
+
+  .cupones{padding:120px 0}
+  .cupon{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:40px;margin-bottom:20px;transition:border-color .2s,box-shadow .2s}
+  .cupon:hover{border-color:var(--accent);box-shadow:0 16px 40px rgba(96,0,255,.06)}
+  .cupon .head{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;margin-bottom:18px}
+  .cupon h3{font-size:28px;font-weight:600;font-family:'Inter',sans-serif}
+  .cupon .estado{padding:6px 14px;border-radius:100px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}
+  .cupon .estado.disponible{background:rgba(16,185,129,.15);color:#10B981}
+  .cupon .estado.cerrado{background:rgba(245,158,11,.15);color:#F59E0B}
+  .cupon .estado.pendiente{background:rgba(99,102,241,.15);color:#6366F1}
+  .cupon p{color:var(--ink-2);font-size:16px;margin-bottom:14px;line-height:1.6}
+  .cupon .req{padding:20px 24px;background:var(--paper);border-radius:12px;margin-top:14px}
+  .cupon .req strong{display:block;font-size:13px;color:var(--ink);font-weight:700;letter-spacing:.04em;text-transform:uppercase;margin-bottom:10px}
+  .cupon .req ul{list-style:none;padding:0}
+  .cupon .req li{font-size:14px;color:var(--ink-2);padding-left:24px;position:relative;margin-bottom:6px;line-height:1.5}
+  .cupon .req li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:700}
+
+  .proceso{background:var(--dark);color:#fff;padding:120px 0;position:relative;overflow:hidden}
+  .proceso::before{content:"";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:800px;height:800px;background:radial-gradient(circle,rgba(96,0,255,.2),transparent 60%);filter:blur(80px);pointer-events:none}
+  .proceso .wrap{position:relative;z-index:1}
+  .proceso .section-tag{color:var(--accent)}
+  .proceso h2{color:#fff;font-size:clamp(34px,4vw,52px);margin-bottom:18px}
+  .proceso .lead{font-size:18px;color:rgba(255,255,255,.75);margin-bottom:48px;max-width:780px;line-height:1.55}
+  .pasos{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;position:relative}
+  .paso{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:24px;position:relative}
+  .paso .n{font-family:'Fraunces',serif;font-size:36px;color:var(--accent);font-weight:700;line-height:1;margin-bottom:14px;text-shadow:0 0 16px var(--accent-glow)}
+  .paso h3{font-size:16px;color:#fff;margin-bottom:8px;font-weight:600;font-family:'Inter',sans-serif}
+  .paso p{font-size:13px;color:rgba(255,255,255,.65);line-height:1.5}
+
+  .faq{padding:120px 0;background:var(--paper)}
+  .faq-items{display:grid;gap:14px;max-width:880px;margin-top:48px}
+  .faq-items details{background:var(--white);border:1px solid var(--line);border-radius:12px;padding:24px 28px;cursor:pointer;transition:border-color .2s}
+  .faq-items details:hover{border-color:var(--line-strong)}
+  .faq-items details[open]{border-color:var(--accent);background:linear-gradient(180deg,var(--white) 0%,var(--accent-soft) 100%)}
+  .faq-items summary{font-size:17px;font-weight:600;color:var(--ink);font-family:'Fraunces',serif;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:24px}
+  .faq-items summary::after{content:"+";font-size:24px;color:var(--accent);transition:transform .2s;font-weight:300}
+  .faq-items details[open] summary::after{content:"−"}
+  .faq-items details p{margin-top:16px;color:var(--ink-2);font-size:15px;line-height:1.6}
+
+  @media(max-width:1024px){
+    .what .grid{grid-template-columns:1fr;gap:48px}
+    .what .col-left{position:relative;top:auto}
+    .pasos{grid-template-columns:repeat(2,1fr)}
+  }
+  @media(max-width:640px){
+    .what,.cupones,.proceso,.faq{padding:80px 0}
+    .alert{flex-direction:column;padding:20px 24px}
+    .alert form{flex-direction:column}
+    .alert form input,.alert form button{width:100%;min-width:auto}
+    .cupon{padding:24px}
+    .cupon .head{flex-direction:column;align-items:flex-start;gap:10px}
+    .cupon h3{font-size:22px}
+    .pasos{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<nav class="top">
+  <div class="wrap">
+    <a href="/" class="brand"><img src="/logos/svg/infinitelabs-mono-black.svg" alt="Infinite Labs"></a>
+    <ul>
+      <li><a href="/servicios/">Servicios</a></li>
+      <li><a href="/sectores/">Sectores</a></li>
+      <li><a href="/productos/">Productos</a></li>
+      <li><a href="/casos/">Casos</a></li>
+      <li><a href="/sobre-nosotros/">Sobre nosotros</a></li>
+      <li><a href="https://blog.infinitelabs.co">Blog</a></li>
+      <li><a href="/portfolio/">Portfolio</a></li>
+    </ul>
+    <a href="/contacto/" class="cta">Reservar diagnóstico</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="wrap">
+    <div class="eyebrow"><span class="badge"></span>Cupons ACCIÓ · Proveedor acreditado</div>
+    <h1>Aplica IA con <em>financiación pública</em> de la Generalitat de Catalunya.</h1>
+    <p class="lead">Como proveedores acreditados por ACCIÓ, gestionamos los cupons de la Generalitat para PYMEs catalanas. Parte del coste del proyecto lo asume la administración pública. Verificamos tu elegibilidad en 24 horas.</p>
+
+    <div class="alert">
+      <div class="icon">⏳</div>
+      <div style="flex:1">
+        <h3>Convocatoria 2026 cerrada · te avisamos cuando reabran</h3>
+        <p>La convocatoria de Cupó IA 2026 ya ha agotado fondos. Déjanos tu email y te notificamos en cuanto se publique la siguiente, antes de que se agote.</p>
+        <form action="https://formspree.io/f/INFINITELABS_FORM" method="POST">
+          <input type="email" name="email" placeholder="tu@empresa.com" required>
+          <input type="hidden" name="_subject" value="Aviso reapertura Cupons ACCIÓ">
+          <button type="submit">Avisarme cuando reabran →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUÉ SON -->
+<section class="what">
+  <div class="wrap">
+    <div class="grid">
+      <div class="col-left">
+        <div class="num">01 · CÓMO FUNCIONAN</div>
+        <h2>Qué son los cupons <em>de ACCIÓ.</em></h2>
+      </div>
+      <div class="col-right">
+        <p>ACCIÓ es la agencia de la Generalitat de Catalunya para la competitividad empresarial. Mantiene un registro oficial de proveedores tecnológicos acreditados, entre los que estamos nosotros (Next Gen Academy SL).</p>
+        <p>Los cupons funcionan como bonos económicos: la Generalitat establece programas concretos (Cupó IA, Cupó Estratègia Digital, etc.) con un importe predefinido. Tu empresa elige a un proveedor acreditado, ejecuta el proyecto y la administración pública asume una parte sustancial del coste.</p>
+        <p>El resultado: tu empresa accede a proyectos de transformación con IA que de otro modo podrían quedar fuera de presupuesto. Y los proyectos siguen el mismo rigor metodológico que aplicamos a cualquier cliente, simplemente con parte del coste financiado.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CUPONS DISPONIBLES -->
+<section class="cupones">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-tag">Cupons que gestionamos</span>
+      <h2>Programas en los que somos proveedores acreditados</h2>
+      <p>Verificamos tu elegibilidad en 24 horas. Si tu empresa cumple, gestionamos toda la tramitación administrativa.</p>
+    </div>
+
+    <div class="cupon">
+      <div class="head">
+        <h3>Cupó IA</h3>
+        <span class="estado cerrado">Convocatoria 2026 cerrada</span>
+      </div>
+      <p>Ayuda económica de la Generalitat dirigida a la aplicación de inteligencia artificial en procesos empresariales. Cubre diagnóstico, plan estratégico y parte de la implantación. Es la vía habitual para que una PYME catalana empiece a aplicar IA con apoyo público.</p>
+      <div class="req">
+        <strong>Requisitos principales</strong>
+        <ul>
+          <li>Sede social en Catalunya</li>
+          <li>Constitución previa al 30 de abril de 2024</li>
+          <li>Mínimo de 10 trabajadores durante abril 2026</li>
+          <li>Código IAE dentro de los sectores elegibles (Sección Primera)</li>
+          <li>No haber superado los 300.000€ en ayudas de minimis en los últimos 3 años</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cupon">
+      <div class="head">
+        <h3>Cupó Estratègia Digital</h3>
+        <span class="estado pendiente">Acreditación en trámite</span>
+      </div>
+      <p>Programa de ACCIÓ orientado a empresas que necesitan definir o redefinir su estrategia digital. Cubre auditoría, plan estratégico y priorización de inversiones tecnológicas a medio plazo. Estamos en proceso de acreditación como proveedor para este programa.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESO -->
+<section class="proceso">
+  <div class="wrap">
+    <span class="section-tag">El proceso paso a paso</span>
+    <h2>De la verificación al cierre del expediente</h2>
+    <p class="lead">Toda la gestión administrativa la hacemos nosotros. Tu único compromiso es la ejecución del proyecto cuando llegue la resolución favorable.</p>
+    <div class="pasos">
+      <div class="paso"><div class="n">01</div><h3>Verificación 24h</h3><p>Conversación inicial gratuita y comprobación de elegibilidad en menos de 24 horas.</p></div>
+      <div class="paso"><div class="n">02</div><h3>Solicitud</h3><p>Si encajas, gestionamos la solicitud completa con ACCIÓ. Cero burocracia para ti.</p></div>
+      <div class="paso"><div class="n">03</div><h3>Resolución</h3><p>Espera de 2-4 meses hasta resolución favorable. Te mantenemos informado en cada paso.</p></div>
+      <div class="paso"><div class="n">04</div><h3>Ejecución</h3><p>Ejecutamos el proyecto según el alcance acordado. 4-12 semanas habitualmente.</p></div>
+      <div class="paso"><div class="n">05</div><h3>Justificación</h3><p>Cerramos el expediente ante ACCIÓ. La administración paga su parte directamente.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-tag">Preguntas frecuentes</span>
+      <h2>Lo que más nos preguntan sobre cupons</h2>
+    </div>
+    <div class="faq-items">
+      <details>
+        <summary>¿Y si mi empresa no cumple los requisitos del cupón?</summary>
+        <p>La verificación de elegibilidad se entrega en 24 horas. Si tu empresa no encaja, existen alternativas: ayudas estatales (Kit Consulting, Kit Digital), programas europeos específicos o proyectos directos sin subvención. En todos los casos planteamos opciones aplicables.</p>
+      </details>
+      <details>
+        <summary>¿Qué coste tiene la gestión del cupón?</summary>
+        <p>La gestión administrativa (solicitud, justificación, cierre) está incluida en el coste del proyecto si finalmente se ejecuta. La verificación inicial de elegibilidad es siempre gratuita. La facturación se vincula al proyecto, no a la solicitud.</p>
+      </details>
+      <details>
+        <summary>¿Cuál es el plazo total del proceso?</summary>
+        <p>Desde la solicitud hasta la resolución, el plazo habitual es de 2 a 4 meses. La ejecución del proyecto se inicia tras la resolución favorable. El ciclo completo desde primera conversación hasta cierre del expediente: 6-8 meses.</p>
+      </details>
+      <details>
+        <summary>¿Qué pasa si la solicitud no es aprobada?</summary>
+        <p>Si la solicitud no obtiene resolución favorable, tu empresa no asume coste alguno por nuestra parte. Si el proyecto sigue teniendo interés, planteamos alternativas de ejecución sin subvención o esperamos a la siguiente convocatoria.</p>
+      </details>
+      <details>
+        <summary>¿Puedo combinar varios cupons en un mismo proyecto?</summary>
+        <p>Depende de la compatibilidad entre programas. Algunos cupons son compatibles entre sí o con ayudas estatales/europeas. Lo verificamos caso a caso en la conversación inicial, donde repasamos qué ayudas ya has utilizado y cuáles siguen disponibles para tu empresa.</p>
+      </details>
+      <details>
+        <summary>¿Sois solo proveedores o también ejecutamos el proyecto?</summary>
+        <p>Ambas cosas. Somos proveedores acreditados ACCIÓ Y ejecutamos el proyecto. No subcontratamos a terceros. Eso significa que la responsabilidad técnica y administrativa es nuestra de principio a fin.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA CIERRE -->
+<section class="closing">
+  <div class="wrap">
+    <h2>¿Tu empresa <em>encaja</em>? Lo verificamos en 24h.</h2>
+    <p>Conversación inicial gratuita. Te confirmamos elegibilidad y orientamos sobre el siguiente paso. Sin compromiso.</p>
+    <a href="/contacto/" class="btn-cta">Verificar elegibilidad →</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <a href="/" class="brand"><img src="/logos/svg/infinitelabs-mono-white.svg" alt="Infinite Labs"></a>
+        <p class="tagline">Consultora europea de IA. Transformamos PYMEs con inteligencia artificial aplicada con criterio.</p>
+        <div class="locations">Oficinas en <strong>Barcelona</strong> y <strong>Tallinn</strong></div>
+      </div>
+      <div class="col"><h4>Servicios</h4><ul><li><a href="/servicios/#diagnostico">Diagnóstico</a></li><li><a href="/servicios/#transformacion">Transformación operativa</a></li><li><a href="/servicios/#director">Director de IA externo</a></li><li><a href="/sectores/">Sectores</a></li><li><a href="/casos/">Casos</a></li></ul></div>
+      <div class="col"><h4>Productos</h4><ul><li><a href="/productos/regulia/">Regulia</a></li><li><a href="/productos/contestia/">Contestia</a></li><li><a href="/productos/instantexam/">InstantExam</a></li><li><a href="/productos/canto/">Canto</a></li><li><a href="/productos/scoreflow/">ScoreFlow</a></li><li><a href="/productos/contablia/">Contablia</a></li><li><a href="/productos/swarmix/">Swarmix</a></li></ul></div>
+      <div class="col"><h4>Empresa</h4><ul><li><a href="/sobre-nosotros/">Sobre nosotros</a></li><li><a href="/portfolio/">Portfolio</a></li><li><a href="https://blog.infinitelabs.co">Blog</a></li><li><a href="/cupons/">Cupons ACCIÓ</a></li><li><a href="/contacto/">Contacto</a></li></ul></div>
+      <div class="col"><h4>Legal</h4><ul><li><a href="/aviso-legal/">Aviso legal</a></li><li><a href="/politica-privacidad/">Privacidad</a></li><li><a href="/politica-cookies/">Cookies</a></li><li><a href="https://www.linkedin.com/company/infinitelabs">LinkedIn</a></li></ul></div>
+    </div>
+    <div class="bottom">
+      <div>© 2026 Infinite Labs · Datos procesados en la Unión Europea · RGPD garantizado</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
