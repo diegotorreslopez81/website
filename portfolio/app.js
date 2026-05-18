@@ -38,7 +38,38 @@
   const grid = document.getElementById("cases-grid");
   const noRes = document.getElementById("no-results");
   const countEl = document.getElementById("result-count");
-  const state = { family:"all", sector:"all", tech:"all" };
+
+  // Mapeo entre los 6 sectores del home v3 y los sectores internos del portfolio
+  const SECTOR_HOME_TO_INTERNAL = {
+    clinicas: "salud",
+    industria: "b2b",
+    distribucion: "b2b",
+    despachos: "legal",
+    administracion: "publico",
+    formacion: "edu"
+  };
+
+  // Lee ?sector=X de la URL para pre-filtrar al cargar (link entrante desde home)
+  function getInitialSector(){
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const raw = params.get("sector");
+      if(!raw) return "all";
+      return SECTOR_HOME_TO_INTERNAL[raw] || raw;
+    } catch(e){ return "all"; }
+  }
+
+  const state = { family:"all", sector:getInitialSector(), tech:"all" };
+
+  // Sincronizar el chip de sector activo en la UI cuando hay pre-filtro
+  function syncSectorChip(){
+    if(state.sector === "all") return;
+    document.querySelectorAll('[data-filter-type="sector"] .chip').forEach(chip=>{
+      const isActive = chip.getAttribute("data-value") === state.sector;
+      chip.classList.toggle("active", isActive);
+      if(isActive) chip.scrollIntoView({behavior:"smooth", block:"nearest", inline:"center"});
+    });
+  }
 
   function renderCases(){
     if(!grid || !window.PORTFOLIO_CASES) return;
@@ -82,6 +113,9 @@
   // expose so applyI18n can re-render
   window.renderCases = renderCases;
 
+  // Pre-activar chip de sector si vino por ?sector=X desde la home
+  // (declarado después de syncSectorChip)
+
   document.querySelectorAll("[data-filter-type]").forEach(group=>{
     const type = group.getAttribute("data-filter-type");
     group.querySelectorAll(".chip").forEach(chip=>{
@@ -93,6 +127,9 @@
       });
     });
   });
+
+  // Aplicar pre-filtro si vino por ?sector=X
+  syncSectorChip();
 
   // ----- nav scroll -----
   const nav = document.getElementById("nav");

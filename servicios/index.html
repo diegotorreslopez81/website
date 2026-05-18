@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Servicios · Infinite Labs · Diagnóstico, transformación operativa y Director de IA externo</title>
+<meta name="description" content="Tres formas de trabajar con nosotros: diagnóstico gratuito de 30 minutos, proyectos de transformación operativa con IA y acompañamiento continuo como tu Director de IA externo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FAFAF7;--white:#FFFFFF;--ink:#0F0F14;--ink-2:#383841;--ink-3:#6E6E7A;
+    --accent:#6000FF;--accent-2:#4D00CC;--accent-soft:rgba(96,0,255,.1);--accent-glow:rgba(96,0,255,.45);
+    --line:rgba(15,15,20,.08);--line-strong:rgba(15,15,20,.16);
+    --dark:#0A0A0F;--ease:cubic-bezier(.2,.7,.2,1);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,h4{font-family:'Fraunces',Georgia,serif;font-weight:500;letter-spacing:-.02em;line-height:1.05}
+  a{color:inherit;text-decoration:none}
+  img{display:block;max-width:100%;height:auto}
+  .wrap{max-width:1280px;margin:0 auto;padding:0 32px}
+
+  /* NAV */
+  nav.top{position:sticky;top:0;z-index:50;background:rgba(250,250,247,.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--line)}
+  nav.top .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:24px}
+  nav.top .brand img{height:28px;width:auto;display:block}
+  nav.top ul{display:flex;gap:28px;list-style:none;align-items:center}
+  nav.top ul a{font-size:14px;color:var(--ink-2);font-weight:500;transition:color .2s;display:inline-flex;align-items:center;gap:6px}
+  nav.top ul a:hover,nav.top ul a.active{color:var(--accent)}
+  nav.top .cta{background:var(--ink);color:#fff;padding:11px 20px;border-radius:8px;font-size:13px;font-weight:600;transition:background .2s,box-shadow .2s}
+  nav.top .cta:hover{background:var(--accent);box-shadow:0 6px 20px var(--accent-glow)}
+
+  /* HERO */
+  .hero{padding:100px 0 80px;position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;top:-20%;right:-10%;width:600px;height:600px;background:radial-gradient(circle,rgba(96,0,255,.1),transparent 60%);filter:blur(80px);pointer-events:none}
+  .hero .eyebrow{display:inline-flex;align-items:center;gap:10px;padding:8px 16px;border:1px solid var(--line-strong);background:var(--white);border-radius:100px;font-size:13px;color:var(--ink-2);margin-bottom:24px;font-weight:500;position:relative}
+  .hero .eyebrow .badge{width:8px;height:8px;background:var(--accent);border-radius:50%;box-shadow:0 0 12px var(--accent-glow)}
+  .hero h1{font-size:clamp(40px,5.5vw,76px);font-weight:500;margin-bottom:24px;max-width:1000px;position:relative}
+  .hero h1 em{font-style:italic;color:var(--accent);font-weight:400}
+  .hero .lead{font-size:20px;color:var(--ink-2);max-width:780px;line-height:1.5;position:relative}
+
+  /* SERVICIO DETALLE (3 secciones grandes) */
+  .servicio{padding:80px 0;border-top:1px solid var(--line)}
+  .servicio:nth-child(odd){background:var(--white)}
+  .servicio .grid{display:grid;grid-template-columns:5fr 7fr;gap:80px;align-items:start}
+  .servicio .col-left{position:sticky;top:120px}
+  .servicio .num{display:inline-flex;align-items:center;gap:14px;font-family:'Fraunces',serif;font-size:14px;color:var(--accent);font-weight:600;margin-bottom:18px;letter-spacing:.05em}
+  .servicio .num .circle{width:36px;height:36px;border-radius:50%;background:var(--accent-soft);color:var(--accent);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px}
+  .servicio h2{font-size:clamp(36px,4.5vw,56px);margin-bottom:18px}
+  .servicio .tag{display:inline-block;background:var(--accent-soft);color:var(--accent);padding:6px 14px;border-radius:100px;font-size:12px;font-weight:700;letter-spacing:.08em;margin-bottom:24px;text-transform:uppercase}
+  .servicio .price-card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:24px;margin-top:24px}
+  .servicio .price-card .price{font-family:'Fraunces',serif;font-size:32px;color:var(--ink);font-weight:600;letter-spacing:-.02em;margin-bottom:6px}
+  .servicio .price-card .price-sub{font-size:14px;color:var(--ink-3)}
+  .servicio .cta-btn{display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:#fff;padding:14px 24px;border-radius:10px;font-weight:600;font-size:14px;margin-top:20px;box-shadow:0 6px 24px var(--accent-glow);transition:all .2s}
+  .servicio .cta-btn:hover{background:var(--accent-2);transform:translateY(-1px)}
+
+  .servicio .col-right p{font-size:17px;color:var(--ink-2);margin-bottom:18px;line-height:1.6}
+  .servicio .col-right h3{font-size:22px;margin:36px 0 16px;font-weight:600;font-family:'Inter',sans-serif;color:var(--ink)}
+  .servicio .deliverables{display:grid;gap:14px;margin-top:24px}
+  .servicio .deliverable{display:flex;gap:14px;align-items:start;padding:18px 20px;background:var(--paper);border:1px solid var(--line);border-radius:12px;transition:border-color .2s,transform .2s}
+  .servicio .deliverable:hover{border-color:var(--accent);transform:translateY(-2px)}
+  .servicio .deliverable .check{width:24px;height:24px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:13px;font-weight:700}
+  .servicio .deliverable strong{display:block;font-size:15px;color:var(--ink);margin-bottom:4px;font-weight:600}
+  .servicio .deliverable span{font-size:14px;color:var(--ink-3);line-height:1.5}
+
+  .servicio .packages{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px}
+  .servicio .pkg{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:24px;transition:border-color .25s,transform .25s,box-shadow .25s}
+  .servicio .pkg:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:0 12px 32px rgba(96,0,255,.08)}
+  .servicio .pkg.recommended{border-color:var(--accent);background:linear-gradient(180deg,var(--white) 0%,var(--accent-soft) 100%);position:relative}
+  .servicio .pkg.recommended::before{content:"Más elegido";position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--accent);color:#fff;padding:4px 12px;border-radius:100px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+  .servicio .pkg .pkg-name{font-family:'Fraunces',serif;font-size:18px;font-weight:600;margin-bottom:6px;color:var(--accent)}
+  .servicio .pkg .pkg-price{font-family:'Fraunces',serif;font-size:32px;font-weight:600;color:var(--ink);margin:8px 0}
+  .servicio .pkg .pkg-price small{font-size:14px;color:var(--ink-3);font-weight:400;font-family:'Inter',sans-serif}
+  .servicio .pkg .pkg-hours{font-size:14px;color:var(--ink-2);margin-bottom:14px;font-weight:500}
+  .servicio .pkg .pkg-rate{font-size:13px;color:var(--ink-3);padding-top:14px;border-top:1px solid var(--line)}
+
+  /* PROCESO TÍPICO */
+  .proceso{background:var(--dark);color:#fff;padding:120px 0;position:relative;overflow:hidden}
+  .proceso::before{content:"";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:800px;height:800px;background:radial-gradient(circle,rgba(96,0,255,.2),transparent 60%);filter:blur(80px);pointer-events:none}
+  .proceso .wrap{position:relative;z-index:1}
+  .proceso .section-head{margin-bottom:64px;max-width:880px}
+  .proceso .section-tag{display:inline-block;font-size:12px;color:var(--accent);font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-bottom:18px}
+  .proceso h2{font-size:clamp(34px,4vw,52px);margin-bottom:18px;color:#fff}
+  .proceso .lead{font-size:18px;color:rgba(255,255,255,.7);line-height:1.55}
+  .proceso .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;position:relative}
+  .proceso .step{position:relative;padding:24px}
+  .proceso .step:not(:last-child)::after{content:"→";position:absolute;right:-16px;top:32px;color:var(--accent);font-size:32px;font-family:'Fraunces',serif;opacity:.5}
+  .proceso .step .num-step{font-family:'Fraunces',serif;font-size:48px;color:var(--accent);font-weight:700;line-height:1;margin-bottom:14px;text-shadow:0 0 24px var(--accent-glow)}
+  .proceso .step h3{font-size:20px;color:#fff;margin-bottom:10px;font-weight:600;font-family:'Inter',sans-serif}
+  .proceso .step p{color:rgba(255,255,255,.65);font-size:14px;line-height:1.55}
+
+  /* FAQ */
+  .faq{padding:120px 0;background:var(--paper)}
+  .faq .section-head{margin-bottom:48px;max-width:780px}
+  .faq .section-tag{display:inline-block;font-size:12px;color:var(--accent);font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-bottom:18px}
+  .faq h2{font-size:clamp(34px,4vw,52px);margin-bottom:18px}
+  .faq .items{display:grid;gap:14px;max-width:880px}
+  .faq details{background:var(--white);border:1px solid var(--line);border-radius:12px;padding:24px 28px;cursor:pointer;transition:border-color .2s}
+  .faq details:hover{border-color:var(--line-strong)}
+  .faq details[open]{border-color:var(--accent);background:linear-gradient(180deg,var(--white) 0%,var(--accent-soft) 100%)}
+  .faq summary{font-size:17px;font-weight:600;color:var(--ink);font-family:'Fraunces',serif;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:24px}
+  .faq summary::after{content:"+";font-size:24px;color:var(--accent);transition:transform .2s;font-weight:300}
+  .faq details[open] summary::after{content:"−"}
+  .faq details p{margin-top:16px;color:var(--ink-2);font-size:15px;line-height:1.6}
+
+  /* CTA CIERRE */
+  .closing{padding:0;position:relative;min-height:80vh;display:flex;align-items:center;overflow:hidden;background:var(--dark)}
+  .closing::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(96,0,255,.7) 0%,rgba(50,0,150,.6) 35%,rgba(15,15,20,.92) 75%);z-index:1}
+  .closing .wrap{position:relative;z-index:2;padding:120px 32px;text-align:center;color:#fff;width:100%}
+  .closing h2{font-size:clamp(38px,5vw,68px);max-width:920px;margin:0 auto 24px;color:#fff;font-weight:500;line-height:1.1}
+  .closing h2 em{font-style:italic;text-shadow:0 0 32px var(--accent-glow)}
+  .closing p{font-size:18px;color:rgba(255,255,255,.78);max-width:680px;margin:0 auto 36px;line-height:1.5}
+  .closing .btn{display:inline-flex;align-items:center;gap:10px;background:#fff;color:var(--accent);padding:18px 32px;border-radius:10px;font-size:16px;font-weight:700;box-shadow:0 12px 40px rgba(255,255,255,.25),0 0 80px var(--accent-glow);transition:all .2s}
+  .closing .btn:hover{background:var(--accent);color:#fff;transform:translateY(-2px)}
+
+  /* FOOTER */
+  footer{background:var(--ink);color:rgba(255,255,255,.7);padding:80px 0 40px;font-size:14px}
+  footer .top{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr 1fr;gap:40px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,.1)}
+  footer .brand img{height:32px;width:auto;margin-bottom:18px;display:block}
+  footer .tagline{color:rgba(255,255,255,.6);font-size:14px;line-height:1.55;max-width:280px;margin-bottom:24px}
+  footer .locations{color:rgba(255,255,255,.55);font-size:13px;line-height:1.6}
+  footer .locations strong{color:rgba(255,255,255,.85);font-weight:600;display:inline-block;margin-right:6px}
+  footer .col h4{color:#fff;font-size:13px;font-weight:600;margin-bottom:16px;letter-spacing:.05em;text-transform:uppercase}
+  footer .col ul{list-style:none}
+  footer .col li{margin-bottom:10px}
+  footer .col a{color:rgba(255,255,255,.65);font-size:14px;transition:color .2s}
+  footer .col a:hover{color:#fff}
+  footer .bottom{padding-top:40px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+
+  @media(max-width:1024px){
+    .servicio .grid{grid-template-columns:1fr;gap:36px}
+    .servicio .col-left{position:relative;top:auto}
+    .servicio .packages{grid-template-columns:1fr}
+    .proceso .steps{grid-template-columns:repeat(2,1fr)}
+    .proceso .step:not(:last-child)::after{display:none}
+    footer .top{grid-template-columns:1fr 1fr}
+  }
+  @media(max-width:640px){
+    nav.top ul{display:none}
+    .proceso .steps{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<nav class="top">
+  <div class="wrap">
+    <a href="/" class="brand"><img src="/logos/svg/infinitelabs-mono-black.svg" alt="Infinite Labs"></a>
+    <ul>
+      <li><a href="/servicios/" class="active">Servicios</a></li>
+      <li><a href="/sectores/">Sectores</a></li>
+      <li><a href="/productos/">Productos</a></li>
+      <li><a href="/casos/">Casos</a></li>
+      <li><a href="/sobre-nosotros/">Sobre nosotros</a></li>
+      <li><a href="https://blog.infinitelabs.co">Blog</a></li>
+      <li><a href="/portfolio/">Portfolio</a></li>
+    </ul>
+    <a href="/contacto/" class="cta">Reservar diagnóstico</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow"><span class="badge"></span>Servicios</div>
+    <h1>Tres formas de trabajar contigo. <em>Un mismo objetivo:</em> reducir costes y aumentar tu producción con IA aplicada.</h1>
+    <p class="lead">Cada empresa es distinta. Por eso empezamos siempre por el diagnóstico. A partir de ahí, tú decides el recorrido: proyecto puntual, acompañamiento continuo o ambos. Sin tarifas cerradas. Sin compromiso inicial.</p>
+  </div>
+</section>
+
+<!-- SERVICIO 1 · DIAGNÓSTICO -->
+<section class="servicio" id="diagnostico">
+  <div class="wrap">
+    <div class="grid">
+      <div class="col-left">
+        <div class="num"><span class="circle">01</span> PRIMER PASO</div>
+        <span class="tag">Gratuito · 30 minutos</span>
+        <h2>Diagnóstico</h2>
+        <p>30 minutos de entrevista estructurada y un formulario que nos permite entender tu realidad operativa. Recibes una propuesta personalizada con el estado inicial de tu empresa, plan de trabajo y presupuesto.</p>
+        <div class="price-card">
+          <div class="price">Gratuito</div>
+          <div class="price-sub">30 minutos · sin compromiso</div>
+        </div>
+        <a href="/contacto/" class="cta-btn">Reservar diagnóstico →</a>
+      </div>
+      <div class="col-right">
+        <h3>Para quién es</h3>
+        <p>Para cualquier empresa que quiera entender qué puede aportarle la inteligencia artificial. No importa el tamaño ni el sector. Es el primer paso natural antes de cualquier servicio de pago.</p>
+
+        <h3>Qué obtienes</h3>
+        <div class="deliverables">
+          <div class="deliverable"><div class="check">✓</div><div><strong>Identificación de áreas con potencial</strong><span>Mapeo preliminar de procesos donde la IA puede aportar valor medible en tu empresa.</span></div></div>
+          <div class="deliverable"><div class="check">✓</div><div><strong>Estado inicial documentado</strong><span>Diagnóstico de cómo está tu organización hoy en términos de procesos, datos y madurez digital.</span></div></div>
+          <div class="deliverable"><div class="check">✓</div><div><strong>Plan de trabajo recomendado</strong><span>Hoja de ruta priorizada: qué hacer primero, qué después, con plazos estimados.</span></div></div>
+          <div class="deliverable"><div class="check">✓</div><div><strong>Presupuesto orientativo</strong><span>Estimación honesta de la inversión necesaria por fase, sin tarifas inflacionadas ni letra pequeña.</span></div></div>
+          <div class="deliverable"><div class="check">✓</div><div><strong>Recomendación de tecnologías</strong><span>Qué herramientas, modelos y arquitectura tienen sentido para tu caso concreto.</span></div></div>
+        </div>
+
+        <h3>Cómo es la conversación</h3>
+        <p>No es una llamada comercial. Es una entrevista de descubrimiento profesional, con preguntas estructuradas sobre tu día a día, tus procesos críticos y tus cuellos de botella. Te escuchamos primero. Después te orientamos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIO 2 · TRANSFORMACIÓN OPERATIVA -->
+<section class="servicio" id="transformacion">
+  <div class="wrap">
+    <div class="grid">
+      <div class="col-left">
+        <div class="num"><span class="circle">02</span> PROYECTO A MEDIDA</div>
+        <span class="tag">Cotización en propuesta</span>
+        <h2>Transformación operativa con IA</h2>
+        <p>Ejecutamos la propuesta acordada tras el diagnóstico: implantación, integración con tus sistemas, automatización de procesos y capacitación de tu equipo. Todo lo que necesita la transformación de tu empresa.</p>
+        <div class="price-card">
+          <div class="price">Personalizado</div>
+          <div class="price-sub">La inversión se define en la propuesta, ajustada al alcance acordado tras el diagnóstico</div>
+        </div>
+        <a href="/contacto/" class="cta-btn">Empezar por el diagnóstico →</a>
+      </div>
+      <div class="col-right">
+        <h3>Para quién es</h3>
+        <p>Para empresas que han identificado sus oportunidades de transformación tras el diagnóstico y quieren un equipo especializado que las ejecute. Cubrimos desde proyectos puntuales hasta transformaciones de varios trimestres.</p>
+
+        <h3>Qué incluye</h3>
+        <div class="deliverables">
+          <div class="deliverable"><div class="check">✓</div><div><strong>Implantación llave en mano</strong><span>Construimos las soluciones desde cero o adaptamos las nuestras a tu caso concreto.</span></div></div>
+          <div class="deliverable"><div class="check">✓</div><div><strong>Integración con tus sistemas</strong><span>Conectamos con tu ERP, CRM, WhatsApp, correo, agenda y cualquier herramienta que ya uses.</span></div></div>
+          <div class="deliverable"><div class="check">✓</div><div><strong>Automatización de procesos</strong><span>Diseñamos el flujo end-to-end, no solo el modelo. Human-in-the-loop por defecto.</span></div></div>
+          <div class="deliverable"><div class="check">✓</div><div><strong>Capacitación de tu equipo</strong><span>Formación a comerciales, administrativos y operaciones. Con casos prácticos de tu día a día.</span></div></div>
+          <div class="deliverable"><div class="check">✓</div><div><strong>Documentación y traspaso</strong><span>Al final del proyecto te quedas con código, claves, datos y manuales. Independencia real.</span></div></div>
+          <div class="deliverable"><div class="check">✓</div><div><strong>SLA y soporte mensual</strong><span>Acuerdo de nivel de servicio incluido durante el primer ciclo. Tiempos de respuesta comprometidos.</span></div></div>
+        </div>
+
+        <h3>Plazo típico</h3>
+        <p>Entre 4 y 12 semanas según el alcance. Los proyectos empiezan siempre por un piloto controlado antes del despliegue completo, para que puedas validar resultados antes de comprometer recursos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIO 3 · DIRECTOR DE IA EXTERNO -->
+<section class="servicio" id="director">
+  <div class="wrap">
+    <div class="grid">
+      <div class="col-left">
+        <div class="num"><span class="circle">03</span> MENSUALIDAD</div>
+        <span class="tag">Acompañamiento continuo</span>
+        <h2>Director de IA externo</h2>
+        <p>Tu Chief AI Officer fraccional. Revisamos propuestas tecnológicas, participamos en decisiones estratégicas e identificamos nuevas oportunidades cada mes. El criterio cualificado que necesita tu empresa, sin contratar a nadie en plantilla.</p>
+        <div class="price-card">
+          <div class="price">Desde 1.000€/mes</div>
+          <div class="price-sub">Tres paquetes con descuento por volumen · 6 meses mínimo</div>
+        </div>
+        <a href="/contacto/" class="cta-btn">Solicitar propuesta →</a>
+      </div>
+      <div class="col-right">
+        <h3>Para quién es</h3>
+        <p>Para empresas que no necesitan un Chief AI Officer en plantilla pero sí necesitan criterio cualificado en decisiones técnicas: evaluación de propuestas, interlocución con consultoras externas, decisiones de inversión tecnológica.</p>
+
+        <h3>Tres paquetes con descuento por volumen</h3>
+        <div class="packages">
+          <div class="pkg">
+            <div class="pkg-name">Light</div>
+            <div class="pkg-price">1.000€<small>/mes</small></div>
+            <div class="pkg-hours">10 horas mensuales</div>
+            <div class="pkg-rate">100€/hora · ideal para arrancar</div>
+          </div>
+          <div class="pkg recommended">
+            <div class="pkg-name">Standard</div>
+            <div class="pkg-price">2.000€<small>/mes</small></div>
+            <div class="pkg-hours">25 horas mensuales</div>
+            <div class="pkg-rate">80€/hora · empresas en fase activa</div>
+          </div>
+          <div class="pkg">
+            <div class="pkg-name">Plus</div>
+            <div class="pkg-price">5.000€<small>/mes</small></div>
+            <div class="pkg-hours">75 horas mensuales</div>
+            <div class="pkg-rate">66€/hora · transformación intensa</div>
+          </div>
+        </div>
+
+        <h3>Qué hacemos cada mes</h3>
+        <div class="deliverables">
+          <div class="deliverable"><div class="check">✓</div><div><strong>Revisión de propuestas de proveedores</strong><span>Filtramos lo que llega a tu mesa: descartamos lo que no aporta, negociamos lo que sí.</span></div></div>
+          <div class="deliverable"><div class="check">✓</div><div><strong>Interlocución con consultoras y agencias</strong><span>Te acompañamos en reuniones técnicas para que no te lleven por donde no quieres ir.</span></div></div>
+          <div class="deliverable"><div class="check">✓</div><div><strong>Hoja de ruta IA actualizada</strong><span>Cada trimestre revisamos prioridades, inversiones y métricas. La hoja de ruta vive.</span></div></div>
+          <div class="deliverable"><div class="check">✓</div><div><strong>Auditoría de software y SaaS</strong><span>Identificamos solapamientos, gastos no usados y oportunidades de consolidación.</span></div></div>
+          <div class="deliverable"><div class="check">✓</div><div><strong>Canal directo Slack/WhatsApp</strong><span>Disponibilidad inmediata para consultas puntuales sin esperar a la reunión mensual.</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESO TÍPICO -->
+<section class="proceso">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-tag">El recorrido típico</span>
+      <h2>De una conversación a la transformación, en pasos claros</h2>
+      <p class="lead">Cada empresa avanza a su ritmo. No hay obligación de pasar de un paso al siguiente. La decisión es tuya en cada etapa.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="num-step">01</div>
+        <h3>Diagnóstico</h3>
+        <p>30 minutos de entrevista. Te entregamos propuesta con estado inicial, plan de trabajo y presupuesto.</p>
+      </div>
+      <div class="step">
+        <div class="num-step">02</div>
+        <h3>Decisión</h3>
+        <p>Tú decides el siguiente paso. Ningún compromiso hasta firmar el alcance del proyecto.</p>
+      </div>
+      <div class="step">
+        <div class="num-step">03</div>
+        <h3>Ejecución</h3>
+        <p>Implantamos, integramos y formamos a tu equipo. Piloto controlado antes del despliegue completo.</p>
+      </div>
+      <div class="step">
+        <div class="num-step">04</div>
+        <h3>Acompañamiento</h3>
+        <p>Si quieres, continuamos como tu Director de IA externo para escalar y mantener la transformación.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-tag">Preguntas frecuentes</span>
+      <h2>Lo que más nos preguntan antes de empezar</h2>
+    </div>
+    <div class="items">
+      <details>
+        <summary>¿El diagnóstico realmente es gratuito? ¿Cuál es el truco?</summary>
+        <p>No hay truco. Es nuestro punto de entrada. Si tras el diagnóstico no decides contratar nada, te quedas con la propuesta y plan de trabajo. Es información valiosa para ti y un coste razonable para nosotros si lo comparamos con un proyecto fallido por no haber entendido el caso.</p>
+      </details>
+      <details>
+        <summary>¿Por qué no publicáis precios fijos del servicio de transformación?</summary>
+        <p>Porque cada caso es distinto. Un proyecto de automatización conversacional en una clínica no se parece a uno de búsqueda inteligente en un despacho. Las tarifas cerradas obligan a inflar precio para los casos complejos o a aceptar pérdidas en los casos pequeños. Preferimos cotizar cada proyecto tras entenderlo.</p>
+      </details>
+      <details>
+        <summary>¿En cuánto tiempo veo resultados medibles?</summary>
+        <p>Depende del proyecto, pero por norma general entre 4 y 12 semanas desde el inicio. Trabajamos siempre por hitos cortos con métricas verificables, para que veas resultados antes de comprometer recursos al despliegue completo.</p>
+      </details>
+      <details>
+        <summary>¿Mis datos están seguros?</summary>
+        <p>Toda nuestra infraestructura está en la Unión Europea (Hetzner Frankfurt y proveedores EU). Cumplimos RGPD por defecto, sin dependencias de terceros países. Si trabajamos con sectores regulados (salud, legal, finanzas), añadimos las medidas específicas que tu sector requiera.</p>
+      </details>
+      <details>
+        <summary>¿Qué pasa si quiero dejar de trabajar con vosotros?</summary>
+        <p>Al finalizar cualquier proyecto te entregamos código, claves de acceso, datos y documentación. Tu empresa conserva todo el activo construido. El Director de IA externo tiene compromiso mínimo de 6 meses, después puedes pausarlo cuando quieras.</p>
+      </details>
+      <details>
+        <summary>¿Puedo aplicar el Cupó IA de la Generalitat con vosotros?</summary>
+        <p>Sí. Somos proveedores acreditados ACCIÓ y gestionamos la solicitud completa. Si tu empresa cumple los requisitos (sede en Catalunya, mínimo 10 trabajadores, IAE elegible), parte del coste del proyecto lo asume la Generalitat. Lo verificamos en 24 horas tras la conversación inicial.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA CIERRE -->
+<section class="closing">
+  <div class="wrap">
+    <h2>El primer paso es <em>una conversación</em>. Sin compromiso.</h2>
+    <p>30 minutos para entender tu realidad y orientarte sobre cómo aplicar IA en tu empresa con criterio.</p>
+    <a href="/contacto/" class="btn">Reservar diagnóstico gratuito →</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <a href="/" class="brand"><img src="/logos/svg/infinitelabs-mono-white.svg" alt="Infinite Labs"></a>
+        <p class="tagline">Consultora europea de IA. Transformamos PYMEs con inteligencia artificial aplicada con criterio.</p>
+        <div class="locations">Oficinas en <strong>Barcelona</strong> y <strong>Tallinn</strong></div>
+      </div>
+      <div class="col">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="/servicios/#diagnostico">Diagnóstico</a></li>
+          <li><a href="/servicios/#transformacion">Transformación operativa</a></li>
+          <li><a href="/servicios/#director">Director de IA externo</a></li>
+          <li><a href="/sectores/">Sectores</a></li>
+          <li><a href="/casos/">Casos</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4>Productos</h4>
+        <ul>
+          <li><a href="/productos/regulia/">Regulia</a></li>
+          <li><a href="/productos/contestia/">Contestia</a></li>
+          <li><a href="/productos/instantexam/">InstantExam</a></li>
+          <li><a href="/productos/canto/">Canto</a></li>
+          <li><a href="/productos/scoreflow/">ScoreFlow</a></li>
+          <li><a href="/productos/contablia/">Contablia</a></li>
+          <li><a href="/productos/swarmix/">Swarmix</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="/sobre-nosotros/">Sobre nosotros</a></li>
+          <li><a href="/portfolio/">Portfolio</a></li>
+          <li><a href="https://blog.infinitelabs.co">Blog</a></li>
+          <li><a href="/cupons/">Cupons ACCIÓ</a></li>
+          <li><a href="/contacto/">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="/aviso-legal/">Aviso legal</a></li>
+          <li><a href="/politica-privacidad/">Privacidad</a></li>
+          <li><a href="/politica-cookies/">Cookies</a></li>
+          <li><a href="https://www.linkedin.com/company/infinitelabs">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom">
+      <div>© 2026 Infinite Labs · Datos procesados en la Unión Europea · RGPD garantizado</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

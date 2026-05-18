@@ -1,5 +1,7 @@
+.DS_Store
 # Ignore internal scratch
 BRIEF-*.md
-index.html.bak-*
-stitch-preview/
 drafts/
+index.html.bak-*
+mockups/
+stitch-preview/

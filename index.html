@@ -2,1386 +2,742 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" type="image/svg+xml" href="/favicon.svg?v=infinite-d">
-<link rel="icon" type="image/x-icon" href="/favicon.ico?v=infinite-d">
-<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png?v=infinite-d">
-<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16.png?v=infinite-d">
-<link rel="shortcut icon" href="/favicon.ico?v=infinite-d">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=infinite-d">
-<meta name="theme-color" content="#0A0A0F">
-<meta property="og:title" content="Infinite Labs · Consultora europea de IA para PYMEs">
-<meta property="og:description" content="Consultora europea de IA para PYMEs. Cuantificamos el ahorro potencial con IA en euros y horas, y diseñamos la implantación. Diagnóstico inicial de 30 min. Estonia + España. GDPR.">
-<meta property="og:image" content="https://infinitelabs.co/img/og-image.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Infinite Labs · Aplicamos la IA para ahorrar costes a tu empresa">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://infinitelabs.co">
-<meta property="og:site_name" content="Infinite Labs">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Infinite Labs · Consultora europea de IA para PYMEs">
-<meta name="twitter:description" content="Aplicamos la IA para ahorrar costes a tu empresa. Diagnóstico inicial de 30 min. Estonia + España. GDPR.">
-<meta name="twitter:image" content="https://infinitelabs.co/img/og-image.png">
-<meta name="twitter:site" content="@0xDiegoTorres">
-<meta name="twitter:creator" content="@0xDiegoTorres">
-
-<script defer src="https://umami.infinitelabs.co/script.js" data-website-id="8b3ff8f3-ef3e-4c8f-bf8e-22a4be3d78a7"></script>
-
-<title>Infinite Labs · Consultora europea de IA para PYMEs</title>
-<meta name="description" content="Consultora europea de IA para PYMEs. Cuantificamos el ahorro potencial con IA en euros y horas, y diseñamos la implantación. Diagnóstico inicial de 30 min. Estonia + España. GDPR.">
-
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Infinite Labs · Mockup home v3 (púrpura neón #6000FF)</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,700;1,9..144,300;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#0A0A0F; --ink:#050507;
-    --paper:#F5F3EE; --paper2:#ECE7DC; --paper-ink:#2A241A;
-    --surface:#111113; --surface2:#18181B;
-    --border:#27272A; --border-h:#3A3A3F;
-    --paper-border:#D8D0BF;
-    --white:#FAFAFA; --high:#D4D4D8; --dim:#A1A1AA; --muted:#71717A; --faint:#52525B;
-    --cyan:#8000FF; --cyan-h:#9B3BFF; --cyan-deep:#6600CC;
-    --amber:#F4A261; --green:#86EFAC;
-    --sans:'Inter',system-ui,sans-serif;
-    --serif:'Fraunces',Georgia,serif;
-    --mono:'JetBrains Mono',monospace;
-    --max:1320px;
-    --ease:cubic-bezier(.22,1,.36,1);
+    --paper:#FAFAF7;
+    --white:#FFFFFF;
+    --ink:#0F0F14;
+    --ink-2:#383841;
+    --ink-3:#6E6E7A;
+    --ink-4:#A8A8B0;
+    --accent:#6000FF;
+    --accent-2:#4D00CC;
+    --accent-soft:rgba(96,0,255,.1);
+    --accent-glow:rgba(96,0,255,.45);
+    --line:rgba(15,15,20,.08);
+    --line-strong:rgba(15,15,20,.16);
+    --dark:#0A0A0F;
+    --ease:cubic-bezier(.2,.7,.2,1);
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
-  body{background:var(--bg);color:var(--white);font-family:var(--sans);-webkit-font-smoothing:antialiased;line-height:1.5;font-weight:400;overflow-x:hidden}
-  section[id],main[id]{scroll-margin-top:80px}
+  body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,h4{font-family:'Fraunces',Georgia,serif;font-weight:500;letter-spacing:-.02em;line-height:1.05}
   a{color:inherit;text-decoration:none}
-  em,.fi{font-family:var(--serif);font-style:italic;font-weight:400}
-  em.ac{color:var(--cyan)}
-  ul{list-style:none}
-  button{font:inherit;border:none;background:none;color:inherit;cursor:pointer}
-  svg{display:block}
-  ::selection{background:var(--cyan);color:#fff}
-
-  .mono{font-family:var(--mono);letter-spacing:.16em;text-transform:uppercase;font-size:11px;font-weight:500}
-  .eyebrow{font-family:var(--mono);letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:var(--dim);font-weight:500;display:inline-flex;align-items:center;gap:10px}
-  .eyebrow::before{content:"";width:22px;height:1px;background:var(--cyan);display:inline-block}
-
-  .anim{opacity:0;transform:translateY(22px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
-  .anim.in{opacity:1;transform:none}
-  .anim-1{transition-delay:.1s} .anim-2{transition-delay:.2s} .anim-3{transition-delay:.3s} .anim-4{transition-delay:.4s}
-
-  @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.55;transform:scale(.9)}}
-  @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  img{display:block;max-width:100%;height:auto}
+  .wrap{max-width:1280px;margin:0 auto;padding:0 32px}
 
   /* NAV */
-  nav.site-nav{position:fixed;top:0;left:0;right:0;z-index:80;display:flex;align-items:center;justify-content:space-between;padding:20px 48px;transition:background .35s var(--ease),backdrop-filter .35s var(--ease),border-color .35s var(--ease),padding .35s var(--ease);border-bottom:1px solid transparent}
-  nav.scrolled{background:rgba(10,10,15,.82);backdrop-filter:blur(16px);border-color:var(--border);padding:14px 48px}
-  .brand{display:inline-flex;align-items:center;color:var(--white)}
-  .brand svg{height:20px;width:auto;display:block}
-  nav .links{display:flex;gap:30px;font-size:13.5px;color:var(--high)}
-  nav .links a{transition:color .2s;position:relative;padding:4px 0}
-  nav .links a:hover{color:var(--cyan)}
-  nav .right{display:flex;align-items:center;gap:18px}
-  .lang{display:flex;gap:2px;font-family:var(--mono);font-size:11px;letter-spacing:.12em}
-  .lang button{padding:5px 8px;color:var(--faint);transition:color .2s}
-  .lang button.active{color:var(--white)}
-  .lang .sep{color:var(--faint);padding:5px 0}
-  .btn{display:inline-flex;align-items:center;gap:10px;padding:11px 20px;font-size:13.5px;font-weight:500;border-radius:999px;transition:all .25s var(--ease);white-space:nowrap;font-family:var(--sans);letter-spacing:-.005em;border:1px solid transparent;cursor:pointer}
-  .btn svg{width:14px;height:14px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
-  .btn-primary{background:var(--cyan);color:#fff;font-weight:600;box-shadow:0 4px 24px -6px rgba(128,0,255,.55)}
-  .btn-primary:hover{background:var(--cyan-h);transform:translateY(-1px)}
-  .btn-ghost{border:1px solid var(--border);color:var(--high)}
-  .btn-ghost:hover{border-color:var(--white);color:var(--white)}
-  .btn-dark{background:var(--ink);color:var(--white)}
-  .btn-dark:hover{background:#0F0F15;transform:translateY(-1px)}
-  .btn-lg{padding:15px 26px;font-size:14px}
-  .btn-xl{padding:19px 36px;font-size:15.5px;font-weight:600}
-  .burger{display:none;background:none;border:1px solid var(--border);border-radius:8px;padding:7px;color:var(--white)}
-  .burger svg{width:20px;height:20px;stroke:currentColor;stroke-width:2;fill:none}
+  nav.top{position:sticky;top:0;z-index:50;background:rgba(250,250,247,.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--line)}
+  nav.top .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:24px}
+  nav.top .brand img{height:28px;width:auto;display:block}
+  nav.top ul{display:flex;gap:28px;list-style:none;align-items:center}
+  nav.top ul a{font-size:14px;color:var(--ink-2);font-weight:500;transition:color .2s;display:inline-flex;align-items:center;gap:6px}
+  nav.top ul a:hover{color:var(--accent)}
+  nav.top ul .more{position:relative}
+  nav.top ul .more:hover .submenu{opacity:1;visibility:visible;transform:translateY(0)}
+  nav.top ul .submenu{position:absolute;top:100%;right:0;background:var(--white);border:1px solid var(--line);border-radius:12px;padding:12px;min-width:200px;box-shadow:0 12px 32px rgba(15,15,20,.08);opacity:0;visibility:hidden;transform:translateY(-6px);transition:all .2s var(--ease);list-style:none;display:block;margin-top:8px}
+  nav.top ul .submenu li{margin-bottom:4px}
+  nav.top ul .submenu a{padding:8px 12px;border-radius:6px;display:block;font-size:14px;color:var(--ink-2)}
+  nav.top ul .submenu a:hover{background:var(--accent-soft);color:var(--accent)}
+  nav.top .cta{background:var(--ink);color:#fff;padding:11px 20px;border-radius:8px;font-size:13px;font-weight:600;transition:background .2s,box-shadow .2s;display:inline-flex;align-items:center}
+  nav.top .cta:hover{background:var(--accent);box-shadow:0 6px 20px var(--accent-glow)}
 
-  /* HERO */
-  .hero{position:relative;padding:140px 48px 80px;border-bottom:1px solid var(--border);overflow:hidden}
-  .hero-grid{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr;gap:80px;align-items:end}
-  .hero-kicker{display:flex;align-items:center;gap:14px;color:var(--dim);font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:32px;flex-wrap:wrap}
-  .hero-kicker .live{display:inline-flex;align-items:center;gap:7px;color:var(--cyan)}
-  .hero-kicker .live .pdot{width:6px;height:6px;border-radius:50%;background:var(--cyan);animation:pulse 2s ease-in-out infinite;box-shadow:0 0 10px var(--cyan)}
-  h1.hero-h{font-family:var(--serif);font-weight:300;font-size:clamp(56px,8.2vw,128px);letter-spacing:-.035em;line-height:.94;margin-bottom:40px;max-width:13ch}
-  h1.hero-h em{font-weight:300}
-  .hero p.sub{color:var(--high);font-size:18px;line-height:1.55;max-width:44ch;margin-bottom:36px}
-  .hero-ctas{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:32px}
-  .hero-meta{display:flex;gap:28px;font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);padding-top:28px;border-top:1px solid var(--border);flex-wrap:wrap}
-  .hero-meta span strong{color:var(--white);font-weight:500;display:block;margin-top:5px;font-family:var(--serif);font-size:16px;letter-spacing:-.01em;text-transform:none}
+  /* HERO asimétrico (texto izquierda + foto derecha) */
+  .hero{min-height:calc(100vh - 76px);padding:60px 0;position:relative;overflow:hidden;display:flex;align-items:center}
+  .hero .wrap{width:100%}
+  .hero .grid{display:grid;grid-template-columns:5fr 7fr;gap:80px;align-items:center}
+  .hero .eyebrow{display:inline-flex;align-items:center;gap:10px;padding:8px 16px;border:1px solid var(--line-strong);background:var(--white);border-radius:100px;font-size:13px;color:var(--ink-2);margin-bottom:28px;font-weight:500}
+  .hero .eyebrow .badge{width:8px;height:8px;background:var(--accent);border-radius:50%;box-shadow:0 0 12px var(--accent-glow),0 0 4px var(--accent)}
+  .hero h1{font-size:clamp(40px,4.8vw,68px);font-weight:500;margin-bottom:28px;color:var(--ink)}
+  .hero h1 em{font-style:italic;color:var(--accent);font-weight:400}
+  .hero .lead{font-size:19px;color:var(--ink-2);margin-bottom:36px;line-height:1.5}
+  .hero .ctas{display:flex;gap:12px;flex-wrap:wrap}
+  .btn-primary{background:var(--accent);color:#fff;padding:15px 26px;border-radius:10px;font-weight:600;font-size:15px;display:inline-flex;align-items:center;gap:10px;transition:background .2s,transform .2s,box-shadow .2s;box-shadow:0 6px 24px var(--accent-glow)}
+  .btn-primary:hover{background:var(--accent-2);transform:translateY(-1px);box-shadow:0 12px 32px var(--accent-glow)}
+  .btn-ghost{background:transparent;color:var(--ink);padding:15px 26px;border-radius:10px;font-weight:600;font-size:15px;border:1px solid var(--line-strong);transition:background .2s,border-color .2s}
+  .btn-ghost:hover{background:var(--white);border-color:var(--ink)}
+  .hero .photo{aspect-ratio:5/4;border-radius:20px;overflow:hidden;background:#ddd;position:relative;box-shadow:0 24px 60px rgba(15,15,20,.12)}
+  .hero .photo img{width:100%;height:100%;object-fit:cover}
+  .hero .photo .tag{position:absolute;bottom:24px;left:24px;background:rgba(15,15,20,.78);backdrop-filter:blur(20px);color:#fff;padding:10px 16px;border-radius:100px;font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase}
 
-  /* Hero visual · big euro number */
-  .hero-visual{position:relative;aspect-ratio:3/4;border-radius:3px;overflow:hidden;background:linear-gradient(140deg,#1B0A30 0%,#0E0520 60%,#060212 100%);border:1px solid var(--border);display:flex;flex-direction:column;padding:28px}
-  .hv-grain{position:absolute;inset:0;opacity:.38;mix-blend-mode:overlay;background-image:radial-gradient(circle at 20% 25%,rgba(128,0,255,.35),transparent 50%),radial-gradient(circle at 82% 72%,rgba(155,59,255,.22),transparent 50%);pointer-events:none}
-  .hv-top{position:relative;display:flex;flex-direction:column;gap:14px}
-  .hv-label{font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--cyan)}
-  .hv-headline{font-family:var(--serif);font-weight:400;font-size:clamp(24px,3.2vw,40px);letter-spacing:-.01em;line-height:1;color:var(--high);text-transform:uppercase}
-  .hv-mid{position:relative;margin-top:auto;display:flex;flex-direction:column;gap:14px}
-  .hv-num{font-family:var(--serif);font-weight:300;font-size:clamp(64px,9.4vw,124px);letter-spacing:-.04em;line-height:.88;color:var(--white)}
-  .hv-num .unit{font-size:.42em;color:var(--cyan);margin-left:8px}
-  .hv-sub{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--high);line-height:1.5}
-  .hv-foot{position:relative;margin-top:24px;padding-top:20px;border-top:1px solid rgba(255,255,255,.1);display:flex;justify-content:space-between;align-items:flex-end;gap:16px}
-  .hv-desc{color:var(--high);font-size:13px;line-height:1.55;max-width:26ch}
-  .hv-chip{font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);white-space:nowrap;padding:6px 10px;border:1px solid rgba(255,255,255,.16);border-radius:99px;flex-shrink:0}
+  /* TRUST BAND (al final, antes del footer) */
+  .trust{padding:80px 0 100px;background:var(--paper);border-top:1px solid var(--line)}
+  .trust .header{text-align:center;margin-bottom:48px}
+  .trust .header .section-tag{display:inline-block;font-size:12px;color:var(--accent);font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-bottom:14px}
+  .trust .header h2{font-size:clamp(28px,3vw,40px);max-width:680px;margin:0 auto 14px}
+  .trust .header p{font-size:16px;color:var(--ink-3);max-width:580px;margin:0 auto;line-height:1.5}
+  .trust .logos{display:grid;grid-template-columns:repeat(6,1fr);gap:32px 24px;align-items:center;max-width:1080px;margin:0 auto}
+  .trust .logo{display:flex;align-items:center;justify-content:center;padding:14px 10px;min-height:64px}
+  .trust .logo img{max-height:34px;max-width:140px;width:auto;height:auto;object-fit:contain;filter:brightness(0) opacity(.5);transition:filter .25s var(--ease),transform .25s var(--ease)}
+  .trust .logo.tall img{max-height:48px;max-width:90px}
+  .trust .logo.wide img{max-height:28px;max-width:170px}
+  .trust .logo:hover img{filter:brightness(0) opacity(.9);transform:scale(1.04)}
 
-  /* Trust marquee */
-  .trust{padding:28px 0;border-bottom:1px solid var(--border);background:#09090B;overflow:hidden}
-  .trust-l{max-width:var(--max);margin:0 auto 18px;padding:0 48px;color:var(--muted);font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase}
-  .marquee{display:flex;overflow:hidden;mask-image:linear-gradient(to right,transparent,black 8%,black 92%,transparent);-webkit-mask-image:linear-gradient(to right,transparent,black 8%,black 92%,transparent)}
-  .marquee-track{display:flex;gap:56px;animation:marquee 40s linear infinite;padding-right:56px;font-family:var(--serif);font-weight:400;font-size:22px;letter-spacing:-.01em;color:var(--high);white-space:nowrap;flex-shrink:0}
-  .marquee-track span.dot{color:var(--cyan);font-size:12px;align-self:center}
+  /* PROBLEMA (foto izq + texto derecha) · DARK ANCHOR */
+  .problem{min-height:100vh;padding:120px 0;background:var(--dark);color:#fff;position:relative;overflow:hidden;display:flex;align-items:center}
+  .problem::before{content:"";position:absolute;top:-20%;right:-10%;width:600px;height:600px;background:radial-gradient(circle,rgba(96,0,255,.18),transparent 60%);filter:blur(60px);pointer-events:none}
+  .problem .wrap{position:relative;z-index:1}
+  .problem .grid{display:grid;grid-template-columns:6fr 6fr;gap:80px;align-items:center}
+  .problem .photo{aspect-ratio:4/5;border-radius:20px;overflow:hidden}
+  .problem .photo img{width:100%;height:100%;object-fit:cover}
+  .problem h2{font-size:clamp(34px,4vw,52px);margin-bottom:28px;color:#fff}
+  .problem h2 em{color:var(--accent);font-style:italic;font-weight:400;text-shadow:0 0 24px var(--accent-glow)}
+  .problem .lead{font-size:18px;color:rgba(255,255,255,.78);margin-bottom:24px;line-height:1.55}
+  .problem .section-tag{color:var(--accent)}
+  .problem .questions{font-size:18px;color:rgba(255,255,255,.92);font-family:'Fraunces',serif;font-style:italic;line-height:1.5;padding:24px;background:rgba(96,0,255,.12);border-radius:14px;border-left:3px solid var(--accent);backdrop-filter:blur(20px)}
 
-  /* SECTION base */
-  section.sec{padding:120px 48px;position:relative}
-  .sec-dark{background:#0A0A0F}
-  .sec-darker{background:#050507}
-  .sec-paper{background:var(--paper);color:var(--paper-ink)}
-  .sec-paper em.ac{color:var(--cyan-deep)}
-  .sec-paper .eyebrow{color:#6B5E44}
-  .sec-paper .eyebrow::before{background:var(--cyan-deep)}
-  .sec-head{max-width:var(--max);margin:0 auto 72px;display:grid;grid-template-columns:1fr 1.2fr;gap:72px;align-items:end}
-  .sec-head h2{font-family:var(--serif);font-weight:300;font-size:clamp(44px,5.4vw,84px);letter-spacing:-.03em;line-height:1;margin-top:22px}
-  .sec-head .intro{color:var(--dim);font-size:17px;line-height:1.55;max-width:48ch}
-  .sec-paper .sec-head .intro{color:#4B433A}
-  .sec-wrap{max-width:var(--max);margin:0 auto}
+  /* SERVICIOS */
+  .services{padding:140px 0}
+  .section-head{margin-bottom:64px;max-width:880px}
+  .section-tag{display:inline-block;font-size:12px;color:var(--accent);font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-bottom:18px}
+  .section-head h2{font-size:clamp(34px,4vw,52px);margin-bottom:18px}
+  .section-head p{font-size:18px;color:var(--ink-3);line-height:1.55}
 
-  /* SERVICES · paper bg, 3 cards editorial */
-  .offer-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--paper-border)}
-  .offer-card{background:var(--paper);padding:48px 40px 40px;display:flex;flex-direction:column;gap:18px;min-height:540px;position:relative;transition:background .3s}
-  .offer-card:hover{background:#F9F7F1}
-  .offer-head{display:flex;align-items:center;justify-content:space-between;gap:16px}
-  .offer-icon{width:52px;height:52px;border-radius:12px;background:rgba(128,0,255,.1);border:1px solid rgba(128,0,255,.25);color:var(--cyan-deep);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .25s}
-  .offer-icon svg{width:22px;height:22px;stroke:currentColor;stroke-width:1.8;fill:none;stroke-linecap:round;stroke-linejoin:round}
-  .offer-card:hover .offer-icon{background:var(--cyan);border-color:var(--cyan);color:#fff;box-shadow:0 6px 20px -4px rgba(128,0,255,.45)}
-  .offer-num{font-family:var(--mono);font-size:10.5px;letter-spacing:.22em;color:var(--cyan-deep);text-transform:uppercase;font-weight:500}
-  .offer-card h3{font-family:var(--serif);font-weight:300;font-size:38px;letter-spacing:-.02em;line-height:1.04;margin-top:4px}
-  .offer-card h3 em{font-weight:300}
-  .offer-card .lead{color:#3A342A;font-size:15px;line-height:1.6;max-width:42ch}
-  .offer-topics{margin-top:4px;display:grid;gap:9px;font-size:13.5px;color:#2A241A}
-  .offer-topics li{display:flex;gap:10px;align-items:flex-start;line-height:1.5}
-  .offer-topics li::before{content:"→";color:var(--cyan-deep);font-weight:700;font-size:13px;line-height:1.4;flex-shrink:0}
-  .offer-price{margin-top:auto;padding-top:24px;border-top:1px solid rgba(0,0,0,.12);display:flex;justify-content:space-between;align-items:flex-end;gap:16px}
-  .offer-price-l{display:flex;flex-direction:column;gap:4px}
-  .offer-price .pv{font-family:var(--serif);font-weight:400;font-size:30px;line-height:1;letter-spacing:-.02em;color:var(--paper-ink)}
-  .offer-price .pl{font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#6B5E44;margin-top:6px;line-height:1.5}
-  .offer-cta{display:inline-flex;align-items:center;gap:8px;padding:13px 20px;background:var(--cyan);color:#fff;border-radius:999px;font-weight:600;font-size:13px;font-family:var(--sans);letter-spacing:-.005em;transition:all .25s var(--ease);flex-shrink:0;white-space:nowrap;box-shadow:0 4px 18px -6px rgba(128,0,255,.5);border:none;cursor:pointer}
-  .offer-cta svg{width:14px;height:14px;stroke:currentColor;stroke-width:2;fill:none}
-  .offer-cta:hover{background:var(--cyan-h);transform:translateY(-1px)}
-  .offer-card.wide{grid-column:1/-1;min-height:auto}
-  .offer-card.wide .ow{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
-  .offer-card.wide h3{font-size:clamp(34px,4vw,56px)}
-  .offer-tiers{display:grid;grid-template-columns:1fr 1fr auto;gap:16px;align-items:end;border-top:1px solid rgba(0,0,0,.12);padding-top:24px}
-  .tier{display:flex;flex-direction:column;gap:6px}
-  .tier-price{font-family:var(--serif);font-weight:400;font-size:26px;line-height:1;letter-spacing:-.015em;color:var(--paper-ink)}
-  .tier-unit{font-family:var(--sans);font-weight:400;font-size:13px;color:#6B5E44;margin-left:2px;letter-spacing:0}
-  .tier-desc{font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#6B5E44;line-height:1.5}
+  .svc-featured{position:relative;border-radius:24px;overflow:hidden;margin-bottom:20px;min-height:460px;box-shadow:0 24px 60px rgba(15,15,20,.18)}
+  .svc-featured img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .svc-featured::before{content:"";position:absolute;inset:0;background:linear-gradient(115deg,rgba(15,15,20,.35) 0%,rgba(15,15,20,.15) 60%,transparent 100%)}
+  .svc-featured .content{position:relative;padding:48px;display:flex;flex-direction:column;justify-content:flex-end;height:100%;min-height:460px}
+  .svc-featured .text-panel{background:rgba(15,15,20,.48);backdrop-filter:blur(40px) saturate(180%);-webkit-backdrop-filter:blur(40px) saturate(180%);border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:36px;max-width:540px;box-shadow:0 20px 60px rgba(0,0,0,.35),inset 0 1px 0 rgba(255,255,255,.08)}
+  .svc-featured .badge{display:inline-flex;align-items:center;background:rgba(96,0,255,.32);backdrop-filter:blur(20px);color:#fff;padding:8px 16px;border-radius:100px;font-size:11px;font-weight:700;letter-spacing:.12em;margin-bottom:22px;width:fit-content;border:1px solid rgba(96,0,255,.55);box-shadow:0 0 20px rgba(96,0,255,.35)}
+  .svc-featured h3{font-size:42px;color:#fff;margin-bottom:14px;font-weight:500;text-shadow:0 2px 16px rgba(0,0,0,.4)}
+  .svc-featured p{color:rgba(255,255,255,.94);font-size:16px;margin-bottom:24px;line-height:1.55;text-shadow:0 1px 8px rgba(0,0,0,.35)}
+  .svc-featured .arrow-btn{display:inline-flex;align-items:center;gap:10px;color:#fff;font-weight:600;font-size:15px;padding:14px 24px;background:var(--accent);border-radius:10px;border:1px solid rgba(255,255,255,.18);width:fit-content;transition:background .2s,transform .2s,box-shadow .2s;box-shadow:0 6px 24px rgba(96,0,255,.5)}
+  .svc-featured .arrow-btn:hover{background:var(--accent-2);transform:translateY(-1px);box-shadow:0 12px 32px rgba(96,0,255,.65)}
 
-  /* STATS STRIP */
-  .stats-strip{padding:120px 48px;background:var(--ink);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
-  .stats-grid{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr)}
-  .stat{padding:0 36px 0 0;border-right:1px solid var(--border);position:relative}
-  .stat:last-child{border-right:none}
-  .stat:not(:first-child){padding-left:36px}
-  .stat .sn{font-family:var(--serif);font-weight:300;font-size:clamp(56px,6.2vw,96px);line-height:.9;letter-spacing:-.03em}
-  .stat:nth-child(odd) .sn{color:var(--cyan)}
-  .stat .sl{margin-top:18px;font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);max-width:22ch;line-height:1.6}
+  .svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+  .svc-card{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:40px;transition:transform .25s var(--ease),box-shadow .25s var(--ease),border-color .25s var(--ease)}
+  .svc-card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(15,15,20,.08);border-color:var(--line-strong)}
+  .svc-card .num{font-family:'Fraunces',serif;font-size:13px;color:var(--accent);font-weight:600;margin-bottom:24px;letter-spacing:.05em}
+  .svc-card h3{font-size:24px;margin-bottom:12px}
+  .svc-card p{color:var(--ink-3);font-size:15px;margin-bottom:24px;line-height:1.55}
+  .svc-card .price{font-size:14px;color:var(--ink-2);font-weight:600;padding-top:20px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
+  .svc-card .price .arrow{color:var(--accent);font-size:18px}
 
-  /* MANIFESTO */
-  .manifesto{padding:180px 48px;text-align:center;background:#050507;border-bottom:1px solid var(--border)}
-  .manifesto .quote{font-family:var(--serif);font-weight:300;font-size:clamp(40px,5.8vw,88px);letter-spacing:-.03em;line-height:1.04;max-width:24ch;margin:32px auto 0}
+  /* SECTORES (fotos verticales con overlay) */
+  .sectors{padding:140px 0;background:var(--white)}
+  .sec-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .sec-card{aspect-ratio:3/4;border-radius:18px;overflow:hidden;position:relative;cursor:pointer;transition:transform .3s var(--ease)}
+  .sec-card:hover{transform:scale(1.02)}
+  .sec-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
+  .sec-card:hover img{transform:scale(1.08)}
+  .sec-card::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(15,15,20,.85) 100%);z-index:1}
+  .sec-card .content{position:absolute;bottom:0;left:0;right:0;padding:28px;color:#fff;z-index:2}
+  .sec-card .num{font-family:'Fraunces',serif;font-size:13px;color:rgba(255,255,255,.6);font-weight:600;margin-bottom:10px;letter-spacing:.05em}
+  .sec-card h3{color:#fff;font-size:24px;margin-bottom:8px;font-weight:500}
+  .sec-card p{color:rgba(255,255,255,.85);font-size:14px;line-height:1.5;margin-bottom:14px}
+  .sec-card .arrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600}
 
-  /* INDUSTRIES carousel on paper */
-  .insights-wrap{padding:120px 0;background:var(--paper);color:var(--paper-ink);border-bottom:1px solid var(--paper-border);overflow:hidden}
-  .insights-wrap .sec-head{padding:0 48px;grid-template-columns:1fr 1fr;gap:40px}
-  .insights-wrap h2{color:var(--paper-ink)}
-  .insights-wrap .intro{color:#4B433A}
-  .insights-scroll{display:flex;gap:20px;padding:0 48px 8px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
-  .insights-scroll::-webkit-scrollbar{display:none}
-  .icard{flex:0 0 430px;background:#FBFAF4;border:1px solid var(--paper-border);border-radius:6px;padding:32px;scroll-snap-align:start;display:flex;flex-direction:column;gap:16px;min-height:380px;transition:border-color .25s,transform .25s,background .25s;position:relative}
-  .icard:hover{border-color:var(--cyan);transform:translateY(-2px);background:#fff;box-shadow:0 20px 40px -24px rgba(128,0,255,.35)}
-  .icard .iicon{width:48px;height:48px;border-radius:12px;background:rgba(128,0,255,.08);border:1px solid rgba(128,0,255,.22);display:flex;align-items:center;justify-content:center;color:var(--cyan-deep);transition:background .25s,color .25s}
-  .icard:hover .iicon{background:var(--cyan);border-color:var(--cyan);color:#fff;box-shadow:0 6px 20px -4px rgba(128,0,255,.5)}
-  .icard .iicon svg{width:22px;height:22px;stroke:currentColor;stroke-width:1.8;fill:none;stroke-linecap:round;stroke-linejoin:round}
-  .icard .isector{font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--cyan-deep)}
-  .icard h3{font-family:var(--serif);font-weight:400;font-size:26px;letter-spacing:-.018em;line-height:1.12;color:var(--paper-ink)}
-  .icard .ipain{color:#3A342A;font-size:14.5px;line-height:1.55;flex:1}
-  .icard .itags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto}
-  .icard .itag{padding:5px 10px;border:1px solid rgba(0,0,0,.15);border-radius:99px;font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:#6B5E44}
-  .insights-nav{max-width:var(--max);margin:32px auto 0;padding:0 48px;display:flex;gap:10px}
-  .insights-nav button{width:48px;height:48px;border-radius:50%;border:1px solid var(--paper-border);color:var(--paper-ink);transition:all .2s;background:transparent;cursor:pointer;display:flex;align-items:center;justify-content:center}
-  .insights-nav button:hover{border-color:var(--cyan-deep);color:var(--cyan-deep)}
-  .insights-nav svg{width:18px;height:18px;stroke:currentColor;stroke-width:1.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+  /* CASO DESTACADO (foto background + cifra gigante + CARRUSEL) */
+  .case{padding:0;position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;background:var(--dark)}
+  .case .slides{position:absolute;inset:0;width:100%;height:100%}
+  .case .slide{position:absolute;inset:0;opacity:0;transition:opacity .8s var(--ease);pointer-events:none}
+  .case .slide.active{opacity:1;pointer-events:auto}
+  .case .slide .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.45}
+  .case .slide::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(15,15,20,.92) 0%,rgba(15,15,20,.72) 50%,rgba(15,15,20,.5) 100%)}
+  .case .slide .content{position:absolute;inset:0;display:flex;align-items:center;z-index:2}
+  .case .slide .wrap{padding:140px 32px;width:100%;color:#fff}
+  .case .slide .grid{display:grid;grid-template-columns:5fr 7fr;gap:80px;align-items:center;max-width:1280px;margin:0 auto}
+  .case .big{font-family:'Fraunces',serif;font-size:clamp(120px,16vw,220px);line-height:.9;color:var(--accent);font-weight:700;letter-spacing:-.05em;text-shadow:0 0 80px var(--accent-glow)}
+  .case .big .pct{font-size:.5em;color:#fff}
+  .case .label{font-size:14px;color:rgba(255,255,255,.7);text-transform:uppercase;letter-spacing:.14em;margin-top:20px;font-weight:600}
+  .case .section-tag{color:rgba(255,255,255,.6)}
+  .case h3{font-size:36px;color:#fff;margin-bottom:24px;max-width:580px;font-weight:500}
+  .case p{font-size:17px;color:rgba(255,255,255,.82);margin-bottom:18px;max-width:620px;line-height:1.55}
+  .case .arrow-btn{display:inline-flex;align-items:center;gap:10px;color:#fff;font-weight:600;font-size:15px;margin-top:18px;padding:14px 22px;background:rgba(255,255,255,.12);backdrop-filter:blur(20px);border-radius:10px;border:1px solid rgba(255,255,255,.2)}
 
-  /* CASE */
-  .case{padding:0;background:var(--ink);border-bottom:1px solid var(--border)}
-  .case-wrap{max-width:var(--max);margin:0 auto;padding:140px 48px;display:grid;grid-template-columns:1fr 1fr;gap:0}
-  .case-left{padding-right:60px;border-right:1px solid var(--border);display:flex;flex-direction:column;gap:28px}
-  .case-right{padding-left:60px;display:flex;flex-direction:column;justify-content:center;gap:32px}
-  .case-num{font-family:var(--serif);font-weight:300;font-size:clamp(140px,18vw,260px);letter-spacing:-.05em;line-height:.85;color:var(--cyan);margin-top:12px}
-  .case-num .unit{font-size:.36em;color:var(--white);margin-left:6px;letter-spacing:-.02em}
-  .case-stats{display:grid;grid-template-columns:1fr 1fr;gap:24px;padding-top:28px;border-top:1px solid var(--border);margin-top:auto}
-  .case-stats div{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
-  .case-stats div strong{display:block;font-family:var(--serif);font-weight:400;font-size:28px;color:var(--white);margin-top:10px;letter-spacing:-.015em;text-transform:none}
-  .case-right h3{font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(32px,3.6vw,52px);letter-spacing:-.022em;line-height:1.1}
-  .case-right p{color:var(--high);font-size:17px;line-height:1.65;max-width:46ch}
+  /* Flechas y dots del carrusel */
+  .case .nav-btn{position:absolute;top:50%;transform:translateY(-50%);z-index:5;width:56px;height:56px;border-radius:50%;background:rgba(255,255,255,.08);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.2);color:#fff;font-size:24px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background .2s,transform .2s,box-shadow .2s}
+  .case .nav-btn:hover{background:var(--accent);box-shadow:0 8px 24px var(--accent-glow);transform:translateY(-50%) scale(1.05);border-color:transparent}
+  .case .nav-btn.prev{left:32px}
+  .case .nav-btn.next{right:32px}
+  .case .dots{position:absolute;bottom:40px;left:50%;transform:translateX(-50%);z-index:5;display:flex;gap:10px}
+  .case .dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.25);cursor:pointer;transition:all .3s var(--ease);border:none;padding:0}
+  .case .dot.active{background:var(--accent);width:32px;border-radius:100px;box-shadow:0 0 12px var(--accent-glow)}
 
-  /* PORTFOLIO */
-  .portfolio{padding:120px 48px;background:#0A0A0F;border-bottom:1px solid var(--border)}
-  .pfgrid{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:minmax(300px,auto);gap:16px}
-  .pfcard{background:#0D0D12;border:1px solid var(--border);border-radius:8px;padding:28px;display:flex;flex-direction:column;gap:14px;transition:border-color .2s,transform .2s,background .2s;position:relative;overflow:hidden}
-  .pfcard:hover{border-color:var(--cyan);transform:translateY(-2px);box-shadow:0 20px 40px -24px rgba(128,0,255,.4)}
-  .pfcard.feat{grid-column:span 2;background:radial-gradient(circle at 18% 10%,rgba(128,0,255,.18),transparent 55%),linear-gradient(160deg,#160B28 0%,#0D0D12 70%)}
-  .pfcard.cta{background:var(--paper);color:var(--paper-ink);display:flex;flex-direction:column;justify-content:space-between}
-  .pfcard.cta:hover{border-color:var(--cyan);transform:translateY(-2px)}
-  .pfcard.cta h3{color:var(--paper-ink)}
-  .pfcard.cta .pfdesc{color:#4B433A}
-  .pficon{width:44px;height:44px;border-radius:10px;background:rgba(128,0,255,.12);border:1px solid rgba(128,0,255,.3);display:flex;align-items:center;justify-content:center;color:var(--cyan-h);transition:all .25s}
-  .pficon svg{width:20px;height:20px;stroke:currentColor;stroke-width:1.8;fill:none;stroke-linecap:round;stroke-linejoin:round}
-  .pfcard:hover .pficon{background:var(--cyan);border-color:var(--cyan);color:#fff;box-shadow:0 6px 20px -4px rgba(128,0,255,.5)}
-  .pfcard.cta .pficon{background:rgba(128,0,255,.08);border-color:rgba(128,0,255,.22);color:var(--cyan-deep)}
-  .status{display:inline-flex;align-items:center;gap:7px;padding:4px 11px;border-radius:99px;font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;width:fit-content;background:rgba(255,255,255,.04);border:1px solid var(--border)}
-  .status.live{color:var(--green)}
-  .status.beta{color:var(--amber)}
-  .status.soon{color:var(--cyan-h)}
-  .status .sdot{width:5px;height:5px;border-radius:50%;background:currentColor;box-shadow:0 0 8px currentColor}
-  .pfcard.cta .status{background:rgba(0,0,0,.05);border-color:rgba(128,0,255,.25);color:var(--cyan-deep)}
-  .pfhead{display:flex;justify-content:space-between;align-items:center;gap:12px}
-  .pfcard h3{font-family:var(--serif);font-weight:400;font-size:28px;letter-spacing:-.018em;line-height:1.08}
-  .pfcard.feat h3{font-size:36px}
-  .pfdesc{color:var(--high);font-size:14px;line-height:1.55;flex:1}
-  .pfcard.cta .pfdesc{color:#4B433A}
-  .pfbullets{display:flex;flex-wrap:wrap;gap:6px}
-  .pfb{padding:4px 9px;border:1px solid var(--border);border-radius:4px;font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--dim)}
-  .pfcard.feat .pfb{border-color:rgba(255,255,255,.16);color:var(--high)}
-  .pflink{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--cyan-h);display:inline-flex;align-items:center;gap:6px;margin-top:6px}
-  .pflink svg{width:12px;height:12px;stroke:currentColor;stroke-width:2;fill:none}
+  /* POR QUÉ INFINITE LABS (6 puntos sobrios) */
+  .why{padding:140px 0}
+  .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px 24px;margin-top:32px}
+  .why-item{padding-top:32px;border-top:2px solid var(--ink)}
+  .why-item .icon{font-size:36px;margin-bottom:24px;font-family:'Fraunces',serif;color:var(--accent);font-weight:600}
+  .why-item h3{font-size:20px;margin-bottom:12px;font-weight:600;font-family:'Inter',sans-serif;letter-spacing:-.01em}
+  .why-item p{color:var(--ink-3);font-size:14px;line-height:1.6}
 
-  /* PORTFOLIO PREVIEW · 7 familias */
-  #portfolio-preview{padding:120px 48px;background:#050507;border-bottom:1px solid var(--border)}
-  .ppgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--border);border:1px solid var(--border);border-radius:10px;overflow:hidden;margin-top:8px}
-  .ppcard{background:#0A0A0F;padding:36px 30px;display:flex;flex-direction:column;gap:14px;transition:background .25s var(--ease);min-height:280px;position:relative}
-  .ppcard:hover{background:#0F0F18}
-  .ppcard:hover .ppicon{background:var(--cyan);border-color:var(--cyan);color:#fff;box-shadow:0 6px 20px -4px rgba(128,0,255,.5)}
-  .ppcard:hover .pparrow{transform:translateX(4px);color:var(--cyan)}
-  .ppnum{font-family:var(--mono);font-size:10.5px;letter-spacing:.22em;color:var(--cyan);text-transform:uppercase;font-weight:500}
-  .ppicon{width:46px;height:46px;border-radius:10px;background:rgba(128,0,255,.12);border:1px solid rgba(128,0,255,.3);color:var(--cyan-h);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .25s}
-  .ppicon svg{width:22px;height:22px;stroke-linecap:round;stroke-linejoin:round}
-  .ppcard h3{font-family:var(--serif);font-weight:400;font-size:22px;letter-spacing:-.012em;line-height:1.18;color:var(--white)}
-  .ppcard p{color:var(--dim);font-size:14px;line-height:1.55;flex:1}
-  .ppmeta{margin-top:auto;display:flex;justify-content:space-between;align-items:center;padding-top:14px;border-top:1px solid var(--border);font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
-  .pparrow{color:var(--high);font-size:16px;transition:transform .25s,color .25s}
-  .ppcta{margin-top:40px;display:flex;justify-content:center}
-  @media (max-width:1100px){.ppgrid{grid-template-columns:repeat(2,1fr)}#portfolio-preview{padding-left:24px;padding-right:24px}}
-  @media (max-width:620px){.ppgrid{grid-template-columns:1fr}}
-  .pfcard:hover .pflink{color:#fff}
-  .pfcard.cta .pflink{color:var(--cyan-deep)}
+  /* BLOG CARRUSEL */
+  .blog{padding:140px 0;background:var(--white)}
+  .blog .header{display:flex;justify-content:space-between;align-items:end;margin-bottom:48px;flex-wrap:wrap;gap:24px}
+  .blog .header h2{font-size:clamp(30px,3.6vw,44px);max-width:580px}
+  .blog .header .view-all{font-size:14px;color:var(--accent);font-weight:600;display:inline-flex;align-items:center;gap:8px}
+  .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .blog-card{display:flex;flex-direction:column;gap:16px;cursor:pointer}
+  .blog-card .thumb{aspect-ratio:16/10;border-radius:14px;overflow:hidden;background:#eee}
+  .blog-card .thumb img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease)}
+  .blog-card:hover .thumb img{transform:scale(1.05)}
+  .blog-card .meta{font-size:12px;color:var(--ink-3);font-weight:600;letter-spacing:.05em;text-transform:uppercase;display:flex;gap:12px;align-items:center}
+  .blog-card .meta .dot{width:3px;height:3px;background:var(--ink-3);border-radius:50%}
+  .blog-card h3{font-size:20px;line-height:1.25;font-weight:500;color:var(--ink)}
+  .blog-card p{color:var(--ink-3);font-size:14px;line-height:1.5}
 
-  /* PROCESS · paper */
-  .process-head{max-width:var(--max);margin:0 auto 80px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end}
-  .process-head h2{font-family:var(--serif);font-weight:300;font-size:clamp(48px,6vw,96px);letter-spacing:-.03em;line-height:.96;color:var(--paper-ink)}
-  .process-head p{color:#4B433A;font-size:16px;line-height:1.6;max-width:44ch}
-  .psteps{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:var(--paper-border)}
-  .pstep{background:var(--paper);padding:44px 32px 48px;display:flex;flex-direction:column;gap:18px;min-height:320px;transition:background .3s}
-  .pstep:hover{background:#F9F7F1}
-  .pnum{font-family:var(--mono);font-size:11px;letter-spacing:.2em;color:var(--cyan-deep)}
-  .pstep h3{font-family:var(--serif);font-weight:400;font-size:28px;letter-spacing:-.018em;line-height:1.12;color:var(--paper-ink)}
-  .pstep p{color:#3A342A;font-size:14px;line-height:1.55}
-  .pstep .pdur{margin-top:auto;font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#6B5E44;padding-top:20px;border-top:1px solid rgba(0,0,0,.1)}
+  /* SOBRE NOSOTROS PREVIEW · LILA SUTIL */
+  .about{min-height:100vh;padding:120px 0;background:linear-gradient(180deg,var(--paper) 0%,rgba(96,0,255,.06) 100%);position:relative;overflow:hidden;display:flex;align-items:center}
+  .about::before{content:"";position:absolute;top:-30%;right:-15%;width:600px;height:600px;background:radial-gradient(circle,rgba(96,0,255,.12),transparent 60%);filter:blur(80px);pointer-events:none}
+  .about .wrap{position:relative;z-index:1}
+  .about .grid{display:grid;grid-template-columns:7fr 5fr;gap:80px;align-items:center}
+  .about h2{font-size:clamp(34px,4vw,52px);margin-bottom:24px}
+  .about h2 em{color:var(--accent);font-style:italic;font-weight:400}
+  .about p{font-size:18px;color:var(--ink-2);margin-bottom:18px;line-height:1.55}
+  .about .signature{margin-top:32px;font-family:'Fraunces',serif;font-style:italic;font-size:18px;color:var(--ink-2)}
+  .about .signature strong{color:var(--ink);font-weight:600;font-style:normal}
+  .about .photo{aspect-ratio:4/5;border-radius:20px;overflow:hidden;position:relative}
+  .about .photo img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease)}
+  .about .photo:hover img{transform:scale(1.03)}
+  .about .arrow-btn{margin-top:28px;display:inline-flex;align-items:center;gap:10px;color:var(--accent);font-weight:600;font-size:15px;padding:14px 22px;border:1px solid var(--accent);border-radius:10px;transition:background .2s,color .2s}
+  .about .arrow-btn:hover{background:var(--accent);color:#fff}
 
-  /* WHY */
-  .whygrid{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--border)}
-  .wcard{background:#0A0A0F;padding:52px 44px;display:flex;flex-direction:column;gap:16px;min-height:280px;transition:background .3s}
-  .wcard:hover{background:#0D0D12}
-  .wcard .wn{font-family:var(--mono);font-size:11px;letter-spacing:.2em;color:var(--cyan)}
-  .wcard h3{font-family:var(--serif);font-weight:400;font-size:32px;letter-spacing:-.02em;line-height:1.1}
-  .wcard p{color:var(--high);font-size:15px;line-height:1.6;max-width:44ch}
-
-  /* BLOG */
-  .blog-grid{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:2px;background:var(--border);border:1px solid var(--border);border-radius:10px;overflow:hidden}
-  .post{background:#0A0A0F;display:flex;flex-direction:column;transition:background .3s;cursor:pointer;overflow:hidden}
-  .post:hover{background:#0D0D12}
-  .post .pcover{aspect-ratio:16/9;width:100%;background:#0D0D12;background-size:cover;background-position:center;position:relative;border-bottom:1px solid var(--border)}
-  .post .pbody{padding:28px 28px 30px;display:flex;flex-direction:column;gap:14px;flex:1}
-  .post .pmeta{font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
-  .post h3{font-family:var(--serif);font-weight:400;font-size:22px;letter-spacing:-.018em;line-height:1.18;color:var(--white)}
-  .post .pbrief{color:var(--dim);font-size:14px;line-height:1.55;flex:1}
-  .post .plink{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;color:var(--cyan);text-transform:uppercase;display:inline-flex;align-items:center;gap:6px}
-  .post:hover .plink{color:var(--cyan-h)}
-  .blog-empty{grid-column:1/-1;padding:72px 48px;background:#0A0A0F;text-align:center;display:flex;flex-direction:column;gap:20px;align-items:center}
-  .blog-empty h3{font-family:var(--serif);font-weight:300;font-size:44px;letter-spacing:-.025em;line-height:1.08;max-width:20ch;color:var(--white)}
-  .blog-empty p{color:var(--dim);font-size:15.5px;max-width:50ch;line-height:1.6}
-
-  /* ABOUT · paper */
-  .about-wrap{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
-  .about-wrap p.lead{font-family:var(--serif);font-weight:300;font-size:clamp(28px,3vw,42px);line-height:1.22;color:var(--paper-ink);letter-spacing:-.018em;max-width:24ch}
-  .loc-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--paper-border)}
-  .loc{padding:32px 28px;background:#FBFAF4;display:flex;flex-direction:column;gap:10px;min-height:200px}
-  .loc .ls{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--cyan-deep)}
-  .loc .ls .sdot{width:6px;height:6px;border-radius:50%;background:var(--cyan-deep);box-shadow:0 0 8px var(--cyan-deep)}
-  .loc h4{font-family:var(--serif);font-weight:400;font-size:32px;letter-spacing:-.02em;margin-top:auto;color:var(--paper-ink)}
-  .loc span.ld{color:#4B433A;font-size:13.5px;line-height:1.5}
-
-  /* CTA final */
-  /* CUSTOMERS & PARTNERS · pre-footer logos */
-  .partners{padding:80px 48px 90px;background:var(--ink);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
-  .partners-wrap{max-width:var(--max);margin:0 auto}
-  .partners-head{text-align:center;margin-bottom:54px}
-  .partners-head .eyebrow{justify-content:center}
-  .partners-head h3{font-family:var(--serif);font-weight:300;font-size:clamp(26px,3vw,40px);letter-spacing:-.02em;line-height:1.08;margin-top:18px;color:var(--high);max-width:32ch;margin-left:auto;margin-right:auto}
-  .partners-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:2px 0;background:transparent;align-items:center}
-  .partner{display:flex;align-items:center;justify-content:center;padding:22px 28px;min-height:104px}
-  .partner img{max-height:42px;max-width:170px;width:auto;height:auto;object-fit:contain;filter:brightness(0) invert(1) opacity(.55);transition:filter .25s var(--ease),transform .25s var(--ease)}
-  .partner.tall img{max-height:58px;max-width:110px}
-  .partner.wide img{max-height:34px;max-width:200px}
-  .partner:hover img{filter:brightness(0) invert(1) opacity(1);transform:scale(1.04)}
-  @media (max-width:1100px){.partners{padding:60px 24px 70px}.partners-grid{grid-template-columns:repeat(3,1fr)}}
-  @media (max-width:620px){.partners-grid{grid-template-columns:repeat(2,1fr)}.partner{padding:16px 18px;min-height:84px}.partner img{max-height:40px;max-width:130px}}
-
-  .cta-final{padding:180px 48px;text-align:center;position:relative;overflow:hidden;background:var(--ink);border-bottom:1px solid var(--border)}
-  .cta-final::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 50% 50% at 50% 50%,rgba(128,0,255,.18),transparent 65%);pointer-events:none}
-  .cta-final h2{position:relative;font-family:var(--serif);font-weight:300;font-size:clamp(52px,7vw,108px);letter-spacing:-.035em;line-height:.98;max-width:20ch;margin:0 auto;color:var(--white)}
-  .cta-final .csub{position:relative;margin-top:32px;color:var(--high);font-size:17.5px;max-width:50ch;margin-left:auto;margin-right:auto;line-height:1.55}
-  .cta-final .cb{position:relative;margin-top:48px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-  .cta-final .cmeta{position:relative;margin-top:28px;font-family:var(--mono);font-size:11px;letter-spacing:.16em;color:var(--muted);text-transform:uppercase}
-
-  /* CONTACT */
-  .contact-wrap{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:1.05fr 1fr;gap:80px;align-items:start}
-  .contact-head h2{font-family:var(--serif);font-weight:300;font-size:clamp(40px,4.4vw,64px);letter-spacing:-.03em;line-height:1;margin-top:20px;max-width:14ch}
-  .contact-head .lead{color:var(--dim);font-size:16.5px;line-height:1.6;margin-top:24px;max-width:42ch}
-  .contact-side{margin-top:40px;display:flex;flex-direction:column;gap:2px;background:var(--border)}
-  .chan{display:flex;gap:18px;padding:22px 24px;background:#0A0A0F;transition:background .25s}
-  .chan:hover{background:#0D0D12}
-  .chan .ci{width:40px;height:40px;border:1px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-  .chan .ci svg{width:18px;height:18px;stroke:var(--cyan);stroke-width:1.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
-  .chan .cb{display:flex;flex-direction:column;gap:3px}
-  .chan .ck{font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
-  .chan .cv{font-size:14.5px;color:var(--white)}
-  .chan .cv2{font-size:12.5px;color:var(--dim);margin-top:2px}
-  form.cform{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:52px;padding:32px;background:#0A0A0F;border:1px solid var(--border);border-radius:12px}
-  form.cform .row-full{grid-column:1/-1}
-  form.cform label{display:flex;flex-direction:column;gap:8px;font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
-  form.cform input,form.cform select,form.cform textarea{padding:14px 16px;background:transparent;border:1px solid var(--border);border-radius:6px;color:var(--white);font:inherit;font-size:14.5px;letter-spacing:0;text-transform:none;font-family:var(--sans);transition:border-color .2s}
-  form.cform input:focus,form.cform select:focus,form.cform textarea:focus{outline:none;border-color:var(--cyan)}
-  form.cform textarea{min-height:140px;resize:vertical}
-  form.cform button.submit{grid-column:1/-1;padding:18px 28px;background:var(--cyan);color:#fff;border-radius:999px;font-weight:600;font-size:14.5px;margin-top:6px;transition:background .2s,transform .2s;cursor:pointer;border:none;box-shadow:0 4px 24px -6px rgba(128,0,255,.5)}
-  form.cform button.submit:hover{background:var(--cyan-h);transform:translateY(-1px)}
-  .cform-legal{grid-column:1/-1;font-size:12px;color:var(--muted);line-height:1.6;margin-top:4px}
-  .cform-legal a{color:var(--high);text-decoration:underline}
+  /* CTA CIERRE */
+  .closing{padding:0;position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;background:var(--ink)}
+  .closing .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.35}
+  .closing::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(96,0,255,.85) 0%,rgba(50,0,150,.7) 35%,rgba(15,15,20,.95) 75%);z-index:1}
+  .closing .wrap{position:relative;z-index:2;padding:120px 32px;text-align:center;color:#fff}
+  .closing h2{font-size:clamp(38px,5vw,76px);max-width:920px;margin:0 auto 28px;color:#fff;font-weight:500;line-height:1.08}
+  .closing h2 em{color:#fff;font-style:italic;text-shadow:0 0 32px var(--accent-glow);background:linear-gradient(180deg,#fff 0%,#fff 100%);background-clip:text;-webkit-background-clip:text}
+  .closing h2 br{display:block}
+  .closing p{font-size:19px;color:rgba(255,255,255,.78);max-width:680px;margin:0 auto 40px;line-height:1.5}
+  .closing .btn-primary{background:#fff;color:var(--accent);padding:20px 36px;font-size:17px;font-weight:700;box-shadow:0 12px 40px rgba(255,255,255,.25),0 0 80px var(--accent-glow);border:1px solid rgba(255,255,255,.5)}
+  .closing .btn-primary:hover{background:var(--accent);color:#fff;box-shadow:0 16px 50px var(--accent-glow),0 0 100px var(--accent-glow);transform:translateY(-2px)}
 
   /* FOOTER */
-  footer.site-footer{padding:80px 48px 32px;background:var(--ink)}
-  .f-top{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:48px;padding-bottom:56px;border-bottom:1px solid var(--border)}
-  .f-col h5{font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--dim);margin-bottom:20px;font-weight:500}
-  .f-col ul{display:flex;flex-direction:column;gap:11px}
-  .f-col ul li a,.f-col ul li{font-size:14px;color:var(--high);transition:color .2s}
-  .f-col ul li a:hover{color:var(--cyan)}
-  .f-brand{display:flex;flex-direction:column;gap:16px}
-  .f-brand .bmark{color:var(--white);display:inline-flex;align-items:center}
-  .f-brand .bmark svg{height:18px;width:auto;display:block}
-  .f-brand .tag{color:var(--dim);font-size:14px;line-height:1.6;max-width:38ch}
-  .f-legal{max-width:var(--max);margin:32px auto 0;display:flex;justify-content:space-between;align-items:center;gap:28px;font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;color:var(--faint);text-transform:uppercase;flex-wrap:wrap}
-  .f-legal .flinks{display:flex;gap:22px}
-  .f-legal .flinks a:hover{color:var(--cyan)}
-  .f-addr{max-width:62ch;line-height:1.9}
+  footer{background:var(--ink);color:rgba(255,255,255,.7);padding:80px 0 40px;font-size:14px}
+  footer .top{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr 1fr;gap:40px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,.1)}
+  footer .brand img{height:32px;width:auto;margin-bottom:18px;display:block}
+  footer .tagline{color:rgba(255,255,255,.6);font-size:14px;line-height:1.55;max-width:280px;margin-bottom:24px}
+  footer .locations{color:rgba(255,255,255,.55);font-size:13px;line-height:1.6}
+  footer .locations strong{color:rgba(255,255,255,.85);font-weight:600;display:inline-block;margin-right:6px}
+  footer .col h4{color:#fff;font-size:13px;font-weight:600;margin-bottom:16px;letter-spacing:.05em;text-transform:uppercase;font-family:'Inter',sans-serif}
+  footer .col ul{list-style:none}
+  footer .col li{margin-bottom:10px}
+  footer .col a{color:rgba(255,255,255,.65);font-size:14px;transition:color .2s}
+  footer .col a:hover{color:#fff}
+  footer .bottom{padding-top:40px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+  footer .bottom .legal{color:rgba(255,255,255,.5);font-size:13px}
+  footer .bottom .legal a{color:rgba(255,255,255,.5);margin-left:24px}
+  footer .bottom .legal a:hover{color:#fff}
 
-  @media (max-width: 1080px){
-    .hero-grid,.sec-head,.case-wrap,.about-wrap,.contact-wrap,.process-head{grid-template-columns:1fr;gap:40px}
-    .case-wrap{padding:100px 24px}
-    .case-left,.case-right{padding:0;border:none}
-    .stats-grid{grid-template-columns:1fr 1fr}
-    .stat{border-right:none;padding:24px 0;border-bottom:1px solid var(--border)}
-    .pfgrid{grid-template-columns:1fr 1fr}
-    .pfcard.feat,.pfcard.std,.pfcard.mini,.pfcard.cta{grid-column:span 2}
-    .psteps,.whygrid,.offer-grid,.blog-grid{grid-template-columns:1fr 1fr}
-    .offer-card.wide .ow{grid-template-columns:1fr}
-    .f-top{grid-template-columns:1fr 1fr}
-    nav.site-nav,.hero,section.sec,.portfolio,.stats-strip,.manifesto,.cta-final,.case-wrap,.insights-wrap{padding-left:24px;padding-right:24px}
-    .hv-num{font-size:84px}
-    .hero{padding-top:120px}
-    .hero p.sub{max-width:none}
+  /* RESPONSIVE */
+  @media(max-width:1024px){
+    .hero .grid,.problem .grid,.case .grid,.about .grid{grid-template-columns:1fr;gap:48px}
+    .sec-grid,.blog-grid{grid-template-columns:repeat(2,1fr)}
+    .svc-grid{grid-template-columns:1fr}
+    .trust .logos{grid-template-columns:repeat(3,1fr)}
+    .why-grid{grid-template-columns:repeat(2,1fr)}
+    footer .top{grid-template-columns:1fr 1fr}
   }
-  @media (max-width: 980px){
-    nav .links{display:none;position:fixed;top:62px;left:0;right:0;background:rgba(10,10,15,.96);backdrop-filter:blur(14px);flex-direction:column;gap:0;padding:12px 24px 24px;border-bottom:1px solid var(--border);font-size:15.5px}
-    nav.menu-open .links{display:flex}
-    nav .links a{padding:14px 0;border-bottom:1px solid var(--border)}
-    nav .links a:last-child{border-bottom:none}
-    .burger{display:inline-flex;align-items:center;justify-content:center}
-    nav .right .btn:not(.burger){display:none}
-  }
-  @media (max-width: 620px){
-    .pfgrid,.psteps,.whygrid,.offer-grid,.blog-grid,.stats-grid,form.cform,.loc-grid{grid-template-columns:1fr}
-    .offer-tiers{grid-template-columns:1fr}
-    .pfcard.feat,.pfcard.std,.pfcard.mini,.pfcard.cta{grid-column:span 1}
-    .f-top{grid-template-columns:1fr}
-    .f-legal{flex-direction:column;align-items:flex-start}
-    .icard{flex:0 0 85vw;min-height:320px}
-    h1.hero-h{font-size:54px}
-    .manifesto{padding:120px 24px}
-    .cta-final{padding:130px 24px}
-    .stats-strip,.portfolio,.insights-wrap,section.sec{padding-top:90px;padding-bottom:90px}
-    .hero-kicker{gap:8px}
+  @media(max-width:640px){
+    nav.top ul{display:none}
+    .sec-grid,.blog-grid{grid-template-columns:1fr}
+    .why-grid{grid-template-columns:1fr}
+    .trust .logos{grid-template-columns:repeat(2,1fr)}
+    .svc-featured .content{padding:36px}
+    .svc-featured h3{font-size:28px}
+    .case .big{font-size:96px}
   }
 </style>
 </head>
 <body>
 
-<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
-  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
-  <symbol id="i-arrow-r" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
-  <symbol id="i-arrow-l" viewBox="0 0 24 24"><path d="M19 12H5M11 18l-6-6 6-6"/></symbol>
-  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
-  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
-  <symbol id="i-link" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
-  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 7-8 13-8 13s-8-6-8-13a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
-  <symbol id="i-fact" viewBox="0 0 24 24"><path d="M2 20V8l7 4V8l7 4V4h5v16z"/><path d="M6 16h.01M10 16h.01M14 16h.01M18 16h.01"/></symbol>
-  <symbol id="i-truck" viewBox="0 0 24 24"><path d="M10 17h4V5H2v12h3"/><path d="M20 17h2v-3.34a4 4 0 0 0-1.17-2.83L19 9h-5"/><path d="M14 17h1"/><circle cx="7.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></symbol>
-  <symbol id="i-brief" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
-  <symbol id="i-steth" viewBox="0 0 24 24"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6 6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .2.3"/><path d="M8 15v1a6 6 0 0 0 6 6 6 6 0 0 0 6-6v-4"/><circle cx="20" cy="10" r="2"/></symbol>
-  <symbol id="i-bld" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 22v-4h6v4M8 6h.01M16 6h.01M12 6h.01M8 10h.01M16 10h.01M12 10h.01M8 14h.01M16 14h.01M12 14h.01"/></symbol>
-  <symbol id="i-grad" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1 3 3 6 3s6-2 6-3v-5"/></symbol>
-  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V5l8-3 8 3v8z"/><path d="m9 12 2 2 4-4"/></symbol>
-  <symbol id="i-msg" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
-  <symbol id="i-tgt" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
-  <symbol id="i-calc" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01M16 18h.01"/></symbol>
-  <symbol id="i-trend-up" viewBox="0 0 24 24"><path d="M22 7 13.5 15.5 8.5 10.5 2 17"/><path d="M16 7h6v6"/></symbol>
-  <symbol id="i-trend-down" viewBox="0 0 24 24"><path d="M22 17 13.5 8.5 8.5 13.5 2 7"/><path d="M16 17h6v-6"/></symbol>
-  <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></symbol>
-  <symbol id="i-coins" viewBox="0 0 24 24"><circle cx="8" cy="8" r="6"/><path d="M18.09 10.37A6 6 0 1 1 10.34 18M7 6h1v4M17 19h1v-4"/><path d="m16.71 13.88.7.71-2.82 2.82"/></symbol>
-  <symbol id="i-clip" viewBox="0 0 24 24"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></symbol>
-  <symbol id="i-coffee" viewBox="0 0 24 24"><path d="M17 8h1a4 4 0 0 1 0 8h-1M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4z"/><path d="M6 2v3M10 2v3M14 2v3"/></symbol>
-  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></symbol>
-  <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a4.5 4.5 0 0 0 6 6L17 16l4 4-2 2-4-4-3.7 3.7a4.5 4.5 0 0 1-6-6L9 12 3 6l3-3 6 6 2.7-2.7z"/></symbol>
-  <symbol id="i-video" viewBox="0 0 24 24"><path d="m23 7-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></symbol>
-  <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16.24 7.76-2.12 6.36-6.36 2.12 2.12-6.36 6.36-2.12z"/></symbol>
-</defs></svg>
-
-<!-- NAV -->
-<nav class="site-nav" id="nav">
-  <a href="#top" class="brand" aria-label="Infinite Labs"><svg height="20" viewBox="0 0 400 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M89 31C89 29.0334 88.7 27.1359 88.1433 25.3507C89.4506 24.867 90.6354 24.1305 91.6381 23.2005C92.5194 25.6371 93 28.2636 93 31C93 43.68 82.68 54 70 54C63.86 54 58.08 51.61 53.74 47.26C52.96 46.48 52.96 45.21 53.74 44.43C54.52 43.65 55.79 43.65 56.57 44.43C60.15 48.02 64.93 50 70 50C80.48 50 89 41.48 89 31ZM90.3191 20.232C87.9215 15.7269 84.069 12.1081 79.3933 10.0071C78.4033 10.9279 77.6626 12.1131 77.2835 13.4503C81.5229 15.2154 84.9896 18.4733 87.0242 22.5646C88.3266 22.0992 89.4626 21.2839 90.3191 20.232ZM70 8C72.1987 8 74.3265 8.3103 76.3418 8.88939C75.4823 9.94871 74.8251 11.1787 74.4287 12.5206C73.0074 12.1803 71.5244 12 70 12C59.52 12 51 20.52 51 31C51 43.68 40.68 54 28 54C18.9006 54 11.0165 48.6854 7.28946 40.9979C7.35947 40.9993 7.42966 41 7.5 41C8.88029 41 10.1984 40.7337 11.4057 40.2496C14.6577 46.063 20.876 50 28 50C38.48 50 47 41.48 47 31C47 18.32 57.32 8 70 8ZM10.4908 23.62C9.53093 25.8899 9 28.3839 9 31C9 33.289 9.40644 35.4844 10.151 37.518C9.32675 37.8295 8.43328 38 7.5 38C7.00206 38 6.51545 37.9515 6.04464 37.8589C5.36593 35.6917 5 33.3877 5 31C5 28.2181 5.49673 25.5498 6.40612 23.0792C6.7632 23.027 7.12845 23 7.5 23C8.56308 23 9.5745 23.2212 10.4908 23.62ZM11.8775 20.9532C15.2369 15.58 21.2067 12 28 12C33.07 12 37.85 13.98 41.43 17.57C42.21 18.35 43.48 18.35 44.26 17.57C45.04 16.79 45.04 15.52 44.26 14.74C39.92 10.39 34.14 8 28 8C19.2997 8 11.7105 12.8585 7.80371 20.0043C9.2545 20.0455 10.6316 20.381 11.8775 20.9532Z" fill="#8000FF"/><circle cx="84.5" cy="15.5" r="7.5" fill="currentColor"/><circle cx="7.5" cy="30.5" r="7.5" fill="currentColor"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M171.88 49.7C172.58 49.7 173.21 49.07 173.21 48.37V25.9H188.26V48.37C188.26 49.07 188.89 49.7 189.59 49.7H191.76C192.46 49.7 193.09 49.07 193.09 48.37V23.03C193.09 22.33 192.46 21.7 191.76 21.7H173.21V11.9C173.21 6.51 176.5 4.34 179.72 4.34C182.84 4.34 186.021 6.09086 187.188 6.73301L187.188 6.73304C187.277 6.78232 187.355 6.82507 187.42 6.86C188.19 7.28 188.82 7.49 189.24 6.79L190.36 4.9C190.64 4.41 190.57 3.64 190.08 3.29C188.82 2.38 184.55 0 179.79 0C173.77 0 168.38 3.78 168.38 11.9V21.7H164.11C163.34 21.7 162.78 22.26 162.78 23.03V24.57C162.78 25.27 163.34 25.9 164.11 25.9H168.38V48.37C168.38 49.07 169.01 49.7 169.71 49.7H171.88ZM136.945 48.37C136.945 49.07 136.315 49.7 135.615 49.7H133.445C132.745 49.7 132.115 49.07 132.115 48.37V23.03C132.115 22.33 132.745 21.7 133.445 21.7H134.775C135.405 21.7 135.755 21.98 135.895 22.54L136.525 24.71C136.525 24.71 140.515 21 146.325 21C154.445 21 157.175 26.32 157.175 33.6V48.37C157.175 49.07 156.545 49.7 155.845 49.7H153.605C152.905 49.7 152.275 49.07 152.275 48.37V33.6C152.275 28.28 149.895 25.69 145.975 25.69C140.725 25.69 136.945 29.68 136.945 29.68V48.37ZM122.8 48.37C122.8 49.07 122.17 49.7 121.47 49.7H119.3C118.6 49.7 117.97 49.07 117.97 48.37V23.03C117.97 22.33 118.6 21.7 119.3 21.7H121.47C122.17 21.7 122.8 22.33 122.8 23.03V48.37ZM207.235 48.37C207.235 49.07 206.605 49.7 205.905 49.7H203.735C203.035 49.7 202.405 49.07 202.405 48.37V23.03C202.405 22.33 203.035 21.7 203.735 21.7H205.065C205.695 21.7 206.045 21.98 206.185 22.54L206.815 24.71C206.815 24.71 210.805 21 216.615 21C224.735 21 227.465 26.32 227.465 33.6V48.37C227.465 49.07 226.835 49.7 226.135 49.7H223.895C223.195 49.7 222.565 49.07 222.565 48.37V33.6C222.565 28.28 220.185 25.69 216.265 25.69C211.015 25.69 207.235 29.68 207.235 29.68V48.37ZM239.93 49.7C240.63 49.7 241.26 49.07 241.26 48.37V23.03C241.26 22.33 240.63 21.7 239.93 21.7H237.76C237.06 21.7 236.43 22.33 236.43 23.03V48.37C236.43 49.07 237.06 49.7 237.76 49.7H239.93ZM266.885 48.02C265.905 48.65 262.125 50.4 258.835 50.4C253.235 50.4 252.395 47.04 252.395 42.7V25.9H248.825C248.055 25.9 247.495 25.27 247.495 24.57V23.03C247.495 22.26 248.055 21.7 248.825 21.7H252.395V13.93C252.395 13.23 253.025 12.6 253.725 12.6L255.965 12.46C256.665 12.46 257.225 13.09 257.225 13.79V21.7H265.345C266.115 21.7 266.675 22.26 266.675 23.03V24.57C266.675 25.27 266.115 25.9 265.345 25.9H257.225V42.28C257.225 45.08 257.925 45.64 259.535 45.64C261.285 45.64 263.735 44.59 264.645 44.1C265.695 43.54 265.975 43.96 266.325 44.52L267.375 46.27C267.865 47.11 267.655 47.53 266.885 48.02ZM285.58 50.4C290.41 50.4 294.19 48.51 295.87 47.18C296.92 46.41 296.64 45.99 296.15 45.36C295.94 45.08 295.747 44.8175 295.555 44.555C295.362 44.2925 295.17 44.03 294.96 43.75C294.449 43.0477 294.055 43.2771 293.246 43.7478L293.136 43.8118C293.092 43.8373 293.046 43.8634 293 43.89C291.39 44.87 289.01 45.99 286.07 45.99C281.1 45.99 276.97 41.58 276.69 36.89H296.85C297.48 36.89 298.04 36.4 298.11 35.7C298.18 35.21 298.25 34.3 298.25 33.81C298.25 26.46 292.93 21 285.58 21C277.11 21 271.86 27.79 271.86 35.7C271.86 43.75 277.11 50.4 285.58 50.4ZM276.76 32.97H293.42C293.21 28.91 289.85 25.27 285.58 25.27C280.89 25.27 277.25 28.63 276.76 32.97ZM307.775 49.7C308.405 49.7 308.685 49.35 308.685 48.79V1.61C308.685 1.12 308.265 0.7 307.775 0.7H306.515C306.025 0.7 305.605 1.12 305.605 1.61V48.79C305.605 49.28 305.885 49.7 306.375 49.7H307.775ZM335.36 46.41C333.54 48.09 330.11 50.4 325.63 50.4C320.45 50.4 316.46 46.83 316.46 41.09C316.46 35.7 320.87 31.64 328.22 31.64C331.44 31.64 334.52 32.62 335.29 32.9C335.29 26.74 334.66 23.66 329.13 23.66C325.188 23.66 322.317 24.8829 321.167 25.3724C320.969 25.4566 320.822 25.5192 320.73 25.55C320.17 25.76 319.82 25.48 319.68 24.99L319.33 24.15C319.12 23.52 319.4 23.24 319.75 23.1C319.96 22.96 323.53 21 329.34 21C337.88 21 338.23 26.11 338.23 33.25V48.79C338.23 49.28 337.81 49.7 337.32 49.7H336.48C335.99 49.7 335.78 49.42 335.64 48.93L335.36 46.41ZM325.98 47.67C322.13 47.67 319.33 45.08 319.33 41.02C319.33 36.89 322.9 34.16 328.22 34.16C331.58 34.16 334.38 35.21 335.29 35.63V43.33C333.96 45.08 330.25 47.67 325.98 47.67ZM373.375 35.63C373.375 43.82 367.705 50.4 360.495 50.4C355.105 50.4 351.605 47.25 350.765 46.27L350.555 48.79C350.485 49.42 350.135 49.7 349.575 49.7H348.875C348.385 49.7 347.965 49.28 347.965 48.79V1.61C347.965 1.12 348.385 0.7 348.875 0.7H350.065C350.555 0.7 350.975 1.12 350.975 1.61V23.8C350.975 23.8 354.335 21 359.655 21C367.565 21 373.375 27.37 373.375 35.63ZM360.215 47.6C354.195 47.6 351.185 42.91 351.045 42.63V26.95C351.045 26.95 354.265 24.01 359.305 24.01C365.745 24.01 370.365 29.05 370.365 35.7C370.365 42.21 366.095 47.6 360.215 47.6ZM399.14 42.63C399.14 46.83 394.8 50.4 389.2 50.4C384.44 50.4 381.57 48.44 380.03 47.25C379.75 47.04 379.54 46.62 379.75 46.27L380.45 45.15C380.66 44.8 381.22 44.66 381.71 45.08C382.41 45.64 385.28 47.81 389.2 47.81C393.19 47.81 395.92 45.57 395.92 42.84C395.92 39.62 392.77 38.29 388.08 36.54C383.11 34.79 379.47 32.62 379.47 28.28C379.47 25.2 382.2 21 388.64 21C392.35 21 395.15 22.33 396.55 23.24C396.97 23.52 397.11 24.08 396.83 24.57L396.41 25.34C396.13 25.83 395.57 25.97 395.08 25.69C394.45 25.27 391.65 23.73 388.64 23.73C384.23 23.73 382.62 26.32 382.62 28.21C382.62 31.01 385.14 32.34 389.27 33.81C394.52 35.77 399.14 37.52 399.14 42.63Z" fill="currentColor"/>
-</svg></a>
-  <div class="links">
-    <a href="#services" data-i18n="n.s">Qué hacemos</a>
-    <a href="#industries" data-i18n="n.i">Para quién</a>
-    <a href="/portfolio/" data-i18n="n.p">Portfolio</a>
-    <a href="#process" data-i18n="n.pr">Cómo empezar</a>
-    <a href="#about" data-i18n="n.a">Equipo</a>
-    <a href="https://blog.infinitelabs.co" target="_blank" rel="noopener" data-i18n="n.b">Blog</a>
-  </div>
-  <div class="right">
-    <div class="lang">
-      <button data-lang="es" class="active">ES</button><span class="sep">/</span><button data-lang="en">EN</button>
-    </div>
-    <a href="#contacto" class="btn btn-primary" data-i18n="n.cta">Solicitar diagnóstico →</a>
-    <button class="burger" id="burger" aria-label="Menú" aria-expanded="false">
-      <svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
-    </button>
+<nav class="top">
+  <div class="wrap">
+    <a href="/" class="brand"><img src="/logos/svg/infinitelabs-mono-black.svg" alt="Infinite Labs"></a>
+    <ul>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#sectores">Sectores</a></li>
+      <li><a href="#productos">Productos</a></li>
+      <li><a href="#casos">Casos</a></li>
+      <li><a href="#sobre">Sobre nosotros</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li class="more"><a href="#" tabindex="0">Más ▾</a>
+        <ul class="submenu">
+          <li><a href="#portfolio">Portfolio · 36 capacidades</a></li>
+          <li><a href="#cupons">Cupons ACCIÓ</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </li>
+    </ul>
+    <a href="#contacto" class="cta">Reservar diagnóstico</a>
   </div>
 </nav>
 
-<main id="top">
-
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-grid">
-    <div>
-      <div class="hero-kicker anim">
-        <span class="live"><span class="pdot"></span><span data-i18n="h.live">En vivo desde Tallinn + Barcelona</span></span>
-        <span>·</span>
-        <span data-i18n="h.issue">Consultora IA · EU</span>
-      </div>
-      <h1 class="hero-h anim anim-1"><span data-i18n="h.h1a">Aplicamos la IA para </span><em class="ac" data-i18n="h.h1b">ahorrar costes a tu empresa.</em></h1>
-      <p class="sub anim anim-2" data-i18n="h.sub">Consultoría europea de IA para PYMEs. Reducción de tareas repetitivas, optimización de flujos operativos y racionalización del gasto en licencias y SaaS. Cuantificamos el ahorro potencial antes de iniciar cualquier proyecto.</p>
-      <div class="hero-ctas anim anim-3">
-        <a href="#contacto" class="btn btn-primary btn-lg" data-i18n="h.cta1">Solicitar diagnóstico inicial <svg><use href="#i-arrow"/></svg></a>
-        <a href="/portfolio/" class="btn btn-ghost btn-lg" data-i18n="h.cta2">Ver portfolio de capacidades</a>
-      </div>
-      <div class="hero-meta anim anim-4">
-        <span data-i18n="h.ma"><span>Respuesta</span><strong>24h</strong></span>
-        <span data-i18n="h.mb"><span>Sedes EU</span><strong>Estonia + España</strong></span>
-        <span data-i18n="h.mc"><span>Cumplimiento</span><strong>GDPR</strong></span>
-        <span data-i18n="h.md"><span>ROI medio</span><strong>4 a 8 semanas</strong></span>
-      </div>
-    </div>
-
-    <div class="hero-visual anim anim-2">
-      <div class="hv-grain"></div>
-      <div class="hv-top">
-        <div class="hv-label" data-i18n="hv.l">Dato real · Q1 2026</div>
-        <div class="hv-headline" data-i18n="hv.hl">Ahorro medio</div>
-      </div>
-      <div class="hv-mid">
-        <div class="hv-num">14.280<span class="unit">€</span></div>
-        <div class="hv-sub" data-i18n="hv.s">Por trimestre · equivale a 240 horas operativas</div>
-      </div>
-      <div class="hv-foot">
-        <div class="hv-desc" data-i18n="hv.d">Dinero ahorrado por un cliente medio tras 4 semanas de implantación de la IA. Son 240 horas al mes que tu equipo deja de perder en tareas repetitivas.</div>
-        <div class="hv-chip" data-i18n="hv.c">PYME real</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- TRUST MARQUEE -->
-<section class="trust">
-  <div class="trust-l" data-i18n="t.lbl">Trabajos previos y colaboraciones</div>
-  <div class="marquee">
-    <div class="marquee-track">
-      <span>Banco Sabadell</span><span class="dot">●</span>
-      <span>EU Banking Association</span><span class="dot">●</span>
-      <span>Dubai Government (DGEP)</span><span class="dot">●</span>
-      <span>Alastria Network</span><span class="dot">●</span>
-      <span>Open Society Foundations</span><span class="dot">●</span>
-      <span data-i18n="t.6">Sector público español</span><span class="dot">●</span>
-      <span>Banco Sabadell</span><span class="dot">●</span>
-      <span>EU Banking Association</span><span class="dot">●</span>
-      <span>Dubai Government (DGEP)</span><span class="dot">●</span>
-      <span>Alastria Network</span><span class="dot">●</span>
-      <span>Open Society Foundations</span><span class="dot">●</span>
-      <span data-i18n="t.6b">Sector público español</span><span class="dot">●</span>
-    </div>
-  </div>
-</section>
-
-<!-- SERVICES (paper) -->
-<section class="sec sec-paper" id="services">
-  <div class="sec-head">
-    <div>
-      <div class="eyebrow anim" data-i18n="sv.eb">Servicios · 01</div>
-      <h2 class="anim anim-1"><span data-i18n="sv.ha">Tres modalidades </span><em class="ac" data-i18n="sv.hb">de colaboración.</em></h2>
-    </div>
-    <p class="intro anim anim-2" data-i18n="sv.sub">Desde la primera conversación hasta el sistema en producción. Cada fase con precio definido y resultado medible en euros. La facturación se vincula al ahorro generado.</p>
-  </div>
-  <div class="sec-wrap">
-    <div class="offer-grid">
-      <article class="offer-card anim">
-        <div class="offer-head">
-          <div class="offer-icon"><svg><use href="#i-video"/></svg></div>
-          <div class="offer-num">01 · <span data-i18n="of1.k">Entrada</span></div>
-        </div>
-        <h3 data-i18n="of1.h"><em>Diagnóstico</em> gratis</h3>
-        <p class="lead" data-i18n="of1.p">Nos cuentas en 30 minutos cómo trabajáis. Preguntamos por pedidos, facturación, personal y software que pagáis cada mes. Al colgar te decimos, con cifras aproximadas, cuánto podéis ahorrar en 90 días.</p>
-        <ul class="offer-topics">
-          <li data-i18n="of1.t1">Dónde se os va el tiempo sin que lo notéis</li>
-          <li data-i18n="of1.t2">Qué software os está cobrando de más</li>
-          <li data-i18n="of1.t3">Ejemplos concretos: fábrica, tienda, taller, despacho, clínica</li>
-          <li data-i18n="of1.t4">Qué se puede hacer hoy y qué todavía no</li>
-          <li data-i18n="of1.t5">Estimación de ahorro al trimestre</li>
-        </ul>
-        <div class="offer-price">
-          <div class="offer-price-l">
-            <div class="pv" data-i18n="of1.pv">Gratis</div>
-            <div class="pl" data-i18n="of1.pl">30 min · Videollamada · Sin comercial</div>
-          </div>
-          <a href="https://calendar.app.google/UvcME44u8dsucaVT9" target="_blank" rel="noopener" class="offer-cta" data-i18n="of1.cta">Reservar <svg><use href="#i-arrow"/></svg></a>
-        </div>
-      </article>
-
-      <article class="offer-card anim anim-1">
-        <div class="offer-head">
-          <div class="offer-icon"><svg><use href="#i-search"/></svg></div>
-          <div class="offer-num">02 · <span data-i18n="of2.k">Diagnóstico</span></div>
-        </div>
-        <h3 data-i18n="of2.h"><em>Estudio</em> de ahorro</h3>
-        <p class="lead" data-i18n="of2.p">Si el diagnóstico cuadra, hacemos el estudio serio. Entrevistas con tu gente (comerciales, administración, operarios), revisamos procesos y facturas de software. Si hace falta, vamos a visitar. Informe ejecutivo en 10 días. Si no hay ROI claro, te lo decimos y paramos.</p>
-        <ul class="offer-topics">
-          <li data-i18n="of2.t1">Entrevistas con tu equipo: comerciales, admin, operarios</li>
-          <li data-i18n="of2.t2">Mapa de procesos con horas y coste por proceso</li>
-          <li data-i18n="of2.t3">Revisión de licencias y SaaS: lo que pagas de más</li>
-          <li data-i18n="of2.t4">Lo que podemos tener funcionando en 4 semanas</li>
-          <li data-i18n="of2.t5">Plan a 90 días con presupuesto por fase</li>
-        </ul>
-        <div class="offer-price">
-          <div class="offer-price-l">
-            <div class="pv" data-i18n="of2.pv">Desde 2.500€</div>
-            <div class="pl" data-i18n="of2.pl">Informe ejecutivo en 10 días hábiles</div>
-          </div>
-          <a href="#contacto" class="offer-cta" data-i18n="of2.cta">Solicitar <svg><use href="#i-arrow"/></svg></a>
-        </div>
-      </article>
-
-      <article class="offer-card wide anim anim-2">
-        <div class="ow">
-          <div>
-            <div class="offer-head" style="margin-bottom:16px">
-              <div class="offer-icon"><svg><use href="#i-wrench"/></svg></div>
-              <div class="offer-num">03 · <span data-i18n="of3.k">Construcción</span></div>
-            </div>
-            <h3 data-i18n="of3.h"><em>Llave</em> en mano, con soporte y mantenimiento.</h3>
-          </div>
-          <div>
-            <p class="lead" style="margin-bottom:24px" data-i18n="of3.p">Construimos las automatizaciones que el estudio recomienda. Se conectan a lo que ya tenéis: ERP, WhatsApp de pedidos, correo, agenda. Piloto controlado primero y luego escalado. Código, claves y datos se quedan con vosotros.</p>
-            <ul class="offer-topics" style="margin-bottom:24px">
-              <li data-i18n="of3.t1">Integración con tu ERP, WhatsApp, correo o agenda</li>
-              <li data-i18n="of3.t2">Formación a tu equipo para usarlo y supervisarlo</li>
-              <li data-i18n="of3.t3">SLA mensual: seguimos encima de que funcione</li>
-              <li data-i18n="of3.t4">Cuando te vayas, todo queda contigo. Sin lock-in</li>
-            </ul>
-            <div class="offer-price" style="border-top:1px solid rgba(0,0,0,.12);padding-top:24px">
-              <div class="offer-price-l">
-                <div class="pv" data-i18n="of3.pv">Desde 8.000€</div>
-                <div class="pl" data-i18n="of3.pl">SLA · Soporte · Sin lock-in</div>
-              </div>
-              <a href="#contacto" class="offer-cta" data-i18n="of3.cta">Contactar <svg><use href="#i-arrow"/></svg></a>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <article class="offer-card wide anim anim-3">
-        <div class="ow">
-          <div>
-            <div class="offer-head" style="margin-bottom:16px">
-              <div class="offer-icon"><svg><use href="#i-compass"/></svg></div>
-              <div class="offer-num">04 · <span data-i18n="of4.k">Continuidad</span></div>
-            </div>
-            <h3 data-i18n="of4.h"><em>Director</em> de tecnología por horas.</h3>
-            <p class="lead" style="margin-top:16px;max-width:42ch" data-i18n="of4.sub">Tu mano derecha tecnológica, sin contratar uno en plantilla. Tú nos llamas cuando necesitas.</p>
-          </div>
-          <div>
-            <p class="lead" style="margin-bottom:24px" data-i18n="of4.p">Te acompañamos cada mes. Revisamos propuestas de proveedores antes de que firmes, entramos a reuniones con consultoras externas, auditamos tus facturas de SaaS cada trimestre y te ayudamos a decidir qué comprar, qué desarrollar y qué dejar pasar.</p>
-            <ul class="offer-topics" style="margin-bottom:24px">
-              <li data-i18n="of4.t1">Revisión de propuestas de software antes de firmar</li>
-              <li data-i18n="of4.t2">Acompañamiento en reuniones con consultoras externas</li>
-              <li data-i18n="of4.t3">Auditoría trimestral de licencias y SaaS</li>
-              <li data-i18n="of4.t4">Roadmap tecnológico a 12 meses, actualizado</li>
-              <li data-i18n="of4.t5">Canal directo Slack o WhatsApp con el equipo</li>
-            </ul>
-            <div class="offer-tiers">
-              <div class="tier">
-                <div class="tier-price">1.500€<span class="tier-unit">/mes</span></div>
-                <div class="tier-desc" data-i18n="of4.tr1">10 h/mes · Contrato 6 meses</div>
-              </div>
-              <div class="tier">
-                <div class="tier-price">3.000€<span class="tier-unit">/mes</span></div>
-                <div class="tier-desc" data-i18n="of4.tr2">25 h/mes · Contrato 6 meses</div>
-              </div>
-              <a href="#contacto" class="offer-cta" style="align-self:center" data-i18n="of4.cta">Reservar <svg><use href="#i-arrow"/></svg></a>
-            </div>
-          </div>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- STATS STRIP -->
-<section class="stats-strip">
-  <div class="stats-grid">
-    <div class="stat anim"><div class="sn">14.280€</div><div class="sl" data-i18n="num.1">Ahorro medio por trimestre</div></div>
-    <div class="stat anim anim-1"><div class="sn">240h</div><div class="sl" data-i18n="num.2">Operativas devueltas al mes</div></div>
-    <div class="stat anim anim-2"><div class="sn">6</div><div class="sl" data-i18n="num.3">SaaS propios en producción</div></div>
-    <div class="stat anim anim-3"><div class="sn">2</div><div class="sl" data-i18n="num.4">Sedes EU · Estonia + España</div></div>
-  </div>
-</section>
-
-<!-- MANIFESTO -->
-<section class="manifesto">
-  <div class="eyebrow anim" data-i18n="mf.eb">Manifiesto · 2026</div>
-  <h2 class="quote anim anim-1"><span data-i18n="mf.a">La IA no va a reemplazar a tu empresa. </span><em class="ac" data-i18n="mf.b">Las empresas que la usen, sí.</em></h2>
-</section>
-
-<!-- INDUSTRIES (paper carousel) -->
-<section class="insights-wrap" id="industries">
-  <div class="sec-head">
-    <div>
-      <div class="eyebrow anim" data-i18n="in.eb">Sectores · 02</div>
-      <h2 class="anim anim-1"><span data-i18n="in.ha">Seis sectores donde ya </span><em class="ac" data-i18n="in.hb">ahorramos dinero.</em></h2>
-    </div>
-    <p class="intro anim anim-2" data-i18n="in.sub">Cada sector, un playbook probado. Arrastra lateralmente para recorrerlos.</p>
-  </div>
-  <div class="insights-scroll" id="iscroll">
-    <article class="icard anim">
-      <div class="iicon"><svg><use href="#i-fact"/></svg></div>
-      <div class="isector">i/01 · <span data-i18n="i1.s">Industria y polígono</span></div>
-      <h3 data-i18n="i1.t">Una parada de máquina cuesta más que todo lo que vas a invertir en IA.</h3>
-      <p class="ipain" data-i18n="i1.p">Mantenimiento predictivo sobre las señales que ya tienes, asistente para sacar ofertas a medida, búsqueda inteligente sobre ISO y procedimientos, control de calidad por imagen en línea.</p>
-      <div class="itags"><span class="itag">Predictivo</span><span class="itag">Ofertas</span><span class="itag">Calidad</span><span class="itag">ISO</span></div>
-    </article>
-    <article class="icard anim anim-1">
-      <div class="iicon"><svg><use href="#i-truck"/></svg></div>
-      <div class="isector">i/02 · <span data-i18n="i2.s">Distribución y logística</span></div>
-      <h3 data-i18n="i2.t">Cada pedido perdido en WhatsApp es margen que se va.</h3>
-      <p class="ipain" data-i18n="i2.p">Asistente que atiende pedidos 24/7, saca referencias, confirma en tu ERP y avisa al comercial solo cuando hay algo raro. Menos cuadre manual, más ventas cerradas.</p>
-      <div class="itags"><span class="itag">WhatsApp</span><span class="itag">ERP</span><span class="itag">Albaranes</span><span class="itag">Clientes</span></div>
-    </article>
-    <article class="icard anim anim-2">
-      <div class="iicon"><svg><use href="#i-brief"/></svg></div>
-      <div class="isector">i/03 · <span data-i18n="i3.s">Servicios profesionales</span></div>
-      <h3 data-i18n="i3.t">Horas facturables perdidas redactando lo mismo mil veces.</h3>
-      <p class="ipain" data-i18n="i3.p">Búsqueda inteligente sobre expedientes, plantillas de contratos que se rellenan solas, transcripción y resumen de reuniones, motor fiscal o normativo propio. Recuperas tiempo de sénior.</p>
-      <div class="itags"><span class="itag">Expedientes</span><span class="itag">Contratos</span><span class="itag">Reuniones</span><span class="itag">Fiscal</span></div>
-    </article>
-    <article class="icard anim">
-      <div class="iicon"><svg><use href="#i-steth"/></svg></div>
-      <div class="isector">i/04 · <span data-i18n="i4.s">Salud y clínicas</span></div>
-      <h3 data-i18n="i4.t">Un no-show al día son miles de euros al mes en agenda perdida.</h3>
-      <p class="ipain" data-i18n="i4.p">Recepcionista IA por WhatsApp, gestión de agendas y confirmaciones, transcripción clínica, seguimientos automáticos. Menos saturación en recepción y mejor atención al paciente.</p>
-      <div class="itags"><span class="itag">Recepcionista</span><span class="itag">Agendas</span><span class="itag">Transcripción</span><span class="itag">Follow-ups</span></div>
-    </article>
-    <article class="icard anim anim-1">
-      <div class="iicon"><svg><use href="#i-bld"/></svg></div>
-      <div class="isector">i/05 · <span data-i18n="i5.s">Administración pública</span></div>
-      <h3 data-i18n="i5.t">Trámites que tardan semanas cuestan votos.</h3>
-      <p class="ipain" data-i18n="i5.p">Liberamos al funcionario del papeleo. Chatbot ciudadano, resumen de plenos, clasificación de quejas 010, búsqueda sobre expedientes históricos.</p>
-      <div class="itags"><span class="itag">Chatbot</span><span class="itag">Expedientes</span><span class="itag">Plenos</span><span class="itag">Quejas</span></div>
-    </article>
-    <article class="icard anim anim-2">
-      <div class="iicon"><svg><use href="#i-grad"/></svg></div>
-      <div class="isector">i/06 · <span data-i18n="i6.s">Formación y RRHH</span></div>
-      <h3 data-i18n="i6.t">Material genérico cuesta alumnos. Métricas tardías cuestan contratos.</h3>
-      <p class="ipain" data-i18n="i6.p">Exámenes que se adaptan al alumno, tutor IA dentro del campus, onboarding guiado por rol, analítica de progreso en tiempo real.</p>
-      <div class="itags"><span class="itag">Exámenes IA</span><span class="itag">Tutor</span><span class="itag">Onboarding</span><span class="itag">Analítica</span></div>
-    </article>
-  </div>
-  <div class="insights-nav">
-    <button onclick="scrollInsights(-1)" aria-label="Anterior"><svg><use href="#i-arrow-l"/></svg></button>
-    <button onclick="scrollInsights(1)" aria-label="Siguiente"><svg><use href="#i-arrow-r"/></svg></button>
-  </div>
-</section>
-
-<!-- CASE -->
-<section class="case" id="case">
-  <div class="case-wrap">
-    <div class="case-left">
-      <div class="eyebrow anim" data-i18n="c.eb">Caso · 2026 · Salud</div>
-      <div class="case-num anim anim-1">-38<span class="unit">%</span></div>
-      <p style="color:var(--dim);font-size:14px;max-width:30ch;margin-top:4px" class="anim anim-2" data-i18n="c.lbl">No-shows en 3 clínicas dentales de Barcelona tras implantar Contestia, nuestra recepcionista IA por WhatsApp.</p>
-      <div class="case-stats anim anim-3">
-        <div data-i18n="c.s1a">Horas libres / semana<strong>+22h</strong></div>
-        <div data-i18n="c.s2a">Hasta ROI<strong>4 sem</strong></div>
-      </div>
-    </div>
-    <div class="case-right">
-      <div class="eyebrow anim" data-i18n="c.ek">Lectura del caso</div>
-      <h3 class="anim anim-1" data-i18n="c.h3">Una recepcionista IA por WhatsApp. Cuatro semanas para estar en producción.</h3>
-      <p class="anim anim-2" data-i18n="c.p">Semana 1, auditoría de llamadas perdidas y citas rebotadas. Semana 2, piloto en una clínica con la gerencia probando todo. Semana 3, integración con Google Calendar y ficha. Semana 4, despliegue en las otras dos. Desde entonces, menos no-shows, recepción menos saturada, pacientes mejor atendidos.</p>
-      <a href="#contacto" class="btn btn-ghost btn-lg anim anim-3" data-i18n="c.cta">Hablar de mi caso <svg><use href="#i-arrow"/></svg></a>
-    </div>
-  </div>
-</section>
-
-<!-- PORTFOLIO -->
-<section class="portfolio" id="productos">
-  <div class="sec-head">
-    <div>
-      <div class="eyebrow anim" data-i18n="p.eb">Productos propios · 03</div>
-      <h2 class="anim anim-1"><span data-i18n="p.ha">Construimos </span><em class="ac" data-i18n="p.hb">la misma tecnología que implantamos.</em></h2>
-    </div>
-    <p class="intro anim anim-2" data-i18n="p.sub">Operamos seis SaaS propios en producción con las mismas tecnologías que aplicamos en proyectos de cliente.</p>
-  </div>
-  <div class="pfgrid">
-    <article class="pfcard feat anim">
-      <div class="pfhead">
-        <div class="pficon"><svg><use href="#i-shield"/></svg></div>
-        <span class="status live"><span class="sdot"></span>Live</span>
-      </div>
-      <h3>Regulia</h3>
-      <p class="pfdesc" data-i18n="pr1.d">Compliance europeo automatizado. GDPR, NIS2, AI Act, ISO. Escáner WCAG, cuestionarios NIS2, clasificador AI Act, evidencias de auditoría exportables.</p>
-      <div class="pfbullets"><span class="pfb">WCAG</span><span class="pfb">NIS2</span><span class="pfb">AI Act</span><span class="pfb">Evidencias</span></div>
-      <a class="pflink" href="https://regulia.app" target="_blank" rel="noopener">regulia.app <svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
-    </article>
-    <article class="pfcard anim anim-1">
-      <div class="pfhead">
-        <div class="pficon"><svg><use href="#i-grad"/></svg></div>
-        <span class="status live"><span class="sdot"></span>Live</span>
-      </div>
-      <h3>InstantExam</h3>
-      <p class="pfdesc" data-i18n="pr2.d">Genera exámenes con IA desde texto, PDFs o YouTube. Leaderboard, export SCORM, certificados.</p>
-      <a class="pflink" href="https://instantexam.co" target="_blank" rel="noopener">instantexam.co <svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
-    </article>
-    <article class="pfcard anim anim-2">
-      <div class="pfhead">
-        <div class="pficon"><svg><use href="#i-msg"/></svg></div>
-        <span class="status live"><span class="sdot"></span>Live</span>
-      </div>
-      <h3>Contestia</h3>
-      <p class="pfdesc" data-i18n="pr3.d">Recepcionista IA por WhatsApp para clínicas. Voz, Google Calendar, facturación por uso.</p>
-      <a class="pflink" href="https://contestia.co" target="_blank" rel="noopener">contestia.co <svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
-    </article>
-    <article class="pfcard anim">
-      <div class="pfhead">
-        <div class="pficon"><svg><use href="#i-tgt"/></svg></div>
-        <span class="status live"><span class="sdot"></span>Live</span>
-      </div>
-      <h3>Swarmix</h3>
-      <p class="pfdesc" data-i18n="pr4.d">Outreach multi-plataforma con agentes IA. LinkedIn, correo, X/Twitter.</p>
-      <a class="pflink" href="https://swarmix.co" target="_blank" rel="noopener">swarmix.co <svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
-    </article>
-    <article class="pfcard anim anim-1">
-      <div class="pfhead">
-        <div class="pficon"><svg><use href="#i-calc"/></svg></div>
-        <span class="status beta"><span class="sdot"></span>Beta</span>
-      </div>
-      <h3>Contablia</h3>
-      <p class="pfdesc" data-i18n="pr5.d">Gestión fiscal autónoma. IVA 303, IRPF 130, VeriFactu, OCR de facturas.</p>
-      <a class="pflink" href="#" data-i18n="pr5.l">contablia · próximamente</a>
-    </article>
-    <article class="pfcard anim anim-2">
-      <div class="pfhead">
-        <div class="pficon"><svg><use href="#i-trend-up"/></svg></div>
-        <span class="status soon"><span class="sdot"></span>Pre-MVP</span>
-      </div>
-      <h3>ScoreFlow</h3>
-      <p class="pfdesc" data-i18n="pr7.d">Craftsmanship score para equipos de producto. Telemetría, Git y APIs admin fusionados en un solo indicador.</p>
-      <a class="pflink" href="#" data-i18n="pr7.l">scoreflow · próximamente</a>
-    </article>
-    <article class="pfcard cta anim">
+  <div class="wrap">
+    <div class="grid">
       <div>
-        <div class="pfhead">
-          <div class="pficon"><svg><use href="#i-zap"/></svg></div>
-          <span class="status"><span class="sdot"></span><span data-i18n="pr6.s">Tu proyecto</span></span>
+        <div class="eyebrow"><span class="badge"></span>Proveedores acreditados ACCIÓ · Generalitat de Catalunya</div>
+        <h1>Aplicamos la IA para <em>ahorrar costes</em> a tu empresa.</h1>
+        <p class="lead">Consultora europea especializada en PYMEs. Aumentamos la producción, reducimos tareas repetitivas y desbloqueamos nuevas capacidades. Inteligencia artificial aplicada con criterio, desde lo más práctico hasta lo más avanzado.</p>
+        <div class="ctas">
+          <a href="#contacto" class="btn-primary">Reservar diagnóstico <span>→</span></a>
+          <a href="#servicios" class="btn-ghost">Ver cómo trabajamos</a>
         </div>
-        <h3 style="margin-top:20px;font-size:30px" data-i18n="pr6.t">¿Tienes un proyecto?</h3>
-        <p class="pfdesc" style="margin-top:12px" data-i18n="pr6.d">Lo construimos contigo, con la misma tecnología que corre en los 6 productos de arriba.</p>
       </div>
-      <a href="#contacto" class="btn btn-primary" style="margin-top:20px;align-self:flex-start" data-i18n="pr6.cta">Contactar <svg><use href="#i-arrow"/></svg></a>
-    </article>
-  </div>
-</section>
-
-<!-- PORTFOLIO PREVIEW -->
-<section class="sec sec-darker" id="portfolio-preview">
-  <div class="sec-head">
-    <div>
-      <div class="eyebrow anim" data-i18n="pp.eb">Portfolio · 04</div>
-      <h2 class="anim anim-1"><span data-i18n="pp.ha">36 capacidades técnicas </span><em class="ac" data-i18n="pp.hb">organizadas en 7 familias.</em></h2>
-    </div>
-    <p class="intro anim anim-2" data-i18n="pp.sub">Selección de capacidades en producción, con descripción técnica, caso de uso típico, resultados de negocio y stack tecnológico. Los ejemplos son representativos y anonimizados por confidencialidad contractual.</p>
-  </div>
-  <div class="sec-wrap" style="max-width:1320px;margin:0 auto">
-    <div class="ppgrid">
-      <a href="/portfolio/conversacional/" class="ppcard anim">
-        <div class="ppnum">01 / 07</div>
-        <div class="ppicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div>
-        <h3 data-i18n="pp.1.t">Asistentes conversacionales IA</h3>
-        <p data-i18n="pp.1.p">Chatbots y voicebots con RAG sobre información corporativa, escalado humano y analítica de conversaciones.</p>
-        <span class="ppmeta"><span data-i18n="pp.1.c">6 capacidades</span><span class="pparrow">→</span></span>
-      </a>
-      <a href="/portfolio/agentes/" class="ppcard anim anim-1">
-        <div class="ppnum">02 / 07</div>
-        <div class="ppicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4M8 16h.01M16 16h.01"/></svg></div>
-        <h3 data-i18n="pp.2.t">Agentes IA autónomos</h3>
-        <p data-i18n="pp.2.p">Agentes con LangGraph y MCP que ejecutan procesos sobre sistemas internos con trazabilidad completa.</p>
-        <span class="ppmeta"><span data-i18n="pp.2.c">7 capacidades</span><span class="pparrow">→</span></span>
-      </a>
-      <a href="/portfolio/rag/" class="ppcard anim anim-2">
-        <div class="ppnum">03 / 07</div>
-        <div class="ppicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div>
-        <h3 data-i18n="pp.3.t">Búsqueda y conocimiento (RAG)</h3>
-        <p data-i18n="pp.3.p">Búsqueda semántica con control de acceso por roles sobre intranet, normativa y transcripciones.</p>
-        <span class="ppmeta"><span data-i18n="pp.3.c">4 capacidades</span><span class="pparrow">→</span></span>
-      </a>
-      <a href="/portfolio/workflow/" class="ppcard anim anim-3">
-        <div class="ppnum">04 / 07</div>
-        <div class="ppicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="6" height="6"/><rect x="15" y="15" width="6" height="6"/><rect x="15" y="3" width="6" height="6"/><path d="M6 9v6h6M18 9v6"/></svg></div>
-        <h3 data-i18n="pp.4.t">Workflow automation</h3>
-        <p data-i18n="pp.4.p">Sincronización entre sistemas heterogéneos, ITSM, comunicación multi-canal e informes generados de forma automática.</p>
-        <span class="ppmeta"><span data-i18n="pp.4.c">5 capacidades</span><span class="pparrow">→</span></span>
-      </a>
-      <a href="/portfolio/governance/" class="ppcard anim">
-        <div class="ppnum">05 / 07</div>
-        <div class="ppicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 13c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V5l8-3 8 3v8z"/><path d="m9 12 2 2 4-4"/></svg></div>
-        <h3 data-i18n="pp.5.t">IA Governance y compliance EU</h3>
-        <p data-i18n="pp.5.p">Governance de sistemas IA según AI Act, auditoría ALTAI y compliance multi-marco automatizado.</p>
-        <span class="ppmeta"><span data-i18n="pp.5.c">3 capacidades</span><span class="pparrow">→</span></span>
-      </a>
-      <a href="/portfolio/verticales/" class="ppcard anim anim-1">
-        <div class="ppnum">06 / 07</div>
-        <div class="ppicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m12 2 9 5-9 5-9-5 9-5z"/><path d="m3 12 9 5 9-5M3 17l9 5 9-5"/></svg></div>
-        <h3 data-i18n="pp.6.t">Plataformas verticales y datos sintéticos</h3>
-        <p data-i18n="pp.6.p">Plataformas sectoriales (seguros, legal, sanidad), simulación digital y generación de datos sintéticos privacy-preserving.</p>
-        <span class="ppmeta"><span data-i18n="pp.6.c">6 capacidades</span><span class="pparrow">→</span></span>
-      </a>
-      <a href="/portfolio/modelos/" class="ppcard anim anim-2">
-        <div class="ppnum">07 / 07</div>
-        <div class="ppicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 15h3M1 9h3M1 15h3"/></svg></div>
-        <h3 data-i18n="pp.7.t">Entrenamiento de modelos LLM y predictivos</h3>
-        <p data-i18n="pp.7.p">Fine-tuning de LLMs open weights, forecasting, anomaly detection, OCR custom y evaluación de modelos.</p>
-        <span class="ppmeta"><span data-i18n="pp.7.c">5 capacidades</span><span class="pparrow">→</span></span>
-      </a>
-    </div>
-    <div class="ppcta anim anim-3">
-      <a href="/portfolio/" class="btn btn-primary btn-xl"><span data-i18n="pp.cta">Ver las 36 capacidades</span> <svg><use href="#i-arrow"/></svg></a>
-    </div>
-  </div>
-</section>
-
-<!-- PROCESS (paper) -->
-<section class="sec sec-paper" id="process">
-  <div class="process-head">
-    <div>
-      <div class="eyebrow anim" data-i18n="pc.eb">Proceso · 05</div>
-      <h2 class="anim anim-1"><span data-i18n="pc.ha">Cuatro pasos. </span><em class="ac" data-i18n="pc.hb">Cada uno con cifras.</em></h2>
-    </div>
-    <p class="anim anim-2" data-i18n="pc.sub">Modelo de colaboración por fases con punto de salida en cada hito. Si los resultados no se materializan, el proyecto se detiene. Si se materializan, se escala.</p>
-  </div>
-  <div class="psteps">
-    <div class="pstep anim">
-      <div class="pnum">01 · <span data-i18n="p1.k">Diagnóstico</span></div>
-      <h3 data-i18n="p1.t">Videollamada gratis</h3>
-      <p data-i18n="p1.p">30 minutos por vídeo. Nos cuentas cómo trabajáis. Al colgar sacamos cifras aproximadas de ahorro. Sin comercial, sin compromiso.</p>
-      <div class="pdur" data-i18n="p1.d">30 min · Sin coste</div>
-    </div>
-    <div class="pstep anim anim-1">
-      <div class="pnum">02 · <span data-i18n="p2.k">Diagnóstico</span></div>
-      <h3 data-i18n="p2.t">Auditoría</h3>
-      <p data-i18n="p2.p">Análisis de procesos, entrevistas con tu equipo, informe ejecutivo con ahorro cuantificado en euros y un plan a 90 días.</p>
-      <div class="pdur" data-i18n="p2.d">10 días hábiles · Desde 2.500€</div>
-    </div>
-    <div class="pstep anim anim-2">
-      <div class="pnum">03 · <span data-i18n="p3.k">Construcción</span></div>
-      <h3 data-i18n="p3.t">Implantación</h3>
-      <p data-i18n="p3.p">Construimos los asistentes, integramos con tu ERP, WhatsApp o correo, entrenamos a tu equipo. Piloto controlado antes de escalar.</p>
-      <div class="pdur" data-i18n="p3.d">4 a 12 semanas · Desde 8.000€</div>
-    </div>
-    <div class="pstep anim anim-3">
-      <div class="pnum">04 · <span data-i18n="p4.k">Operación</span></div>
-      <h3 data-i18n="p4.t">Mejora continua</h3>
-      <p data-i18n="p4.p">Monitorización en producción, iteración mensual, métricas reales. Nada se queda olvidado en un servidor.</p>
-      <div class="pdur" data-i18n="p4.d">Mensual · SLA incluido</div>
-    </div>
-  </div>
-</section>
-
-<!-- WHY -->
-<section class="sec sec-dark">
-  <div class="sec-head">
-    <div>
-      <div class="eyebrow anim" data-i18n="w.eb">Por qué Infinite Labs · 06</div>
-      <h2 class="anim anim-1"><span data-i18n="w.ha">Cuatro razones. </span><em class="ac" data-i18n="w.hb">Cero humo.</em></h2>
-    </div>
-    <p class="intro anim anim-2" data-i18n="w.sub">No venimos a enseñarte slides bonitos. Venimos a enseñarte cuánto has ahorrado cada mes. Es la única métrica que nos importa.</p>
-  </div>
-  <div class="whygrid">
-    <div class="wcard anim"><div class="wn">01</div><h3 data-i18n="w1.t">Construimos lo que vendemos</h3><p data-i18n="w1.p">5 SaaS propios en producción. La IA que te proponemos ya corre en nuestros productos, con pagos reales, soporte real y errores arreglados de verdad.</p></div>
-    <div class="wcard anim anim-1"><div class="wn">02</div><h3 data-i18n="w2.t">Europeos, GDPR</h3><p data-i18n="w2.p">Datos en la UE. Infra propia. Sin dependencias de EEUU. Contrato y soporte en español. Facturación europea.</p></div>
-    <div class="wcard anim anim-2"><div class="wn">03</div><h3 data-i18n="w3.t">Resultados medidos en euros</h3><p data-i18n="w3.p">Auditoría con números. Proyectos con cifras. Si el resultado no se puede medir en euros o en horas, no es un resultado.</p></div>
-    <div class="wcard anim anim-3"><div class="wn">04</div><h3 data-i18n="w4.t">Sin humo, sin lock-in</h3><p data-i18n="w4.p">Tecnología abierta. Documentación tuya. Claves, repositorios y datos se quedan contigo. Cuando acabamos, puedes continuar sin nosotros.</p></div>
-  </div>
-</section>
-
-<!-- INSIGHTS · blog feed -->
-<section class="sec sec-darker" id="insights-blog">
-  <div class="sec-head">
-    <div>
-      <div class="eyebrow anim" data-i18n="bl.eb">Insights · 07</div>
-      <h2 class="anim anim-1"><span data-i18n="bl.ha">Briefings diarios </span><em class="ac" data-i18n="bl.hb">sobre IA para empresa.</em></h2>
-    </div>
-    <div class="anim anim-2" style="display:flex;flex-direction:column;gap:16px;align-items:flex-start">
-      <p class="intro" data-i18n="bl.sub">Cada día laborable: modelos, herramientas, casos, mercado y regulación europea. Texto y podcast de 3-5 minutos.</p>
-      <a href="https://blog.infinitelabs.co" target="_blank" rel="noopener" class="btn btn-ghost" data-i18n="bl.seeall">Ver blog completo <svg><use href="#i-arrow"/></svg></a>
-    </div>
-  </div>
-  <div class="blog-grid" id="blog-grid">
-    <a class="post anim" href="https://blog.infinitelabs.co/briefing-5-voz-tiempo-real-agentes-datos-expuestos" target="_blank" rel="noopener">
-      <div class="pbody">
-        <div class="pmeta">11 may 2026 · 4 min</div>
-        <h3>Briefing #5 · Voz en tiempo real, agentes y datos expuestos</h3>
-        <div class="pbrief">OpenAI despliega nuevas APIs de voz, la CNIL regula scoring crediticio automatizado y miles de apps vibe-coded filtran datos corporativos.</div>
-        <div class="plink"><span data-i18n="bl.read">Leer artículo</span> <svg viewBox="0 0 24 24" style="width:12px;height:12px;stroke:currentColor;stroke-width:2;fill:none"><path d="M7 17 17 7M8 7h9v9"/></svg></div>
-      </div>
-    </a>
-    <a class="post anim anim-1" href="https://blog.infinitelabs.co/briefing-4-agentes-banca-g7" target="_blank" rel="noopener">
-      <div class="pbody">
-        <div class="pmeta">7 may 2026 · 4 min</div>
-        <h3>Briefing #4 · Agentes, banca y regulación G7</h3>
-        <div class="pbrief">Microsoft pivota al modelo agentic, Singular Bank ahorra 90 minutos al día por banquero, y el G7 debate el futuro de los datos personales en París.</div>
-        <div class="plink"><span data-i18n="bl.read">Leer artículo</span> <svg viewBox="0 0 24 24" style="width:12px;height:12px;stroke:currentColor;stroke-width:2;fill:none"><path d="M7 17 17 7M8 7h9v9"/></svg></div>
-      </div>
-    </a>
-    <a class="post anim anim-2" href="https://blog.infinitelabs.co/briefing-3-servicios-ia-cfo-regulacion-juvenil" target="_blank" rel="noopener">
-      <div class="pbody">
-        <div class="pmeta">6 may 2026 · 4 min</div>
-        <h3>Briefing #3 · Servicios IA, CFO automatizado y regulación juvenil</h3>
-        <div class="pbrief">Modelos más precisos, agentes para finanzas, y Europa pregunta qué pasa cuando los jóvenes usan IA para hablar de salud mental.</div>
-        <div class="plink"><span data-i18n="bl.read">Leer artículo</span> <svg viewBox="0 0 24 24" style="width:12px;height:12px;stroke:currentColor;stroke-width:2;fill:none"><path d="M7 17 17 7M8 7h9v9"/></svg></div>
-      </div>
-    </a>
-  </div>
-</section>
-
-<!-- ABOUT (paper) -->
-<section class="sec sec-paper" id="about">
-  <div class="about-wrap">
-    <div>
-      <div class="eyebrow anim" data-i18n="ab.eb">Quiénes somos · 08</div>
-      <p class="lead anim anim-1" style="margin-top:24px"><span data-i18n="ab.a">Consultora europea. </span><em class="ac" data-i18n="ab.b">Construimos y operamos</em><span data-i18n="ab.c"> nuestros propios SaaS con las mismas tecnologías que implantamos en nuestros clientes.</span></p>
-    </div>
-    <div class="loc-grid anim anim-2">
-      <div class="loc">
-        <div class="ls"><span class="sdot"></span>EE · Tallinn</div>
-        <h4>Estonia</h4>
-        <span class="ld" data-i18n="ab.e">Infinite Labs OÜ · Reg. 14889000 · VAT EE102227228</span>
-      </div>
-      <div class="loc">
-        <div class="ls"><span class="sdot"></span>ES · Barcelona</div>
-        <h4>España</h4>
-        <span class="ld" data-i18n="ab.s">Next Gen Academy SL · CIF B44861649 · Carrer Penedès 27, Palau-solità i Plegamans</span>
+      <div class="photo">
+        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1400&q=80&auto=format&fit=crop" alt="Equipo profesional trabajando">
       </div>
     </div>
   </div>
 </section>
 
-<!-- CTA -->
-<section class="cta-final" id="cta">
-  <div class="eyebrow anim" style="color:var(--dim)" data-i18n="cf.eb">Empezar hoy</div>
-  <h2 class="anim anim-1" style="margin-top:28px"><span data-i18n="cf.ha">Empieza con una </span><em class="ac" data-i18n="cf.hb">sesión de diagnóstico</em><span data-i18n="cf.hc"> gratuita. Y decide tú.</span></h2>
-  <div class="csub anim anim-2" data-i18n="cf.sub">Sesión presencial o videollamada sin compromiso. Resultado: mapa cuantificado del ahorro potencial trimestral.</div>
-  <div class="cb anim anim-3">
-    <a href="https://calendar.app.google/UvcME44u8dsucaVT9" target="_blank" rel="noopener" class="btn btn-primary btn-xl" data-i18n="cf.cta">Solicitar diagnóstico <svg><use href="#i-arrow"/></svg></a>
-    <a href="#contacto" class="btn btn-ghost btn-xl" data-i18n="cf.cta2">Escribir un mensaje</a>
+<!-- PROBLEMA -->
+<section class="problem">
+  <div class="wrap">
+    <div class="grid">
+      <div class="photo">
+        <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1200&q=80&auto=format&fit=crop" alt="Gerente PYME revisando informes">
+      </div>
+      <div>
+        <span class="section-tag">El problema</span>
+        <h2>La inteligencia artificial está reordenando tu sector. <em>La pregunta no es si te afectará, sino cómo aplicarla bien.</em></h2>
+        <p class="lead">La información disponible es abundante, pero distinguir lo que realmente transforma tu negocio de lo que solo suena interesante requiere criterio y experiencia. La transformación no es solo tecnológica: toca procesos, equipos y formas de decidir.</p>
+        <p class="questions">¿Qué tareas repetitivas consumen el día a día de tu equipo? ¿Qué decisiones se toman sin datos suficientes? ¿Qué áreas están saturadas? ¿Qué pasa cuando una persona clave no está? ¿Cuál es la inversión real para empezar y cómo se mide el retorno?</p>
+      </div>
+    </div>
   </div>
-  <div class="cmeta anim anim-4">calendar.app.google/UvcME44u8dsucaVT9 · hello@infinitelabs.co</div>
 </section>
 
-<!-- CONTACT -->
-<section class="sec sec-darker" id="contacto">
-  <div class="contact-wrap">
-    <div class="contact-head">
-      <div class="eyebrow anim" data-i18n="ct.eb">Contacto · 08</div>
-      <h2 class="anim anim-1"><span data-i18n="ct.ha">Describa el proyecto </span><em class="ac" data-i18n="ct.hb">a automatizar.</em></h2>
-      <p class="lead anim anim-2" data-i18n="ct.lead">Respondemos en 24h hábiles. Si prefieres, reserva la sesión de diagnóstico gratuita directamente en el calendario.</p>
-      <div class="contact-side anim anim-3">
-        <a class="chan" href="mailto:hello@infinitelabs.co">
-          <div class="ci"><svg><use href="#i-mail"/></svg></div>
-          <div class="cb"><div class="ck">Email</div><div class="cv">hello@infinitelabs.co</div><div class="cv2" data-i18n="ch.mail">Respuesta en 24h</div></div>
-        </a>
-        <a class="chan" href="https://calendar.app.google/UvcME44u8dsucaVT9" target="_blank" rel="noopener">
-          <div class="ci"><svg><use href="#i-cal"/></svg></div>
-          <div class="cb"><div class="ck">Google Calendar</div><div class="cv" data-i18n="ch.cal">Solicitar diagnóstico inicial</div><div class="cv2">calendar.app.google/UvcME44u8dsucaVT9</div></div>
-        </a>
-        <a class="chan" href="https://linkedin.com/company/infinitelabs-eu" target="_blank" rel="noopener">
-          <div class="ci"><svg><use href="#i-link"/></svg></div>
-          <div class="cb"><div class="ck">LinkedIn</div><div class="cv">/company/infinitelabs-eu</div><div class="cv2" data-i18n="ch.li">Caso a caso, en abierto</div></div>
-        </a>
-        <div class="chan">
-          <div class="ci"><svg><use href="#i-pin"/></svg></div>
-          <div class="cb"><div class="ck" data-i18n="ch.loc">Ubicación</div><div class="cv">Tallinn · Barcelona</div><div class="cv2" data-i18n="ch.tz">CET / EET · ES + EN</div></div>
+<!-- SERVICIOS -->
+<section class="services" id="servicios">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-tag">Cómo trabajamos</span>
+      <h2>Empezamos por un diagnóstico. Después, tú decides el recorrido.</h2>
+      <p>Cada empresa es distinta. El proceso es lineal: primero entendemos tu realidad, luego construimos la transformación y, si quieres, te acompañamos en el medio y largo plazo como tu Director de IA externo.</p>
+    </div>
+
+    <div class="svc-featured">
+      <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=1800&q=80&auto=format&fit=crop" alt="Diagnóstico inicial">
+      <div class="content">
+        <div class="text-panel">
+          <span class="badge">PRIMER PASO · GRATUITO · 30 MIN</span>
+          <h3>Diagnóstico</h3>
+          <p>30 minutos de entrevista estructurada y un formulario que nos permite entender tu realidad. Recibes una propuesta personalizada con el estado inicial de tu empresa, plan de trabajo y presupuesto. Sin compromiso.</p>
+          <a href="#" class="arrow-btn">Reservar diagnóstico <span>→</span></a>
         </div>
       </div>
     </div>
 
-    <form class="cform anim anim-2" action="https://formsubmit.co/ajax/hello@infinitelabs.co" method="POST" onsubmit="submitContact(event)">
-      <input type="hidden" name="_subject" value="[Infinite Labs] Nuevo contacto desde la web">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_template" value="table">
-      <input type="text" name="_honey" style="display:none">
-      <label>
-        <span data-i18n="f.name">Nombre</span>
-        <input type="text" name="name" required>
-      </label>
-      <label>
-        <span data-i18n="f.co">Empresa</span>
-        <input type="text" name="company" required>
-      </label>
-      <label class="row-full">
-        <span data-i18n="f.mail">Email</span>
-        <input type="email" name="email" required>
-      </label>
-      <label>
-        <span data-i18n="f.sec">Sector</span>
-        <select name="sector" required>
-          <option value="" data-i18n="f.sec0">Selecciona…</option>
-          <option data-i18n="f.s1">Industria / Polígono</option>
-          <option data-i18n="f.s2">Distribución / Logística</option>
-          <option data-i18n="f.s3">Servicios profesionales</option>
-          <option data-i18n="f.s4">Salud / Clínicas</option>
-          <option data-i18n="f.s5">Administración pública</option>
-          <option data-i18n="f.s6">Formación / RRHH</option>
-          <option data-i18n="f.s7">Otro</option>
-        </select>
-      </label>
-      <label>
-        <span data-i18n="f.sz">Tamaño equipo</span>
-        <select name="size" required>
-          <option value="" data-i18n="f.sz0">Selecciona…</option>
-          <option>1 a 10</option>
-          <option>11 a 50</option>
-          <option>51 a 200</option>
-          <option>201 a 500</option>
-          <option>500+</option>
-        </select>
-      </label>
-      <label class="row-full">
-        <span data-i18n="f.msg">Mensaje</span>
-        <textarea name="message" required placeholder="¿Qué proceso te gustaría automatizar? ¿Cuál es el punto de dolor?"></textarea>
-      </label>
-      <div class="cform-legal" data-i18n="f.legal">Al enviar aceptas nuestra <a href="/privacy/">política de privacidad</a>. Datos tratados en UE · GDPR · Nunca cedemos a terceros.</div>
-      <button type="submit" class="submit" data-i18n="f.cta">Enviar mensaje →</button>
-    </form>
-  </div>
-</section>
-
-<!-- CUSTOMERS & PARTNERS · pre-footer -->
-<section class="partners" id="partners">
-  <div class="partners-wrap">
-    <div class="partners-head">
-      <div class="eyebrow anim" data-i18n="pt.eb">Customers & Partners</div>
-      <h3 class="anim anim-1" data-i18n="pt.h">Organizaciones con las que hemos colaborado.</h3>
-    </div>
-    <div class="partners-grid">
-      <div class="partner wide anim"><img src="/img/logos/sabadell.png" alt="Banco Sabadell" loading="lazy"></div>
-      <div class="partner wide anim anim-1"><img src="/img/logos/anthropic.svg" alt="Anthropic" loading="lazy"></div>
-      <div class="partner anim anim-2"><img src="/img/logos/gencat.svg" alt="Generalitat de Catalunya" loading="lazy"></div>
-      <div class="partner anim anim-3"><img src="/img/logos/gov-dubai.svg" alt="Government of Dubai" loading="lazy"></div>
-      <div class="partner anim anim-4"><img src="/img/logos/open-society.png" alt="Open Society Foundations" loading="lazy"></div>
-      <div class="partner anim"><img src="/img/logos/barcelona-activa.png" alt="Barcelona Activa" loading="lazy"></div>
-      <div class="partner tall anim anim-1"><img src="/img/logos/accio.png" alt="ACCIÓ"  loading="lazy"></div>
-      <div class="partner wide anim anim-2"><img src="/img/logos/peninsula.png" alt="Peninsula" loading="lazy"></div>
-      <div class="partner tall anim anim-3"><img src="/img/logos/badajoz.svg" alt="Ayuntamiento de Badajoz" loading="lazy"></div>
-      <div class="partner anim anim-4"><img src="/img/logos/eba.png" alt="Euro Banking Association" loading="lazy"></div>
-      <div class="partner tall anim"><img src="/img/logos/futurium.svg" alt="Futurium · European Commission" loading="lazy"></div>
-      <div class="partner anim anim-1"><img src="/img/logos/interledger.svg" alt="Interledger Foundation" loading="lazy"></div>
-      <div class="partner anim anim-2"><img src="/img/logos/mydata.png" alt="MyData Global" loading="lazy"></div>
-      <div class="partner tall anim anim-3"><img src="/img/logos/all-tech-is-human.png" alt="All Tech is Human" loading="lazy"></div>
-      <div class="partner anim anim-4"><img src="/img/logos/alastria.png" alt="Alastria" loading="lazy"></div>
+    <div class="svc-grid">
+      <div class="svc-card">
+        <div class="num">02 · Proyecto a medida</div>
+        <h3>Transformación operativa con IA</h3>
+        <p>Tras el diagnóstico, ejecutamos la propuesta acordada: implantación, integración con tus sistemas, automatización de procesos y capacitación de tu equipo. Todo lo que necesita la transformación. La inversión se define en la propuesta, ajustada al alcance.</p>
+        <div class="price"><span>Cotización personalizada en propuesta</span><span class="arrow">→</span></div>
+      </div>
+      <div class="svc-card">
+        <div class="num">03 · Mensualidad</div>
+        <h3>Director de IA externo</h3>
+        <p>Acompañamiento continuo en la dirección estratégica de IA de tu empresa. Revisamos propuestas de proveedores, participamos en decisiones tecnológicas e identificamos nuevas oportunidades cada mes. Tres paquetes de horas con descuento por volumen.</p>
+        <div class="price"><span>Desde 1.000€/mes · 6 meses mín.</span><span class="arrow">→</span></div>
+      </div>
     </div>
   </div>
 </section>
 
-<footer class="site-footer">
-  <div class="f-top">
-    <div class="f-col f-brand">
-      <div class="bmark"><svg height="18" viewBox="0 0 400 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M89 31C89 29.0334 88.7 27.1359 88.1433 25.3507C89.4506 24.867 90.6354 24.1305 91.6381 23.2005C92.5194 25.6371 93 28.2636 93 31C93 43.68 82.68 54 70 54C63.86 54 58.08 51.61 53.74 47.26C52.96 46.48 52.96 45.21 53.74 44.43C54.52 43.65 55.79 43.65 56.57 44.43C60.15 48.02 64.93 50 70 50C80.48 50 89 41.48 89 31ZM90.3191 20.232C87.9215 15.7269 84.069 12.1081 79.3933 10.0071C78.4033 10.9279 77.6626 12.1131 77.2835 13.4503C81.5229 15.2154 84.9896 18.4733 87.0242 22.5646C88.3266 22.0992 89.4626 21.2839 90.3191 20.232ZM70 8C72.1987 8 74.3265 8.3103 76.3418 8.88939C75.4823 9.94871 74.8251 11.1787 74.4287 12.5206C73.0074 12.1803 71.5244 12 70 12C59.52 12 51 20.52 51 31C51 43.68 40.68 54 28 54C18.9006 54 11.0165 48.6854 7.28946 40.9979C7.35947 40.9993 7.42966 41 7.5 41C8.88029 41 10.1984 40.7337 11.4057 40.2496C14.6577 46.063 20.876 50 28 50C38.48 50 47 41.48 47 31C47 18.32 57.32 8 70 8ZM10.4908 23.62C9.53093 25.8899 9 28.3839 9 31C9 33.289 9.40644 35.4844 10.151 37.518C9.32675 37.8295 8.43328 38 7.5 38C7.00206 38 6.51545 37.9515 6.04464 37.8589C5.36593 35.6917 5 33.3877 5 31C5 28.2181 5.49673 25.5498 6.40612 23.0792C6.7632 23.027 7.12845 23 7.5 23C8.56308 23 9.5745 23.2212 10.4908 23.62ZM11.8775 20.9532C15.2369 15.58 21.2067 12 28 12C33.07 12 37.85 13.98 41.43 17.57C42.21 18.35 43.48 18.35 44.26 17.57C45.04 16.79 45.04 15.52 44.26 14.74C39.92 10.39 34.14 8 28 8C19.2997 8 11.7105 12.8585 7.80371 20.0043C9.2545 20.0455 10.6316 20.381 11.8775 20.9532Z" fill="currentColor"/><circle cx="84.5" cy="15.5" r="7.5" fill="currentColor"/><circle cx="7.5" cy="30.5" r="7.5" fill="currentColor"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M171.88 49.7C172.58 49.7 173.21 49.07 173.21 48.37V25.9H188.26V48.37C188.26 49.07 188.89 49.7 189.59 49.7H191.76C192.46 49.7 193.09 49.07 193.09 48.37V23.03C193.09 22.33 192.46 21.7 191.76 21.7H173.21V11.9C173.21 6.51 176.5 4.34 179.72 4.34C182.84 4.34 186.021 6.09086 187.188 6.73301L187.188 6.73304C187.277 6.78232 187.355 6.82507 187.42 6.86C188.19 7.28 188.82 7.49 189.24 6.79L190.36 4.9C190.64 4.41 190.57 3.64 190.08 3.29C188.82 2.38 184.55 0 179.79 0C173.77 0 168.38 3.78 168.38 11.9V21.7H164.11C163.34 21.7 162.78 22.26 162.78 23.03V24.57C162.78 25.27 163.34 25.9 164.11 25.9H168.38V48.37C168.38 49.07 169.01 49.7 169.71 49.7H171.88ZM136.945 48.37C136.945 49.07 136.315 49.7 135.615 49.7H133.445C132.745 49.7 132.115 49.07 132.115 48.37V23.03C132.115 22.33 132.745 21.7 133.445 21.7H134.775C135.405 21.7 135.755 21.98 135.895 22.54L136.525 24.71C136.525 24.71 140.515 21 146.325 21C154.445 21 157.175 26.32 157.175 33.6V48.37C157.175 49.07 156.545 49.7 155.845 49.7H153.605C152.905 49.7 152.275 49.07 152.275 48.37V33.6C152.275 28.28 149.895 25.69 145.975 25.69C140.725 25.69 136.945 29.68 136.945 29.68V48.37ZM122.8 48.37C122.8 49.07 122.17 49.7 121.47 49.7H119.3C118.6 49.7 117.97 49.07 117.97 48.37V23.03C117.97 22.33 118.6 21.7 119.3 21.7H121.47C122.17 21.7 122.8 22.33 122.8 23.03V48.37ZM207.235 48.37C207.235 49.07 206.605 49.7 205.905 49.7H203.735C203.035 49.7 202.405 49.07 202.405 48.37V23.03C202.405 22.33 203.035 21.7 203.735 21.7H205.065C205.695 21.7 206.045 21.98 206.185 22.54L206.815 24.71C206.815 24.71 210.805 21 216.615 21C224.735 21 227.465 26.32 227.465 33.6V48.37C227.465 49.07 226.835 49.7 226.135 49.7H223.895C223.195 49.7 222.565 49.07 222.565 48.37V33.6C222.565 28.28 220.185 25.69 216.265 25.69C211.015 25.69 207.235 29.68 207.235 29.68V48.37ZM239.93 49.7C240.63 49.7 241.26 49.07 241.26 48.37V23.03C241.26 22.33 240.63 21.7 239.93 21.7H237.76C237.06 21.7 236.43 22.33 236.43 23.03V48.37C236.43 49.07 237.06 49.7 237.76 49.7H239.93ZM266.885 48.02C265.905 48.65 262.125 50.4 258.835 50.4C253.235 50.4 252.395 47.04 252.395 42.7V25.9H248.825C248.055 25.9 247.495 25.27 247.495 24.57V23.03C247.495 22.26 248.055 21.7 248.825 21.7H252.395V13.93C252.395 13.23 253.025 12.6 253.725 12.6L255.965 12.46C256.665 12.46 257.225 13.09 257.225 13.79V21.7H265.345C266.115 21.7 266.675 22.26 266.675 23.03V24.57C266.675 25.27 266.115 25.9 265.345 25.9H257.225V42.28C257.225 45.08 257.925 45.64 259.535 45.64C261.285 45.64 263.735 44.59 264.645 44.1C265.695 43.54 265.975 43.96 266.325 44.52L267.375 46.27C267.865 47.11 267.655 47.53 266.885 48.02ZM285.58 50.4C290.41 50.4 294.19 48.51 295.87 47.18C296.92 46.41 296.64 45.99 296.15 45.36C295.94 45.08 295.747 44.8175 295.555 44.555C295.362 44.2925 295.17 44.03 294.96 43.75C294.449 43.0477 294.055 43.2771 293.246 43.7478L293.136 43.8118C293.092 43.8373 293.046 43.8634 293 43.89C291.39 44.87 289.01 45.99 286.07 45.99C281.1 45.99 276.97 41.58 276.69 36.89H296.85C297.48 36.89 298.04 36.4 298.11 35.7C298.18 35.21 298.25 34.3 298.25 33.81C298.25 26.46 292.93 21 285.58 21C277.11 21 271.86 27.79 271.86 35.7C271.86 43.75 277.11 50.4 285.58 50.4ZM276.76 32.97H293.42C293.21 28.91 289.85 25.27 285.58 25.27C280.89 25.27 277.25 28.63 276.76 32.97ZM307.775 49.7C308.405 49.7 308.685 49.35 308.685 48.79V1.61C308.685 1.12 308.265 0.7 307.775 0.7H306.515C306.025 0.7 305.605 1.12 305.605 1.61V48.79C305.605 49.28 305.885 49.7 306.375 49.7H307.775ZM335.36 46.41C333.54 48.09 330.11 50.4 325.63 50.4C320.45 50.4 316.46 46.83 316.46 41.09C316.46 35.7 320.87 31.64 328.22 31.64C331.44 31.64 334.52 32.62 335.29 32.9C335.29 26.74 334.66 23.66 329.13 23.66C325.188 23.66 322.317 24.8829 321.167 25.3724C320.969 25.4566 320.822 25.5192 320.73 25.55C320.17 25.76 319.82 25.48 319.68 24.99L319.33 24.15C319.12 23.52 319.4 23.24 319.75 23.1C319.96 22.96 323.53 21 329.34 21C337.88 21 338.23 26.11 338.23 33.25V48.79C338.23 49.28 337.81 49.7 337.32 49.7H336.48C335.99 49.7 335.78 49.42 335.64 48.93L335.36 46.41ZM325.98 47.67C322.13 47.67 319.33 45.08 319.33 41.02C319.33 36.89 322.9 34.16 328.22 34.16C331.58 34.16 334.38 35.21 335.29 35.63V43.33C333.96 45.08 330.25 47.67 325.98 47.67ZM373.375 35.63C373.375 43.82 367.705 50.4 360.495 50.4C355.105 50.4 351.605 47.25 350.765 46.27L350.555 48.79C350.485 49.42 350.135 49.7 349.575 49.7H348.875C348.385 49.7 347.965 49.28 347.965 48.79V1.61C347.965 1.12 348.385 0.7 348.875 0.7H350.065C350.555 0.7 350.975 1.12 350.975 1.61V23.8C350.975 23.8 354.335 21 359.655 21C367.565 21 373.375 27.37 373.375 35.63ZM360.215 47.6C354.195 47.6 351.185 42.91 351.045 42.63V26.95C351.045 26.95 354.265 24.01 359.305 24.01C365.745 24.01 370.365 29.05 370.365 35.7C370.365 42.21 366.095 47.6 360.215 47.6ZM399.14 42.63C399.14 46.83 394.8 50.4 389.2 50.4C384.44 50.4 381.57 48.44 380.03 47.25C379.75 47.04 379.54 46.62 379.75 46.27L380.45 45.15C380.66 44.8 381.22 44.66 381.71 45.08C382.41 45.64 385.28 47.81 389.2 47.81C393.19 47.81 395.92 45.57 395.92 42.84C395.92 39.62 392.77 38.29 388.08 36.54C383.11 34.79 379.47 32.62 379.47 28.28C379.47 25.2 382.2 21 388.64 21C392.35 21 395.15 22.33 396.55 23.24C396.97 23.52 397.11 24.08 396.83 24.57L396.41 25.34C396.13 25.83 395.57 25.97 395.08 25.69C394.45 25.27 391.65 23.73 388.64 23.73C384.23 23.73 382.62 26.32 382.62 28.21C382.62 31.01 385.14 32.34 389.27 33.81C394.52 35.77 399.14 37.52 399.14 42.63Z" fill="currentColor"/>
-</svg></div>
-      <p class="tag" data-i18n="fo.tag">Consultora europea de IA para PYMEs. Cuantificamos el ahorro potencial en euros y diseñamos la implantación.</p>
+<!-- SECTORES -->
+<section class="sectors" id="sectores">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-tag">Sectores</span>
+      <h2>Seis sectores. Una metodología.</h2>
+      <p>En cada uno aplicamos una metodología contrastada. La tecnología es la parte visible. Lo que cambia es cómo trabaja tu equipo.</p>
     </div>
-    <div class="f-col">
-      <h5 data-i18n="fo.s">Servicios</h5>
-      <ul>
-        <li><a href="#services" data-i18n="fo.s1">Diagnóstico gratis</a></li>
-        <li><a href="#services" data-i18n="fo.s2">Estudio de ahorro</a></li>
-        <li><a href="#services" data-i18n="fo.s3">Llave en mano</a></li>
-        <li><a href="#services" data-i18n="fo.s6">Director tecnología por horas</a></li>
-        <li><a href="#industries" data-i18n="fo.s4">Sectores</a></li>
-        <li><a href="#case" data-i18n="fo.s5">Caso destacado</a></li>
-      </ul>
-    </div>
-    <div class="f-col">
-      <h5 data-i18n="fo.p">Productos</h5>
-      <ul>
-        <li><a href="https://regulia.app" target="_blank" rel="noopener">Regulia</a></li>
-        <li><a href="https://instantexam.co" target="_blank" rel="noopener">InstantExam</a></li>
-        <li><a href="https://contestia.co" target="_blank" rel="noopener">Contestia</a></li>
-        <li><a href="https://swarmix.co" target="_blank" rel="noopener">Swarmix</a></li>
-        <li><a href="#portfolio">Contablia</a></li>
-        <li><a href="#portfolio">ScoreFlow</a></li>
-      </ul>
-    </div>
-    <div class="f-col">
-      <h5 data-i18n="fo.c">Contacto</h5>
-      <ul>
-        <li><a href="mailto:hello@infinitelabs.co">hello@infinitelabs.co</a></li>
-        <li><a href="https://calendar.app.google/UvcME44u8dsucaVT9" target="_blank" rel="noopener" data-i18n="fo.c2">Solicitar diagnóstico</a></li>
-        <li><a href="https://linkedin.com/company/infinitelabs-eu" target="_blank" rel="noopener">LinkedIn</a></li>
-        <li><a href="https://blog.infinitelabs.co" target="_blank" rel="noopener">Blog</a></li>
-      </ul>
+    <div class="sec-grid">
+      <a href="/portfolio/?sector=clinicas" class="sec-card">
+        <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=900&q=80&auto=format&fit=crop" alt="Clínicas">
+        <div class="content">
+          <div class="num">Sector 01</div>
+          <h3>Clínicas y centros de salud</h3>
+          <p>Repensamos la recepción, la agenda, el seguimiento del paciente y la trazabilidad clínica.</p>
+          <span class="arrow">Ver casos del sector →</span>
+        </div>
+      </a>
+      <a href="/portfolio/?sector=industria" class="sec-card">
+        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=900&q=80&auto=format&fit=crop" alt="Industria">
+        <div class="content">
+          <div class="num">Sector 02</div>
+          <h3>Industria y talleres</h3>
+          <p>Transformamos el ciclo de presupuesto, mantenimiento y control de calidad de procesos productivos.</p>
+          <span class="arrow">Ver casos del sector →</span>
+        </div>
+      </a>
+      <a href="/portfolio/?sector=distribucion" class="sec-card">
+        <img src="https://images.unsplash.com/photo-1553413077-190dd305871c?w=900&q=80&auto=format&fit=crop" alt="Distribución">
+        <div class="content">
+          <div class="num">Sector 03</div>
+          <h3>Distribución y logística</h3>
+          <p>Repensamos cómo se reciben los pedidos, cómo se valida el stock y cómo trabajan los comerciales.</p>
+          <span class="arrow">Ver casos del sector →</span>
+        </div>
+      </a>
+      <a href="/portfolio/?sector=despachos" class="sec-card">
+        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=900&q=80&auto=format&fit=crop" alt="Despachos">
+        <div class="content">
+          <div class="num">Sector 04</div>
+          <h3>Despachos profesionales</h3>
+          <p>Liberamos horas del personal sénior automatizando documentos repetitivos y búsquedas sobre archivo.</p>
+          <span class="arrow">Ver casos del sector →</span>
+        </div>
+      </a>
+      <a href="/portfolio/?sector=administracion" class="sec-card">
+        <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=900&q=80&auto=format&fit=crop" alt="Administración pública">
+        <div class="content">
+          <div class="num">Sector 05</div>
+          <h3>Administración pública</h3>
+          <p>Transformamos la atención ciudadana, la gestión documental y el análisis de expedientes históricos.</p>
+          <span class="arrow">Ver casos del sector →</span>
+        </div>
+      </a>
+      <a href="/portfolio/?sector=formacion" class="sec-card">
+        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=900&q=80&auto=format&fit=crop" alt="Formación">
+        <div class="content">
+          <div class="num">Sector 06</div>
+          <h3>Formación y recursos humanos</h3>
+          <p>Cambiamos cómo se evalúa, cómo se hace el onboarding y cómo se analiza el progreso del alumno.</p>
+          <span class="arrow">Ver casos del sector →</span>
+        </div>
+      </a>
     </div>
   </div>
-  <div class="f-legal">
-    <div class="f-addr"><strong>Operada por Infinite Labs OÜ</strong> · Harju maakond, Kesklinna linnaosa, Tallinn · Estonia · Reg. 14889000 · VAT EE102227228</div>
-    <div class="f-addr"><strong>Comercializada en España por Next Gen Academy SL</strong> · CIF B44861649 · Carrer Penedès 27, 08184 Palau-solità i Plegamans, Barcelona · © 2026</div>
-    <div class="flinks">
-      <a href="/privacy/" data-i18n="fo.l1">Privacy</a>
-      <a href="/terms/" data-i18n="fo.l2">Terms</a>
-      <a href="/privacy/#cookies" data-i18n="fo.l3">Cookies</a>
+</section>
+
+<!-- CASO DESTACADO · CARRUSEL ROTATIVO 5 CASOS -->
+<section class="case" id="casos">
+  <div class="slides">
+
+    <!-- Slide 1 · Clínicas dentales -->
+    <div class="slide active" data-slide="0">
+      <img class="bg" src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=2000&q=80&auto=format&fit=crop" alt="Clínica moderna">
+      <div class="content"><div class="wrap"><div class="grid">
+        <div>
+          <div class="big">38<span class="pct">%</span></div>
+          <div class="label">menos ausencias en consulta</div>
+        </div>
+        <div>
+          <span class="section-tag">Caso 1 de 5 · Clínicas dentales · Barcelona</span>
+          <h3>Tres clínicas dentales compartían el mismo problema.</h3>
+          <p>Un número elevado de pacientes no acudía a sus citas sin previo aviso. La recepción no disponía del tiempo necesario para las llamadas de confirmación.</p>
+          <p>En cuatro semanas implantamos Contestia, una recepcionista virtual por WhatsApp. La inversión se amortizó en menos de un mes.</p>
+          <a href="#" class="arrow-btn">Leer el caso completo <span>→</span></a>
+        </div>
+      </div></div></div>
+    </div>
+
+    <!-- Slide 2 · Distribuidora industrial -->
+    <div class="slide" data-slide="1">
+      <img class="bg" src="https://images.unsplash.com/photo-1553413077-190dd305871c?w=2000&q=80&auto=format&fit=crop" alt="Distribuidora industrial">
+      <div class="content"><div class="wrap"><div class="grid">
+        <div>
+          <div class="big">2<span class="pct">h</span></div>
+          <div class="label">recuperadas por comercial / día</div>
+        </div>
+        <div>
+          <span class="section-tag">Caso 2 de 5 · Distribución industrial · Catalunya</span>
+          <h3>12 comerciales perdían dos horas diarias en pedidos manuales.</h3>
+          <p>Los pedidos llegaban por WhatsApp, llamada y correo. Los comerciales dedicaban las dos primeras horas del día a transcribirlos al ERP.</p>
+          <p>Conectamos un asistente de IA al WhatsApp principal: identifica al cliente, reconoce referencias, valida stock y genera el pedido. El comercial solo interviene en excepciones.</p>
+          <a href="#" class="arrow-btn">Leer el caso completo <span>→</span></a>
+        </div>
+      </div></div></div>
+    </div>
+
+    <!-- Slide 3 · Despacho de abogados -->
+    <div class="slide" data-slide="2">
+      <img class="bg" src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=2000&q=80&auto=format&fit=crop" alt="Despacho abogados">
+      <div class="content"><div class="wrap"><div class="grid">
+        <div>
+          <div class="big">20<span class="pct">h</span></div>
+          <div class="label">liberadas por socio sénior / mes</div>
+        </div>
+        <div>
+          <span class="section-tag">Caso 3 de 5 · Derecho mercantil · Madrid</span>
+          <h3>Un despacho de 18 profesionales repetía cinco plantillas de contratos.</h3>
+          <p>Cada socio sénior dedicaba entre 4 y 6 horas semanales a redactar y revisar contratos que eran variaciones de las mismas plantillas.</p>
+          <p>Desarrollamos un generador de contratos basado en sus plantillas. El tiempo medio de respuesta a clientes pasó de 3 días a 6 horas.</p>
+          <a href="#" class="arrow-btn">Leer el caso completo <span>→</span></a>
+        </div>
+      </div></div></div>
+    </div>
+
+    <!-- Slide 4 · Taller industrial -->
+    <div class="slide" data-slide="3">
+      <img class="bg" src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=2000&q=80&auto=format&fit=crop" alt="Taller industrial">
+      <div class="content"><div class="wrap"><div class="grid">
+        <div>
+          <div class="big">45<span class="pct">%</span></div>
+          <div class="label">menos tiempo en presupuestos</div>
+        </div>
+        <div>
+          <span class="section-tag">Caso 4 de 5 · Industria metalúrgica · Sabadell</span>
+          <h3>Cada presupuesto industrial se demoraba 3 días en oficina técnica.</h3>
+          <p>El cliente enviaba planos por correo. La oficina técnica calculaba materiales, mano de obra y márgenes a mano. El presupuesto tardaba 3 días en salir.</p>
+          <p>Implantamos un sistema de IA que interpreta el plano, calcula la estimación y propone márgenes. El equipo revisa y aprueba. Plazo: 4 horas.</p>
+          <a href="#" class="arrow-btn">Leer el caso completo <span>→</span></a>
+        </div>
+      </div></div></div>
+    </div>
+
+    <!-- Slide 5 · Centro formación -->
+    <div class="slide" data-slide="4">
+      <img class="bg" src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=2000&q=80&auto=format&fit=crop" alt="Centro formación">
+      <div class="content"><div class="wrap"><div class="grid">
+        <div>
+          <div class="big">3<span class="pct">x</span></div>
+          <div class="label">más alumnos atendidos en tutoría</div>
+        </div>
+        <div>
+          <span class="section-tag">Caso 5 de 5 · Formación profesional · Valencia</span>
+          <h3>Un centro de FP tenía cola de un mes para tutorías personalizadas.</h3>
+          <p>Los formadores no daban abasto con las dudas individuales. Los alumnos esperaban hasta un mes para una tutoría, lo que afectaba a la tasa de aprobado.</p>
+          <p>Construimos un asistente formativo entrenado con su material. Resuelve dudas 24/7 y escala a tutor humano solo en casos complejos. La cola se eliminó.</p>
+          <a href="#" class="arrow-btn">Leer el caso completo <span>→</span></a>
+        </div>
+      </div></div></div>
+    </div>
+
+  </div>
+
+  <button class="nav-btn prev" aria-label="Caso anterior" onclick="changeCase(-1)">‹</button>
+  <button class="nav-btn next" aria-label="Caso siguiente" onclick="changeCase(1)">›</button>
+
+  <div class="dots">
+    <button class="dot active" onclick="gotoCase(0)" aria-label="Caso 1"></button>
+    <button class="dot" onclick="gotoCase(1)" aria-label="Caso 2"></button>
+    <button class="dot" onclick="gotoCase(2)" aria-label="Caso 3"></button>
+    <button class="dot" onclick="gotoCase(3)" aria-label="Caso 4"></button>
+    <button class="dot" onclick="gotoCase(4)" aria-label="Caso 5"></button>
+  </div>
+</section>
+
+<script>
+  let currentCase = 0;
+  const totalCases = 5;
+  function gotoCase(idx){
+    document.querySelectorAll('.case .slide').forEach((s,i)=>s.classList.toggle('active',i===idx));
+    document.querySelectorAll('.case .dot').forEach((d,i)=>d.classList.toggle('active',i===idx));
+    currentCase = idx;
+  }
+  function changeCase(delta){
+    let next = (currentCase + delta + totalCases) % totalCases;
+    gotoCase(next);
+  }
+  // Auto-rotate cada 7 segundos
+  setInterval(()=>changeCase(1), 7000);
+</script>
+
+<!-- POR QUÉ INFINITE LABS -->
+<section class="why">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-tag">Por qué Infinite Labs</span>
+      <h2>Seis razones para confiar en nosotros</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="icon">01</div>
+        <h3>Transformación transversal, no solo tecnología</h3>
+        <p>La IA cambia procesos, equipos y formas de decidir. No basta con instalar herramientas. Acompañamos la transformación completa de tu organización.</p>
+      </div>
+      <div class="why-item">
+        <div class="icon">02</div>
+        <h3>La IA aumenta a las personas, no las sustituye</h3>
+        <p>Diseñamos cada implantación con tu equipo en el centro. Human-in-the-loop por defecto: liberamos tiempo de tareas repetitivas para que tu gente se dedique a lo que aporta valor.</p>
+      </div>
+      <div class="why-item">
+        <div class="icon">03</div>
+        <h3>Construimos lo que implantamos</h3>
+        <p>Operamos productos propios en producción con empresas reales. La tecnología que proponemos está validada con clientes activos.</p>
+      </div>
+      <div class="why-item">
+        <div class="icon">04</div>
+        <h3>Datos en Europa, cumplimiento garantizado</h3>
+        <p>Infraestructura propia en la UE. Cumplimiento del RGPD. Sin dependencias de terceros países. Soporte en español y catalán.</p>
+      </div>
+      <div class="why-item">
+        <div class="icon">05</div>
+        <h3>Resultados medidos en horas y en ventas</h3>
+        <p>Cada proyecto empieza con una estimación cuantificada: tiempo recuperado, reducción de costes, aumento de producción o ventas. Seguimiento mensual con métricas verificables.</p>
+      </div>
+      <div class="why-item">
+        <div class="icon">06</div>
+        <h3>Sin dependencia tecnológica</h3>
+        <p>Al finalizar el proyecto, tu empresa conserva el código, las claves, los datos y la documentación. Independencia real.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section class="blog" id="blog">
+  <div class="wrap">
+    <div class="header">
+      <h2>Reflexiones del equipo</h2>
+      <a href="https://blog.infinitelabs.co" class="view-all">Ver todas las publicaciones <span>→</span></a>
+    </div>
+    <div class="blog-grid">
+      <a href="https://blog.infinitelabs.co/posts/briefing-7-como-aplicar-ia-en-una-pyme/" class="blog-card">
+        <div class="thumb"><img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=900&q=80&auto=format&fit=crop" alt="Guía aplicar IA en PYME"></div>
+        <div class="meta"><span>Guía</span><span class="dot"></span><span>15 May 2026</span></div>
+        <h3>Cómo aplicar IA en una PYME en 2026: guía práctica para gerentes</h3>
+        <p>Hoja de ruta concreta en cuatro fases para que una empresa mediana española aplique inteligencia artificial con criterio.</p>
+      </a>
+      <a href="https://blog.infinitelabs.co/posts/briefing-8-cupo-ia-generalitat-requisitos-2026/" class="blog-card">
+        <div class="thumb"><img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=900&q=80&auto=format&fit=crop" alt="Cupó IA Generalitat 2026"></div>
+        <div class="meta"><span>Cupons ACCIÓ</span><span class="dot"></span><span>12 May 2026</span></div>
+        <h3>Cupó IA de la Generalitat 2026: requisitos, plazos y cómo solicitarlo</h3>
+        <p>Convocatoria abierta el 7 de mayo. Requisitos completos y cómo gestionamos la solicitud como proveedores acreditados ACCIÓ.</p>
+      </a>
+      <a href="https://blog.infinitelabs.co/posts/briefing-10-caso-clinica-dental-38-ausencias/" class="blog-card">
+        <div class="thumb"><img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=900&q=80&auto=format&fit=crop" alt="Caso clínicas dentales"></div>
+        <div class="meta"><span>Caso real</span><span class="dot"></span><span>8 May 2026</span></div>
+        <h3>Cómo tres clínicas dentales redujeron las ausencias un 38% con IA</h3>
+        <p>Análisis detallado del proyecto: recepcionista virtual por WhatsApp implantada en 4 semanas, 22 horas semanales liberadas.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE NOSOTROS PREVIEW -->
+<section class="about" id="sobre">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <span class="section-tag">Sobre nosotros</span>
+        <h2>Una consultora con historia, <em>nacida desde dentro del problema.</em></h2>
+        <p>Más de 20 años aplicando tecnología a empresas reales. Acreditados por la Generalitat de Catalunya. Con clientes desde Barcelona hasta Dubai. Y con una convicción: la IA solo aporta valor cuando se aplica con criterio.</p>
+        <p>Infinite Labs nace de la experiencia acumulada por Diego Torres a lo largo de dos décadas. Tras acompañar a más de 500 startups, observó un patrón: las grandes empresas tenían consultoras estratégicas, las PYMEs quedaban desorientadas frente a la avalancha tecnológica. Nació para ser ese interlocutor de confianza para tu empresa.</p>
+        <p class="signature">— <strong>Diego Torres</strong>, fundador</p>
+        <a href="/sobre-nosotros/" class="arrow-btn">Nuestra misión es ayudarte, conócenos <span>→</span></a>
+      </div>
+      <div class="photo">
+        <img src="/img/about-tech-campus.jpg" alt="Infinite Labs · campus tecnológico europeo">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA CIERRE -->
+<section class="closing" id="contacto">
+  <img class="bg" src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=2000&q=80&auto=format&fit=crop" alt="Oficina con vista">
+  <div class="wrap">
+    <h2>30 minutos. <em>Sin compromiso.</em><br>Tú decides después.</h2>
+    <p>Entrevista estructurada con tu empresa. Te entregamos una propuesta personalizada con estado inicial, plan de trabajo y presupuesto.</p>
+    <a href="#" class="btn-primary">Reservar diagnóstico gratuito →</a>
+  </div>
+</section>
+
+<!-- TRUST BAND (al final, antes del footer) -->
+<section class="trust">
+  <div class="wrap">
+    <div class="header">
+      <span class="section-tag">Confianza demostrada</span>
+      <h2>Instituciones, corporaciones y partners tecnológicos de primer nivel</h2>
+      <p>Más de 7 años aplicando IA con criterio en Catalunya, Europa y el mundo.</p>
+    </div>
+    <div class="logos">
+      <div class="logo wide"><img src="/img/logos/anthropic.svg" alt="Anthropic"></div>
+      <div class="logo wide"><img src="/img/logos/sabadell.png" alt="Banc Sabadell"></div>
+      <div class="logo"><img src="/img/logos/gencat.svg" alt="Generalitat de Catalunya"></div>
+      <div class="logo"><img src="/img/logos/accio.png" alt="ACCIÓ"></div>
+      <div class="logo"><img src="/img/logos/open-society.png" alt="Open Society Foundations"></div>
+      <div class="logo tall"><img src="/img/logos/barcelona-activa.png" alt="Barcelona Activa"></div>
+      <div class="logo wide"><img src="/img/logos/peninsula.png" alt="Peninsula"></div>
+      <div class="logo tall"><img src="/img/logos/badajoz.svg" alt="Ayuntamiento de Badajoz"></div>
+      <div class="logo"><img src="/img/logos/eba.png" alt="Euro Banking Association"></div>
+      <div class="logo"><img src="/img/logos/gov-dubai.svg" alt="Government of Dubai"></div>
+      <div class="logo"><img src="/img/logos/futurium.svg" alt="Futurium European Commission"></div>
+      <div class="logo"><img src="/img/logos/interledger.svg" alt="Interledger Foundation"></div>
+      <div class="logo"><img src="/img/logos/mydata.png" alt="MyData Global"></div>
+      <div class="logo tall"><img src="/img/logos/all-tech-is-human.png" alt="All Tech Is Human"></div>
+      <div class="logo"><img src="/img/logos/alastria.png" alt="Alastria"></div>
+      <div class="logo wide"><img src="/img/logos/aws.svg" alt="Amazon Web Services"></div>
+      <div class="logo wide"><img src="/img/logos/googlecloud.svg" alt="Google Cloud"></div>
+      <div class="logo wide"><img src="/img/logos/openai.svg" alt="OpenAI"></div>
+      <div class="logo"><img src="/img/logos/gemini.svg" alt="Google Gemini"></div>
+      <div class="logo"><img src="/img/logos/deepseek.svg" alt="DeepSeek"></div>
+      <div class="logo"><img src="/img/logos/hetzner.svg" alt="Hetzner Cloud"></div>
+      <div class="logo wide"><img src="/img/logos/mistral.svg" alt="Mistral AI"></div>
+      <div class="logo wide"><img src="/img/logos/huggingface.svg" alt="Hugging Face"></div>
+      <div class="logo wide"><img src="/img/logos/cloudflare.svg" alt="Cloudflare"></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <a href="/" class="brand"><img src="/logos/svg/infinitelabs-mono-white.svg" alt="Infinite Labs"></a>
+        <p class="tagline">Consultora europea de IA. Transformamos PYMEs con inteligencia artificial aplicada con criterio.</p>
+        <div class="locations">
+          Oficinas en <strong>Barcelona</strong> y <strong>Tallinn</strong>
+        </div>
+      </div>
+      <div class="col">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="/servicios/#diagnostico">Diagnóstico</a></li>
+          <li><a href="/servicios/#proyecto">Transformación operativa</a></li>
+          <li><a href="/servicios/#director">Director de IA externo</a></li>
+          <li><a href="/sectores/">Sectores</a></li>
+          <li><a href="/casos/">Casos</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4>Productos</h4>
+        <ul>
+          <li><a href="/productos/regulia/">Regulia</a></li>
+          <li><a href="/productos/contestia/">Contestia</a></li>
+          <li><a href="/productos/instantexam/">InstantExam</a></li>
+          <li><a href="/productos/canto/">Canto</a></li>
+          <li><a href="/productos/scoreflow/">ScoreFlow</a></li>
+          <li><a href="/productos/contablia/">Contablia</a></li>
+          <li><a href="/productos/swarmix/">Swarmix</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="/sobre-nosotros/">Sobre nosotros</a></li>
+          <li><a href="/portfolio/">Portfolio</a></li>
+          <li><a href="https://blog.infinitelabs.co">Blog</a></li>
+          <li><a href="/cupons/">Cupons ACCIÓ</a></li>
+          <li><a href="/contacto/">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="/aviso-legal/">Aviso legal</a></li>
+          <li><a href="/politica-privacidad/">Privacidad</a></li>
+          <li><a href="/politica-cookies/">Cookies</a></li>
+          <li><a href="https://www.linkedin.com/company/infinitelabs">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom">
+      <div>© 2026 Infinite Labs · Datos procesados en la Unión Europea · RGPD garantizado</div>
+      <div class="legal">
+        <a href="/aviso-legal/">Aviso legal</a>
+        <a href="/politica-privacidad/">Privacidad</a>
+      </div>
     </div>
   </div>
 </footer>
-
-</main>
-
-<script>
-const nav=document.querySelector('nav.site-nav');
-const onS=()=>nav.classList.toggle('scrolled',window.scrollY>20);
-addEventListener('scroll',onS,{passive:true});onS();
-
-const burger=document.getElementById('burger');
-if(burger){
-  burger.addEventListener('click',()=>{
-    const open=nav.classList.toggle('menu-open');
-    burger.setAttribute('aria-expanded',open?'true':'false');
-  });
-  document.querySelectorAll('nav .links a').forEach(a=>{
-    a.addEventListener('click',()=>{
-      nav.classList.remove('menu-open');
-      burger.setAttribute('aria-expanded','false');
-    });
-  });
-}
-
-const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{rootMargin:'0px 0px -8% 0px',threshold:.06});
-document.querySelectorAll('.anim').forEach(el=>io.observe(el));
-
-window.scrollInsights=function(dir){
-  const s=document.getElementById('iscroll');
-  s.scrollBy({left:dir*450,behavior:'smooth'});
-};
-
-const I18N={es:{},en:{
-  'n.s':'What we do','n.i':'Industries','n.p':'Portfolio','n.pr':'How to start','n.a':'Team','n.b':'Blog','n.cta':'Request diagnostic →',
-  'h.live':'Live from Tallinn + Barcelona','h.issue':'European AI consultancy',
-  'h.h1a':'We apply AI to ','h.h1b':'reduce costs in your organization.',
-  'h.sub':'European AI consultancy for SMBs. Reduction of repetitive tasks, optimization of operational workflows and rationalization of software and SaaS expenses. We quantify potential savings before any project begins.',
-  'h.cta1':'Request initial diagnostic','h.cta2':'View capabilities portfolio',
-  'h.ma':'<span>Reply within</span><strong>24h</strong>','h.mb':'<span>EU offices</span><strong>Estonia + Spain</strong>','h.mc':'<span>Compliance</span><strong>GDPR</strong>','h.md':'<span>Avg ROI</span><strong>4 to 8 weeks</strong>',
-  'hv.l':'Real data · Q1 2026','hv.hl':'Average savings','hv.s':'Per quarter · equals 240 operational hours','hv.d':'Money saved by an average client after 4 weeks of AI rollout. That is 240 hours a month your team stops losing on repetitive tasks.','hv.c':'Real SME',
-  't.lbl':'Past work and collaborations','t.6':'Spanish public sector','t.6b':'Spanish public sector',
-  'sv.eb':'Services · 01','sv.ha':'Three collaboration ','sv.hb':'engagement models.','sv.sub':'From the first conversation to the system in production. Each phase with defined price and measurable result in euros. Billing linked to savings generated.',
-  'of1.k':'Entry','of1.h':'Free <em>diagnosis</em>','of1.p':'In 30 minutes over video you tell us how you work. We ask about orders, invoicing, staff, and software you pay every month. When we hang up we give you ballpark numbers of how much you could save in 90 days.',
-  'of1.t1':'Where time is slipping through your fingers',
-  'of1.t2':'Which software is overcharging you',
-  'of1.t3':'Concrete examples: factory, shop, workshop, office, clinic',
-  'of1.t4':'What can be done today and what cannot',
-  'of1.t5':'Quarterly savings estimate',
-  'of1.pv':'Free','of1.pl':'30 min · Video call · No sales','of1.cta':'Book',
-  'of2.k':'Study','of2.h':'Savings <em>study</em>','of2.p':'If the diagnosis adds up, we do the real study. Interviews with your people (sales, admin, ops), review of processes and software invoices. On-site visits if needed. Executive report in 10 days. If there is no clear ROI we tell you and stop.',
-  'of2.t1':'Interviews with your team: sales, admin, ops',
-  'of2.t2':'Process map with hours and cost per process',
-  'of2.t3':'License and SaaS review: what you overpay for',
-  'of2.t4':'What we can have running in 4 weeks',
-  'of2.t5':'90-day plan with budget per phase',
-  'of2.pv':'From €2,500','of2.pl':'Executive report in 10 business days','of2.cta':'Request',
-  'of3.k':'Build','of3.h':'<em>Turnkey</em>, with support and maintenance.','of3.p':'We build the automations the study recommends. They plug into what you already use: ERP, WhatsApp for orders, email, calendar. Controlled pilot first, then scale. Code, keys and data stay with you.',
-  'of3.t1':'Integration with your ERP, WhatsApp, email or calendar',
-  'of3.t2':'Training for your team to use and supervise it',
-  'of3.t3':'Monthly SLA: we stay on top of it working',
-  'of3.t4':'When you leave, everything stays with you. No lock-in',
-  'of3.pv':'From €8,000','of3.pl':'SLA · Support · No lock-in','of3.cta':'Let\u2019s talk',
-  'of4.k':'Continuity','of4.h':'<em>Fractional</em> head of technology.','of4.sub':'Your right-hand tech lead, without hiring one in-house. You call us when you need.',
-  'of4.p':'We are on call every month. We review software vendor proposals before you sign, join meetings with outside consultancies, audit your SaaS invoices every quarter and help you decide what to buy, what to build and what to skip.',
-  'of4.t1':'Software proposal review before you sign',
-  'of4.t2':'Joining meetings with outside consultancies',
-  'of4.t3':'Quarterly audit of licenses and SaaS',
-  'of4.t4':'12-month tech roadmap, kept up to date',
-  'of4.t5':'Direct Slack or WhatsApp channel with the team',
-  'of4.tr1':'10 h/mo · 6-month contract','of4.tr2':'25 h/mo · 6-month contract','of4.cta':'Book',
-  'num.1':'Avg savings per quarter','num.2':'Ops hours returned / month','num.3':'Own SaaS in production','num.4':'EU offices · Estonia + Spain',
-  'mf.eb':'Manifesto · 2026','mf.a':'AI is not going to replace your company. ','mf.b':'Companies that use it will.',
-  'in.eb':'Sectors · 02','in.ha':'Six sectors where we already ','in.hb':'save money.','in.sub':'Each sector, a proven playbook. Scroll sideways to browse.',
-  'i1.s':'Industry & industrial park','i1.t':'One machine stop costs more than everything you will ever invest in AI.','i1.p':'Predictive maintenance on signals you already have, assistant to draft tailored offers, smart search over ISO and procedures, image-based quality control on the line.',
-  'i2.s':'Distribution & logistics','i2.t':'Every order lost on WhatsApp is margin walking away.','i2.p':'Assistant answering orders 24/7, extracting references, confirming in your ERP and alerting sales only on exceptions. Less manual reconciliation, more closed sales.',
-  'i3.s':'Professional services','i3.t':'Billable hours lost drafting the same thing a thousand times.','i3.p':'Smart search over case files, contract templates that fill themselves, meeting transcription and summary, your own tax or compliance engine. You get senior time back.',
-  'i4.s':'Health & clinics','i4.t':'One no-show a day is thousands of euros of lost diary every month.','i4.p':'WhatsApp AI receptionist, scheduling and confirmations, clinical transcription, automated follow-ups. Less overloaded reception and better patient care.',
-  'i5.s':'Public administration','i5.t':'Procedures that take weeks cost votes.','i5.p':'We free the civil servant from paperwork. Citizen chatbot, plenary summary, 010 complaint triage, search over historic case files.',
-  'i6.s':'Training & HR','i6.t':'Generic content costs students. Late metrics cost contracts.','i6.p':'Exams that adapt to the student, AI tutor inside the LMS, role-based onboarding, real-time progress analytics.',
-  'c.eb':'Case · 2026 · Health','c.ek':'Reading the case','c.lbl':'No-shows in 3 dental clinics in Barcelona after rolling out Contestia, our WhatsApp AI receptionist.',
-  'c.s1a':'Free hours / week<strong>+22h</strong>','c.s2a':'To ROI<strong>4 wks</strong>',
-  'c.h3':'A WhatsApp AI receptionist. Four weeks to production.',
-  'c.p':'Week 1, audit of missed calls and bounced appointments. Week 2, pilot in one clinic with management testing everything. Week 3, integration with Google Calendar and patient records. Week 4, rollout across the other two. Since then, fewer no-shows, less reception overload, patients better served.',
-  'c.cta':'Talk about my case',
-  'p.eb':'Own products · 03','p.ha':'We build ','p.hb':'the same technology we deploy.','p.sub':'We operate six own SaaS in production using the same technologies we apply to client projects.',
-  'pp.eb':'Portfolio · 04','pp.ha':'36 technical capabilities ','pp.hb':'organized in 7 families.','pp.sub':'Selection of capabilities in production, with technical description, typical use case, business outcomes and technology stack. Examples are representative and anonymized for contractual confidentiality.',
-  'pp.1.t':'AI conversational assistants','pp.1.p':'Chatbots and voicebots with RAG over corporate information, human escalation and conversation analytics.','pp.1.c':'6 capabilities',
-  'pp.2.t':'Autonomous AI agents','pp.2.p':'LangGraph + MCP agents that execute processes on internal systems with full traceability.','pp.2.c':'7 capabilities',
-  'pp.3.t':'Search and knowledge (RAG)','pp.3.p':'Semantic search with role-based access control over intranet, regulations and transcripts.','pp.3.c':'4 capabilities',
-  'pp.4.t':'Workflow automation','pp.4.p':'Sync between heterogeneous systems, ITSM, multi-channel communication and automatically generated reports.','pp.4.c':'5 capabilities',
-  'pp.5.t':'AI Governance and EU compliance','pp.5.p':'AI Act governance, ALTAI audit and automated multi-framework compliance.','pp.5.c':'3 capabilities',
-  'pp.6.t':'Vertical platforms and synthetic data','pp.6.p':'Sector platforms (insurance, legal, healthcare), digital simulation and privacy-preserving synthetic data generation.','pp.6.c':'6 capabilities',
-  'pp.7.t':'LLM and predictive model training','pp.7.p':'Open-weight LLM fine-tuning, forecasting, anomaly detection, custom OCR and model evaluation.','pp.7.c':'5 capabilities',
-  'pp.cta':'See all 36 capabilities',
-  'pt.eb':'Customers & Partners','pt.h':'Organizations we have collaborated with.',
-  'pr1.d':'Automated European compliance. GDPR, NIS2, AI Act, ISO. WCAG scanner, NIS2 questionnaires, AI Act classifier, exportable audit evidence.',
-  'pr2.d':'AI-generated exams from text, PDFs or YouTube. Leaderboard, SCORM export, certificates.',
-  'pr3.d':'WhatsApp AI receptionist for clinics. Voice, Google Calendar, pay per use.',
-  'pr4.d':'Multi-platform outreach with AI agents. LinkedIn, email, X/Twitter.',
-  'pr5.d':'Autonomous tax management. IVA 303, IRPF 130, VeriFactu, invoice OCR.','pr5.l':'contablia · coming soon',
-  'pr7.d':'Craftsmanship score for product teams. Telemetry, Git and admin APIs merged into one indicator.','pr7.l':'scoreflow · coming soon',
-  'pr6.s':'Your project','pr6.t':'Got a project?','pr6.d':'We build it with you, with the same tech running in the 6 products above.','pr6.cta':'Let\u2019s talk',
-  'pc.eb':'Process · 05','pc.ha':'Four phases. ','pc.hb':'Each with numbers.','pc.sub':'Phased engagement model with exit point at every milestone. If results do not materialize, the project stops. If they do, it scales.',
-  'p1.k':'Diagnosis','p1.t':'Free video call','p1.p':'30 minutes over video. You tell us how you work. By the end we give you ballpark savings numbers. No sales, no commitment.','p1.d':'30 min · No cost',
-  'p2.k':'Diagnosis','p2.t':'Audit','p2.p':'Process analysis, interviews with your team, executive report with savings quantified in euros and a 90-day plan.','p2.d':'10 business days · From €2,500',
-  'p3.k':'Build','p3.t':'Rollout','p3.p':'We build the assistants, integrate with your ERP, WhatsApp or email, train your team. Controlled pilot before scaling.','p3.d':'4 to 12 weeks · From €8,000',
-  'p4.k':'Operate','p4.t':'Continuous improvement','p4.p':'Production monitoring, monthly iteration, real metrics. Nothing gets forgotten on a server.','p4.d':'Monthly · SLA included',
-  'w.eb':'Why Infinite Labs · 06','w.ha':'Four reasons. ','w.hb':'Zero fluff.','w.sub':'Not pretty slides. Monthly reports of savings generated. That is the only metric that matters.',
-  'w1.t':'We build what we sell','w1.p':'5 of our own SaaS in production. The AI we propose already runs in our products, with real payments, real support and real bugs fixed.',
-  'w2.t':'European, GDPR','w2.p':'Data in the EU. Own infra. No US dependencies. Contract and support in Spanish. EU invoicing.',
-  'w3.t':'Results measured in euros','w3.p':'Audit with numbers. Projects with figures. If the result cannot be measured in euros or hours, it is not a result.',
-  'w4.t':'No smoke, no lock-in','w4.p':'Open tech. Docs yours. Keys, repos and data stay with you. When we are done, you can keep going without us.',
-  'bl.eb':'Insights · 07','bl.ha':'Daily briefings ','bl.hb':'on AI for business.','bl.sub':'Every business day: models, tools, cases, market and European regulation. Text and 3-5 minute podcast.',
-  'bl.seeall':'View full blog','bl.read':'Read article',
-  'ab.eb':'About · 08','ab.a':'European consultancy. ','ab.b':'We build and operate','ab.c':' our own SaaS with the same technologies we deploy at clients.',
-  'ab.e':'Infinite Labs OÜ · Reg. 14889000 · VAT EE102227228','ab.s':'Next Gen Academy SL · CIF B44861649 · Carrer Penedès 27, Palau-solità i Plegamans',
-  'cf.eb':'Start today','cf.ha':'Start with a free ','cf.hb':'diagnosis session','cf.hc':'. You decide.',
-  'cf.sub':'On-site or video session, no commitment. Outcome: quantified map of quarterly savings potential.',
-  'cf.cta':'Request diagnostic','cf.cta2':'Send a message',
-  'ct.eb':'Contact · 08','ct.ha':'Tell us what you want to ','ct.hb':'automate.','ct.lead':'We reply within 24 business hours. Or book the free diagnosis session straight from the calendar.',
-  'ch.mail':'Reply within 24h','ch.cal':'Book free diagnosis','ch.li':'Case by case, in the open','ch.loc':'Location','ch.tz':'CET / EET · ES + EN',
-  'f.name':'Name','f.co':'Company','f.mail':'Email','f.sec':'Sector','f.sec0':'Select…',
-  'f.s1':'Industry / Industrial park','f.s2':'Distribution / Logistics','f.s3':'Professional services','f.s4':'Health / Clinics','f.s5':'Public administration','f.s6':'Training / HR','f.s7':'Other',
-  'f.sz':'Team size','f.sz0':'Select…','f.msg':'Message','f.cta':'Send message →',
-  'f.legal':'By submitting you accept our <a href="/privacy/">privacy policy</a>. Data handled in EU · GDPR · Never shared with third parties.',
-  'fo.tag':'European AI consultancy for SMEs. We show you what you can save, quantify it in euros and build it.',
-  'fo.s':'What we do','fo.s1':'Free diagnosis','fo.s2':'Savings study','fo.s3':'Turnkey','fo.s6':'Fractional tech lead','fo.s4':'Who for','fo.s5':'Featured case',
-  'fo.p':'Products','fo.c':'Contact','fo.c2':'Book diagnosis',
-  'fo.l1':'Privacy','fo.l2':'Terms','fo.l3':'Cookies'
-}};
-Object.keys(I18N.en).forEach(k=>{const el=document.querySelector(`[data-i18n="${k}"]`);if(el)I18N.es[k]=el.innerHTML;});
-let lang=localStorage.getItem('il_lang_v6')||'es';
-function apply(L){lang=L;localStorage.setItem('il_lang_v6',L);document.documentElement.lang=L;document.querySelectorAll('[data-i18n]').forEach(el=>{const k=el.getAttribute('data-i18n');if(I18N[L][k]!==undefined)el.innerHTML=I18N[L][k]});document.querySelectorAll('.lang button').forEach(b=>b.classList.toggle('active',b.dataset.lang===L));}
-document.querySelectorAll('.lang button').forEach(b=>b.addEventListener('click',()=>apply(b.dataset.lang)));
-apply(lang);
-
-// Refresh insights from blog.infinitelabs.co RSS if CORS allows.
-// Static cards above act as graceful fallback when CORS is blocked.
-async function loadPosts(){
-  try{
-    const r=await fetch('https://blog.infinitelabs.co/rss.xml',{cache:'no-store'});
-    if(!r.ok) return;
-    const xml=new DOMParser().parseFromString(await r.text(),'text/xml');
-    const items=Array.from(xml.querySelectorAll('item')).slice(0,3);
-    if(!items.length) return;
-    const g=document.getElementById('blog-grid');
-    g.innerHTML='';
-    items.forEach((it,i)=>{
-      const title=it.querySelector('title')?.textContent||'';
-      const link=it.querySelector('link')?.textContent||'#';
-      const desc=it.querySelector('description')?.textContent||'';
-      const date=it.querySelector('pubDate')?.textContent;
-      const dt=date?new Date(date).toLocaleDateString(lang==='es'?'es-ES':'en-GB',{day:'numeric',month:'short',year:'numeric'}):'';
-      const a=document.createElement('a');
-      a.className='post anim'+(i?' anim-'+i:'');
-      a.href=link;a.target='_blank';a.rel='noopener';
-      const brief=desc.replace(/\s+/g,' ').slice(0,180);
-      a.innerHTML=`<div class="pbody"><div class="pmeta">${dt} · 4 min</div><h3>${title}</h3><div class="pbrief">${brief}${brief.length>=180?'…':''}</div><div class="plink">${lang==='es'?'Leer artículo':'Read article'} <svg viewBox="0 0 24 24" style="width:12px;height:12px;stroke:currentColor;stroke-width:2;fill:none"><path d="M7 17 17 7M8 7h9v9"/></svg></div></div>`;
-      g.appendChild(a);
-      requestAnimationFrame(()=>a.classList.add('in'));
-    });
-  }catch(e){/* CORS not enabled on blog; static cards remain */}
-}
-loadPosts();
-
-window.submitContact=async function(e){
-  e.preventDefault();
-  const f=e.target;
-  const btn=f.querySelector('button.submit');
-  const orig=btn.textContent;
-  btn.disabled=true;
-  btn.textContent=lang==='es'?'Enviando…':'Sending…';
-  try{
-    const fd=new FormData(f);
-    const payload={};
-    fd.forEach((v,k)=>{payload[k]=v;});
-    const r=await fetch(f.action,{method:'POST',headers:{'content-type':'application/json','accept':'application/json'},body:JSON.stringify(payload)});
-    if(!r.ok) throw new Error('bad status');
-    btn.textContent=lang==='es'?'Mensaje enviado ✓':'Message sent ✓';
-    btn.style.background='#86EFAC';
-    f.reset();
-    setTimeout(()=>{btn.textContent=orig;btn.style.background='';btn.disabled=false;},5000);
-  }catch(err){
-    btn.textContent=lang==='es'?'Error. Escribe a hello@infinitelabs.co':'Error. Email hello@infinitelabs.co';
-    btn.style.background='#f87171';
-    setTimeout(()=>{btn.textContent=orig;btn.style.background='';btn.disabled=false;},5000);
-  }
-};
-</script>
 
 </body>
 </html>
