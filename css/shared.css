@@ -87,7 +87,7 @@ footer .bottom .legal a:hover{color:#fff}
   nav.top ul{display:none}
   nav.top .wrap{height:64px}
   nav.top .brand img{height:24px}
-  nav.top .cta{padding:9px 14px;font-size:12px}
+  nav.top .cta{padding:9px 12px;font-size:11px;white-space:nowrap}
   .page-hero{padding:60px 0 48px}
   .page-hero h1{font-size:32px;line-height:1.15}
   .page-hero .lead{font-size:16px}
