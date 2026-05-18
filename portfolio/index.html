@@ -235,7 +235,7 @@
       const info=CASES_INFO[c.id]||{t:c.id,p:""};
       const tags=[...c.sectors.slice(0,2),...c.techs.slice(0,2)].map(t=>`<span class="case-tag">${t}</span>`).join("");
       const card=document.createElement("a");
-      card.href=c.href;card.className="case-card";
+      card.href="/contacto/?ref=portfolio-"+c.fam;card.className="case-card";
       card.innerHTML=`<div class="fam">${FAMILIAS[c.fam]||c.fam}</div><h3>${info.t}</h3><p>${info.p}</p><div class="meta">${tags}</div>`;
       grid.appendChild(card);
     });
