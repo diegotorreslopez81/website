@@ -114,11 +114,20 @@
       <div style="flex:1">
         <h3>Convocatoria 2026 cerrada · te avisamos cuando reabran</h3>
         <p>La convocatoria de Cupó IA 2026 ya ha agotado fondos. Déjanos tu email y te notificamos en cuanto se publique la siguiente, antes de que se agote.</p>
-        <form action="mailto:hello@infinitelabs.co" method="POST">
-          <input type="email" name="email" placeholder="tu@empresa.com" required>
-          <input type="hidden" name="_subject" value="Aviso reapertura Cupons ACCIÓ">
+        <form id="cupon-form" onsubmit="return cuponNotify(event)">
+          <input type="email" name="email" id="cupon-email" placeholder="tu@empresa.com" required>
           <button type="submit">Avisarme cuando reabran →</button>
         </form>
+        <script>
+          function cuponNotify(e){
+            e.preventDefault();
+            const em=document.getElementById('cupon-email').value;
+            const subject=encodeURIComponent('Aviso reapertura Cupons ACCIÓ');
+            const body=encodeURIComponent(`Mi email: ${em}\n\nQuiero recibir aviso cuando se reabra la convocatoria de Cupó IA u otros cupons de ACCIÓ.`);
+            window.location.href='mailto:hello@infinitelabs.co?subject='+subject+'&body='+body;
+            return false;
+          }
+        </script>
       </div>
     </div>
   </div>

@@ -39,14 +39,28 @@ form button:hover{background:var(--accent-2);transform:translateY(-1px);box-shad
   <div class="form-card">
     <h2>Escríbenos</h2>
     <p>Describe tu situación con tus propias palabras. Te respondemos en menos de 24 horas hábiles.</p>
-    <form action="mailto:hello@infinitelabs.co" method="POST">
-      <div class="field"><label>Nombre</label><input type="text" name="name" required></div>
-      <div class="field"><label>Empresa</label><input type="text" name="company" required></div>
-      <div class="field"><label>Email</label><input type="email" name="email" required></div>
-      <div class="field"><label>Sector</label><select name="sector"><option value="clinicas">Clínicas y centros de salud</option><option value="industria">Industria y talleres</option><option value="distribucion">Distribución y logística</option><option value="despachos">Despachos profesionales</option><option value="administracion">Administración pública</option><option value="formacion">Formación y RRHH</option><option value="otro">Otro</option></select></div>
-      <div class="field"><label>¿Qué te trae por aquí?</label><textarea name="message" placeholder="Cuéntanos brevemente tu situación, qué buscas o qué dolor concreto te ha hecho llegar a nosotros..."></textarea></div>
+    <form id="contact-form" onsubmit="return sendContactForm(event)">
+      <div class="field"><label>Nombre</label><input type="text" name="name" id="cf-name" required></div>
+      <div class="field"><label>Empresa</label><input type="text" name="company" id="cf-company" required></div>
+      <div class="field"><label>Email</label><input type="email" name="email" id="cf-email" required></div>
+      <div class="field"><label>Sector</label><select name="sector" id="cf-sector"><option value="clinicas">Clínicas y centros de salud</option><option value="industria">Industria y talleres</option><option value="distribucion">Distribución y logística</option><option value="despachos">Despachos profesionales</option><option value="administracion">Administración pública</option><option value="formacion">Formación y RRHH</option><option value="otro">Otro</option></select></div>
+      <div class="field"><label>¿Qué te trae por aquí?</label><textarea name="message" id="cf-message" placeholder="Cuéntanos brevemente tu situación, qué buscas o qué dolor concreto te ha hecho llegar a nosotros..."></textarea></div>
       <button type="submit">Enviar mensaje →</button>
     </form>
+    <script>
+      function sendContactForm(e){
+        e.preventDefault();
+        const n=document.getElementById('cf-name').value;
+        const c=document.getElementById('cf-company').value;
+        const em=document.getElementById('cf-email').value;
+        const s=document.getElementById('cf-sector').value;
+        const m=document.getElementById('cf-message').value;
+        const subject=encodeURIComponent('Contacto desde infinitelabs.co · '+c);
+        const body=encodeURIComponent(`Nombre: ${n}\nEmpresa: ${c}\nEmail: ${em}\nSector: ${s}\n\nMensaje:\n${m}`);
+        window.location.href='mailto:hello@infinitelabs.co?subject='+subject+'&body='+body;
+        return false;
+      }
+    </script>
     <div class="note"><p>Los datos se tratan en la Unión Europea conforme al RGPD. No los cedemos a terceros. Más detalle en nuestra <a href="/politica-privacidad/" style="color:var(--accent);font-weight:600">política de privacidad</a>.</p></div>
   </div>
 
