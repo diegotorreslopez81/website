@@ -49,7 +49,7 @@
     formacion: "edu"
   };
 
-  // Lee ?sector=X de la URL para pre-filtrar al cargar (link entrante desde home)
+  // Lee ?sector=X o ?familia=X de la URL para pre-filtrar al cargar
   function getInitialSector(){
     try {
       const params = new URLSearchParams(window.location.search);
@@ -58,14 +58,29 @@
       return SECTOR_HOME_TO_INTERNAL[raw] || raw;
     } catch(e){ return "all"; }
   }
+  function getInitialFamily(){
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const raw = params.get("familia");
+      return raw || "all";
+    } catch(e){ return "all"; }
+  }
 
-  const state = { family:"all", sector:getInitialSector(), tech:"all" };
+  const state = { family:getInitialFamily(), sector:getInitialSector(), tech:"all" };
 
   // Sincronizar el chip de sector activo en la UI cuando hay pre-filtro
   function syncSectorChip(){
     if(state.sector === "all") return;
     document.querySelectorAll('[data-filter-type="sector"] .chip').forEach(chip=>{
       const isActive = chip.getAttribute("data-value") === state.sector;
+      chip.classList.toggle("active", isActive);
+      if(isActive) chip.scrollIntoView({behavior:"smooth", block:"nearest", inline:"center"});
+    });
+  }
+  function syncFamilyChip(){
+    if(state.family === "all") return;
+    document.querySelectorAll('[data-filter-type="family"] .chip').forEach(chip=>{
+      const isActive = chip.getAttribute("data-value") === state.family;
       chip.classList.toggle("active", isActive);
       if(isActive) chip.scrollIntoView({behavior:"smooth", block:"nearest", inline:"center"});
     });
@@ -128,8 +143,9 @@
     });
   });
 
-  // Aplicar pre-filtro si vino por ?sector=X
+  // Aplicar pre-filtro si vino por ?sector=X o ?familia=X
   syncSectorChip();
+  syncFamilyChip();
 
   // ----- nav scroll -----
   const nav = document.getElementById("nav");
