@@ -6,8 +6,8 @@
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<title>Servicios · Infinite Labs · Diagnóstico, transformación operativa y Director de IA externo</title>
-<meta name="description" content="Tres formas de trabajar con nosotros: diagnóstico gratuito de 30 minutos, proyectos de transformación operativa con IA y acompañamiento continuo como tu Director de IA externo.">
+<title>Servicios · Infinite Labs · Diagnóstico, transformación operativa y Partner tecnológico</title>
+<meta name="description" content="Tres formas de trabajar con nosotros: diagnóstico gratuito de 30 minutos, proyectos de transformación operativa con IA y acompañamiento continuo como tu Partner tecnológico.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -40,6 +40,55 @@
   nav.top .cta:hover{background:var(--accent);box-shadow:0 6px 20px var(--accent-glow)}
 
   /* HERO */
+  /* Phases timeline (Transformación operativa) */
+  .phases{display:grid;grid-template-columns:1fr auto 1fr auto 1fr auto 1fr;gap:8px;align-items:start;margin:20px 0 36px;padding:24px;background:var(--paper);border:1px solid var(--line);border-radius:16px}
+  .phase{display:flex;flex-direction:column;gap:8px}
+  .phase-num{font-family:'Fraunces',serif;font-size:14px;font-weight:600;color:var(--accent);letter-spacing:.05em}
+  .phase-name{font-family:'Inter',sans-serif;font-size:16px;font-weight:600;color:var(--ink)}
+  .phase-desc{font-size:13px;color:var(--ink-3);line-height:1.5}
+  .phase-sep{font-size:18px;color:var(--accent);font-weight:300;padding-top:12px}
+  @media(max-width:768px){
+    .phases{grid-template-columns:1fr;gap:16px}
+    .phase-sep{transform:rotate(90deg);padding:0;text-align:center}
+  }
+
+  /* Cycle diagram (Partner tecnológico) */
+  .cycle{margin:20px 0 36px;padding:32px 24px;background:var(--paper);border:1px solid var(--line);border-radius:16px}
+  .cycle-ring{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto auto;gap:14px;max-width:540px;margin:0 auto;position:relative}
+  .cycle-step{padding:14px 18px;background:var(--white);border:1px solid var(--line);border-radius:12px;display:flex;flex-direction:column;gap:4px;transition:border-color .2s}
+  .cycle-step:hover{border-color:var(--accent)}
+  .cycle-num{font-family:'Fraunces',serif;font-size:12px;font-weight:600;color:var(--accent);letter-spacing:.05em}
+  .cycle-step strong{font-family:'Inter',sans-serif;font-size:15px;font-weight:600;color:var(--ink)}
+  .cycle-step small{font-size:12px;color:var(--ink-3);line-height:1.4}
+  .cycle-hub{grid-column:1 / -1;background:var(--accent);color:#fff;padding:18px 22px;border-radius:14px;text-align:center;position:relative;box-shadow:0 8px 32px var(--accent-glow);display:flex;flex-direction:column;gap:4px}
+  .cycle-hub strong{font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#fff}
+  .cycle-hub small{font-size:12px;color:rgba(255,255,255,.85);line-height:1.4}
+  .cycle-hub-pulse{position:absolute;top:-6px;right:18px;width:12px;height:12px;background:#fff;border-radius:50%;box-shadow:0 0 0 0 rgba(255,255,255,.7);animation:cyclePulse 2s infinite}
+  @keyframes cyclePulse{0%{box-shadow:0 0 0 0 rgba(255,255,255,.7)}70%{box-shadow:0 0 0 10px rgba(255,255,255,0)}100%{box-shadow:0 0 0 0 rgba(255,255,255,0)}}
+  @media(max-width:480px){.cycle-ring{grid-template-columns:1fr}}
+
+  /* Flow diagram (servicios overview) */
+  .flow-diagram{padding:32px 0 80px}
+  .flow-diagram .wrap{max-width:980px;display:flex;flex-direction:column;align-items:center;gap:0}
+  .flow-step{display:flex;flex-direction:column;align-items:center;text-align:center}
+  .flow-tag{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);font-weight:700;margin-bottom:12px}
+  .flow-card{background:var(--white);border:1px solid var(--line-strong);border-radius:14px;padding:24px 36px;min-width:280px;box-shadow:0 2px 12px rgba(15,15,20,.04)}
+  .flow-card h3{font-family:'Fraunces',serif;font-size:24px;color:var(--ink);font-weight:500;margin-bottom:6px;letter-spacing:-.01em}
+  .flow-card p{font-size:14px;color:var(--ink-3);margin:0}
+  .flow-card-accent{border-color:var(--accent);background:linear-gradient(135deg,rgba(96,0,255,.04),rgba(96,0,255,.01))}
+  .flow-arrow-down{width:2px;height:48px;background:linear-gradient(to bottom,var(--line-strong) 0%,var(--accent) 100%);position:relative;margin:8px 0}
+  .flow-arrow-down::after{content:"";position:absolute;bottom:-2px;left:50%;transform:translateX(-50%);width:10px;height:10px;border-right:2px solid var(--accent);border-bottom:2px solid var(--accent);transform:translateX(-50%) rotate(45deg)}
+  .flow-branch{display:grid;grid-template-columns:1fr auto 1fr;gap:32px;align-items:center;width:100%;max-width:880px;margin-top:8px}
+  .flow-or{font-family:'Fraunces',serif;font-style:italic;font-size:22px;color:var(--ink-3);font-weight:400;padding:0 12px}
+  .flow-note{margin-top:36px;padding:14px 24px;background:var(--accent-soft);border-radius:100px;font-size:14px;color:var(--accent-2);font-weight:500;text-align:center;max-width:780px}
+  @media(max-width:768px){
+    .flow-branch{grid-template-columns:1fr;gap:16px}
+    .flow-or{padding:8px 0;font-size:18px}
+    .flow-card{padding:20px 24px;min-width:0;width:100%}
+    .flow-card h3{font-size:20px}
+    .flow-note{font-size:13px;padding:12px 20px;border-radius:14px}
+  }
+
   .hero{padding:100px 0 80px;position:relative;overflow:hidden}
   .hero::before{content:"";position:absolute;top:-20%;right:-10%;width:600px;height:600px;background:radial-gradient(circle,rgba(96,0,255,.1),transparent 60%);filter:blur(80px);pointer-events:none}
   .hero .eyebrow{display:inline-flex;align-items:center;gap:10px;padding:8px 16px;border:1px solid var(--line-strong);background:var(--white);border-radius:100px;font-size:13px;color:var(--ink-2);margin-bottom:24px;font-weight:500;position:relative}
@@ -213,6 +262,38 @@
   </div>
 </section>
 
+<!-- DIAGRAMA · CÓMO FLUYE EL SERVICIO -->
+<section class="flow-diagram" aria-label="Diagrama de flujo del servicio">
+  <div class="wrap">
+    <div class="flow-step flow-start">
+      <div class="flow-tag">Punto de partida</div>
+      <div class="flow-card">
+        <h3>Diagnóstico</h3>
+        <p>30 minutos · gratuito</p>
+      </div>
+    </div>
+    <div class="flow-arrow flow-arrow-down" aria-hidden="true"></div>
+    <div class="flow-branch">
+      <div class="flow-step">
+        <div class="flow-tag">Proyecto puntual</div>
+        <div class="flow-card flow-card-accent">
+          <h3>Transformación operativa</h3>
+          <p>Implantación, integración y capacitación</p>
+        </div>
+      </div>
+      <div class="flow-or" aria-hidden="true">o</div>
+      <div class="flow-step">
+        <div class="flow-tag">Acompañamiento continuo</div>
+        <div class="flow-card flow-card-accent">
+          <h3>Partner tecnológico</h3>
+          <p>Criterio cualificado cada mes</p>
+        </div>
+      </div>
+    </div>
+    <div class="flow-note">↔ Puedes empezar por uno y sumar el otro cuando lo necesites. O combinarlos desde el inicio.</div>
+  </div>
+</section>
+
 <!-- SERVICIO 1 · DIAGNÓSTICO -->
 <section class="servicio" id="diagnostico">
   <div class="wrap">
@@ -277,6 +358,33 @@
           <div class="deliverable"><div class="check">✓</div><div><strong>SLA y soporte mensual</strong><span>Acuerdo de nivel de servicio incluido durante el primer ciclo. Tiempos de respuesta comprometidos.</span></div></div>
         </div>
 
+        <h3>Cuatro fases con un final claro</h3>
+        <div class="phases">
+          <div class="phase">
+            <div class="phase-num">01</div>
+            <div class="phase-name">Piloto</div>
+            <div class="phase-desc">Versión mínima funcionando en un proceso acotado. Validamos hipótesis antes de escalar.</div>
+          </div>
+          <div class="phase-sep" aria-hidden="true">→</div>
+          <div class="phase">
+            <div class="phase-num">02</div>
+            <div class="phase-name">Integración</div>
+            <div class="phase-desc">Conexión con tus sistemas (ERP, CRM, WhatsApp, agenda). Datos fluyendo end-to-end.</div>
+          </div>
+          <div class="phase-sep" aria-hidden="true">→</div>
+          <div class="phase">
+            <div class="phase-num">03</div>
+            <div class="phase-name">Despliegue</div>
+            <div class="phase-desc">Salida a producción y formación a tu equipo. Medición desde el día uno.</div>
+          </div>
+          <div class="phase-sep" aria-hidden="true">→</div>
+          <div class="phase">
+            <div class="phase-num">04</div>
+            <div class="phase-name">Cierre</div>
+            <div class="phase-desc">Entrega de código, claves, datos y documentación. Independencia real.</div>
+          </div>
+        </div>
+
         <h3>Plazo típico</h3>
         <p>Entre 4 y 12 semanas según el alcance. Los proyectos empiezan siempre por un piloto controlado antes del despliegue completo, para que puedas validar resultados antes de comprometer recursos.</p>
       </div>
@@ -285,17 +393,17 @@
 </section>
 
 <!-- SERVICIO 3 · DIRECTOR DE IA EXTERNO -->
-<section class="servicio" id="director">
+<section class="servicio" id="partner">
   <div class="wrap">
     <div class="grid">
       <div class="col-left">
         <div class="num"><span class="circle">03</span> MENSUALIDAD</div>
         <span class="tag">Acompañamiento continuo</span>
-        <h2>Director de IA externo</h2>
-        <p>Tu Chief AI Officer fraccional. Revisamos propuestas tecnológicas, participamos en decisiones estratégicas e identificamos nuevas oportunidades cada mes. El criterio cualificado que necesita tu empresa, sin contratar a nadie en plantilla.</p>
+        <h2>Partner tecnológico</h2>
+        <p>Criterio cualificado cada mes a tu lado. Revisamos propuestas tecnológicas, participamos en decisiones estratégicas e identificamos nuevas oportunidades cada mes. El criterio cualificado que necesita tu empresa, sin contratar a nadie en plantilla.</p>
         <div class="price-card">
           <div class="price">Desde 1.000€/mes</div>
-          <div class="price-sub">Tres paquetes con descuento por volumen · 6 meses mínimo</div>
+          <div class="price-sub">Tres paquetes con descuento por volumen · Revisión trimestral del servicio</div>
         </div>
         <a href="/contacto/" class="cta-btn">Solicitar propuesta →</a>
       </div>
@@ -322,6 +430,21 @@
             <div class="pkg-price">5.000€<small>/mes</small></div>
             <div class="pkg-hours">75 horas mensuales</div>
             <div class="pkg-rate">66€/hora · transformación intensa</div>
+          </div>
+        </div>
+
+        <h3>El ritmo mensual</h3>
+        <div class="cycle">
+          <div class="cycle-ring">
+            <div class="cycle-step cycle-1"><span class="cycle-num">01</span><strong>Revisión</strong><small>mensual conjunta</small></div>
+            <div class="cycle-step cycle-2"><span class="cycle-num">02</span><strong>Interlocución</strong><small>con tus proveedores</small></div>
+            <div class="cycle-step cycle-3"><span class="cycle-num">03</span><strong>Hoja de ruta</strong><small>trimestral</small></div>
+            <div class="cycle-step cycle-4"><span class="cycle-num">04</span><strong>Auditoría</strong><small>SaaS y software</small></div>
+            <div class="cycle-hub">
+              <div class="cycle-hub-pulse"></div>
+              <strong>Canal directo</strong>
+              <small>Slack / WhatsApp · siempre activo</small>
+            </div>
           </div>
         </div>
 
@@ -365,7 +488,7 @@
       <div class="step">
         <div class="num-step">04</div>
         <h3>Acompañamiento</h3>
-        <p>Si quieres, continuamos como tu Director de IA externo para escalar y mantener la transformación.</p>
+        <p>Si quieres, continuamos como tu Partner tecnológico para escalar y mantener la transformación.</p>
       </div>
     </div>
   </div>
@@ -397,7 +520,7 @@
       </details>
       <details>
         <summary>¿Qué pasa si quiero dejar de trabajar con vosotros?</summary>
-        <p>Al finalizar cualquier proyecto te entregamos código, claves de acceso, datos y documentación. Tu empresa conserva todo el activo construido. El Director de IA externo tiene compromiso mínimo de 6 meses, después puedes pausarlo cuando quieras.</p>
+        <p>Al finalizar cualquier proyecto te entregamos código, claves de acceso, datos y documentación. Tu empresa conserva todo el activo construido. El Partner tecnológico se revisa trimestralmente y puedes ajustarlo o pausarlo según evolucione tu empresa.</p>
       </details>
       <details>
         <summary>¿Puedo aplicar el Cupó IA de la Generalitat con vosotros?</summary>
@@ -430,7 +553,7 @@
         <ul>
           <li><a href="/servicios/#diagnostico">Diagnóstico</a></li>
           <li><a href="/servicios/#transformacion">Transformación operativa</a></li>
-          <li><a href="/servicios/#director">Director de IA externo</a></li>
+          <li><a href="/servicios/#partner">Partner tecnológico</a></li>
           <li><a href="/sectores/">Sectores</a></li>
           <li><a href="/historias-de-exito/">Historias de éxito</a></li>
         </ul>
