@@ -1,5 +1,5 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Contacto · Infinite Labs · Reserva tu diagnóstico gratuito de 30 minutos</title><meta name="description" content="Reserva diagnóstico de 30 minutos sin compromiso. Tres vías de contacto: formulario, calendario directo y email. Respondemos en 24h hábiles.">
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact · Infinite Labs · Book your free 30-minute diagnostic</title><meta name="description" content="Book a 30-minute diagnostic, no strings attached. Three ways to reach us: form, direct calendar and email. We reply within 24 business hours.">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -30,38 +30,38 @@ form button:hover{background:var(--accent-2);transform:translateY(-1px);box-shad
   <div class="wrap">
     <a href="/" class="brand"><img src="/logos/svg/infinitelabs-mono-black.svg" alt="Infinite Labs"></a>
     <ul class="nav-list">
-      <li><a href="/sectores/">Sectores</a></li>
-      <li><a href="/casos-de-uso/">Casos de uso</a></li>
-      <li><a href="/servicios/">Servicios</a></li>
-      <li><a href="/historias-de-exito/">Historias de éxito</a></li>
-      <li><a href="/productos/">Productos</a></li>
+      <li><a href="/sectores/">Sectors</a></li>
+      <li><a href="/casos-de-uso/">Use cases</a></li>
+      <li><a href="/servicios/">Services</a></li>
+      <li><a href="/historias-de-exito/">Success stories</a></li>
+      <li><a href="/productos/">Products</a></li>
       <li><a href="https://blog.infinitelabs.co">Blog</a></li>
-      <li><a href="/sobre-nosotros/">Sobre nosotros</a></li>
-      <li><a href="/contacto/" class="active">Contacto</a></li>
+      <li><a href="/sobre-nosotros/">About us</a></li>
+      <li><a href="/contacto/" class="active">Contact</a></li>
     </ul>
-    <button class="nav-burger" aria-label="Menú" onclick="this.closest('nav').classList.toggle('menu-open')"><span></span><span></span><span></span></button>
-    <a href="/contacto/" class="cta"><span class="cta-full">Reservar diagnóstico</span><span class="cta-mob">Reservar</span></a>
+    <button class="nav-burger" aria-label="Menu" onclick="this.closest('nav').classList.toggle('menu-open')"><span></span><span></span><span></span></button>
+    <a href="/contacto/" class="cta"><span class="cta-full">Book a diagnostic</span><span class="cta-mob">Book</span></a>
   </div>
 </nav>
 <section class="page-hero">
   <div class="wrap">
-    <div class="eyebrow"><span class="badge"></span>Contacto</div>
-    <h1>Cuéntanos <em>tu situación.</em></h1>
-    <p class="lead">Respondemos en 24 horas hábiles. Si lo prefieres, reserva directamente la conversación inicial de 30 minutos en el calendario.</p>
+    <div class="eyebrow"><span class="badge"></span>Contact</div>
+    <h1>Tell us <em>about your situation.</em></h1>
+    <p class="lead">We reply within 24 business hours. If you prefer, book the initial 30-minute conversation directly in the calendar.</p>
   </div>
 </section>
 
 <section><div class="wrap"><div class="contacto-grid">
   <div class="form-card">
-    <h2>Escríbenos</h2>
-    <p>Describe tu situación con tus propias palabras. Te respondemos en menos de 24 horas hábiles.</p>
+    <h2>Write to us</h2>
+    <p>Describe your situation in your own words. We reply within 24 business hours.</p>
     <form id="contact-form" onsubmit="return sendContactForm(event)">
-      <div class="field"><label>Nombre</label><input type="text" name="name" id="cf-name" required></div>
-      <div class="field"><label>Empresa</label><input type="text" name="company" id="cf-company" required></div>
+      <div class="field"><label>Name</label><input type="text" name="name" id="cf-name" required></div>
+      <div class="field"><label>Company</label><input type="text" name="company" id="cf-company" required></div>
       <div class="field"><label>Email</label><input type="email" name="email" id="cf-email" required></div>
-      <div class="field"><label>Sector</label><select name="sector" id="cf-sector"><option value="clinicas">Clínicas y centros de salud</option><option value="industria">Industria y talleres</option><option value="distribucion">Distribución y logística</option><option value="despachos">Despachos profesionales</option><option value="administracion">Administración pública</option><option value="formacion">Formación y RRHH</option><option value="otro">Otro</option></select></div>
-      <div class="field"><label>¿Qué te trae por aquí?</label><textarea name="message" id="cf-message" placeholder="Cuéntanos brevemente tu situación, qué buscas o qué dolor concreto te ha hecho llegar a nosotros..."></textarea></div>
-      <button type="submit">Enviar mensaje →</button>
+      <div class="field"><label>Sector</label><select name="sector" id="cf-sector"><option value="clinicas">Clinics and healthcare centres</option><option value="industria">Industry and workshops</option><option value="distribucion">Distribution and logistics</option><option value="despachos">Professional firms</option><option value="administracion">Public administration</option><option value="formacion">Training and HR</option><option value="otro">Other</option></select></div>
+      <div class="field"><label>What brings you here?</label><textarea name="message" id="cf-message" placeholder="Tell us briefly about your situation, what you're looking for or the specific pain point that brought you to us..."></textarea></div>
+      <button type="submit">Send message →</button>
     </form>
     <script>
       function sendContactForm(e){
@@ -71,40 +71,40 @@ form button:hover{background:var(--accent-2);transform:translateY(-1px);box-shad
         const em=document.getElementById('cf-email').value;
         const s=document.getElementById('cf-sector').value;
         const m=document.getElementById('cf-message').value;
-        const subject=encodeURIComponent('Contacto desde infinitelabs.co · '+c);
-        const body=encodeURIComponent(`Nombre: ${n}\nEmpresa: ${c}\nEmail: ${em}\nSector: ${s}\n\nMensaje:\n${m}`);
+        const subject=encodeURIComponent('Contact from infinitelabs.co · '+c);
+        const body=encodeURIComponent(`Name: ${n}\nCompany: ${c}\nEmail: ${em}\nSector: ${s}\n\nMessage:\n${m}`);
         window.location.href='mailto:hello@infinitelabs.co?subject='+subject+'&body='+body;
         return false;
       }
     </script>
-    <div class="note"><p>Los datos se tratan en la Unión Europea conforme al RGPD. No los cedemos a terceros. Más detalle en nuestra <a href="/politica-privacidad/" style="color:var(--accent);font-weight:600">política de privacidad</a>.</p></div>
+    <div class="note"><p>Your data is processed in the European Union in accordance with the GDPR. We never share it with third parties. More detail in our <a href="/politica-privacidad/" style="color:var(--accent);font-weight:600">privacy policy</a>.</p></div>
   </div>
 
   <div>
-    <h2 style="font-size:28px;margin-bottom:24px;font-weight:600">Otras vías</h2>
+    <h2 style="font-size:28px;margin-bottom:24px;font-weight:600">Other ways to reach us</h2>
     <div class="vias">
       <div class="via">
-        <h3>📅 Reservar conversación</h3>
-        <p>30 minutos por videoconferencia. Sin coste. Sin compromiso. Te entregamos propuesta personalizada tras la llamada.</p>
-        <a href="https://calendar.app.google/3nhQL1Fp3EW9YhBj6" target="_blank" rel="noopener">Acceder al calendario →</a>
+        <h3>📅 Book a conversation</h3>
+        <p>30 minutes by video call. Free of charge. No strings attached. You receive a tailored proposal after the call.</p>
+        <a href="https://calendar.app.google/3nhQL1Fp3EW9YhBj6" target="_blank" rel="noopener">Open the calendar →</a>
       </div>
       <div class="via">
-        <h3>✉ Email directo</h3>
-        <p>Escríbenos directamente y respondemos en 24 horas hábiles.</p>
+        <h3>✉ Direct email</h3>
+        <p>Write to us directly and we reply within 24 business hours.</p>
         <a href="mailto:hello@infinitelabs.co">hello@infinitelabs.co →</a>
       </div>
       <div class="via">
         <h3>💼 LinkedIn</h3>
-        <p>Sigue nuestro día a día y nuestra actividad pública. Mensajes también respondidos.</p>
-        <a href="https://www.linkedin.com/company/infinitelabs-co" target="_blank" rel="noopener">Ver perfil →</a>
+        <p>Follow our day-to-day work and public activity. Messages answered there too.</p>
+        <a href="https://www.linkedin.com/company/infinitelabs-co" target="_blank" rel="noopener">View profile →</a>
       </div>
     </div>
   </div>
 </div></div></section>
 <footer><div class="wrap"><div class="top">
-  <div><a href="/" class="brand"><img src="/logos/svg/infinitelabs-mono-white.svg" alt="Infinite Labs"></a><p class="tagline">Consultora tecnológica especializada en PYMEs. Transformamos PYMEs con inteligencia artificial aplicada con criterio.</p><div class="locations">Oficinas en <strong>Barcelona</strong> y <strong>Tallinn</strong></div></div>
-  <div class="col"><h4>Servicios</h4><ul><li><a href="/servicios/#diagnostico">Diagnóstico</a></li><li><a href="/servicios/#transformacion">Transformación operativa</a></li><li><a href="/servicios/#partner">Partner tecnológico</a></li><li><a href="/sectores/">Sectores</a></li><li><a href="/historias-de-exito/">Historias de éxito</a></li></ul></div>
-  <div class="col"><h4>Productos</h4><ul><li><a href="/productos/regulia/">Regulia</a></li><li><a href="/productos/contestia/">Contestia</a></li><li><a href="/productos/instantexam/">InstantExam</a></li><li><a href="/productos/canto/">Canto</a></li><li><a href="/productos/scoreflow/">ScoreFlow</a></li><li><a href="/productos/contablia/">Contablia</a></li><li><a href="/productos/swarmix/">Swarmix</a></li></ul></div>
-  <div class="col"><h4>Empresa</h4><ul><li><a href="/sobre-nosotros/">Sobre nosotros</a></li><li><a href="/casos-de-uso/">Casos de uso</a></li><li><a href="https://blog.infinitelabs.co">Blog</a></li><li><a href="/cupons/">Cupons ACCIÓ</a></li><li><a href="/contacto/">Contacto</a></li></ul></div>
-  <div class="col"><h4>Legal</h4><ul><li><a href="/aviso-legal/">Aviso legal</a></li><li><a href="/politica-privacidad/">Privacidad</a></li><li><a href="/politica-cookies/">Cookies</a></li><li><a href="https://www.linkedin.com/company/infinitelabs-co">LinkedIn</a></li></ul></div>
-</div><div class="bottom"><div>© 2026 Infinite Labs · Datos procesados en la Unión Europea · RGPD garantizado</div></div></div></footer></body></html>
+  <div><a href="/" class="brand"><img src="/logos/svg/infinitelabs-mono-white.svg" alt="Infinite Labs"></a><p class="tagline">Technology consultancy specialised in SMEs. We transform companies with artificial intelligence applied with judgement.</p><div class="locations">Headquartered in <strong>Tallinn, Estonia</strong></div></div>
+  <div class="col"><h4>Services</h4><ul><li><a href="/servicios/#diagnostico">Diagnostic</a></li><li><a href="/servicios/#transformacion">Operational transformation</a></li><li><a href="/servicios/#partner">Technology partner</a></li><li><a href="/sectores/">Sectors</a></li><li><a href="/historias-de-exito/">Success stories</a></li></ul></div>
+  <div class="col"><h4>Products</h4><ul><li><a href="/productos/regulia/">Regulia</a></li><li><a href="/productos/contestia/">Contestia</a></li><li><a href="/productos/instantexam/">InstantExam</a></li><li><a href="/productos/canto/">Canto</a></li><li><a href="/productos/scoreflow/">ScoreFlow</a></li><li><a href="/productos/contablia/">Contablia</a></li><li><a href="/productos/swarmix/">Swarmix</a></li></ul></div>
+  <div class="col"><h4>Company</h4><ul><li><a href="/sobre-nosotros/">About us</a></li><li><a href="/casos-de-uso/">Use cases</a></li><li><a href="https://blog.infinitelabs.co">Blog</a></li><li><a href="/contacto/">Contact</a></li></ul></div>
+  <div class="col"><h4>Legal</h4><ul><li><a href="/aviso-legal/">Legal notice</a></li><li><a href="/politica-privacidad/">Privacy</a></li><li><a href="/politica-cookies/">Cookies</a></li><li><a href="https://www.linkedin.com/company/infinitelabs-co">LinkedIn</a></li></ul></div>
+</div><div class="bottom"><div>© 2026 Infinite Labs OÜ · Tallinn, Estonia · Data processed in the European Union · GDPR compliant</div></div></div></footer></body></html>
